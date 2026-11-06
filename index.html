@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRE Quant Mock Tests</title>
+<meta name="description" content="단축형 GRE General Test 규격에 맞춘 고난도 Quantitative Reasoning 모의고사 20회분과 한국어 단계별 해설">
+<script src="js/quant_tests_index.js"></script>
+<script src="js/quant_history_manager.js"></script>
+<style>
+  :root { --bg:#f7f5f0; --paper:#fff; --ink:#0f172a; --soft:#475569; --mute:#94a3b8; --line:#e2e8f0; --accent:#1c3d5a; --ok:#16a34a; --bad:#dc2626; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--ink); font-family: -apple-system, 'Segoe UI', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; line-height: 1.6; }
+  a { color: inherit; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+  .hero { background: linear-gradient(135deg, #1c3d5a 0%, #0f2537 100%); color: #fff; padding: 56px 0 46px; }
+  .hero .eyebrow { font-size: 12px; letter-spacing: .25em; text-transform: uppercase; opacity: .7; margin-bottom: 12px; font-weight: 700; }
+  .hero h1 { font-size: 36px; line-height: 1.2; margin-bottom: 14px; letter-spacing: -.01em; }
+  .hero p { opacity: .85; max-width: 760px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+  .chip { font-size: 12.5px; padding: 5px 12px; border: 1px solid rgba(255,255,255,.3); border-radius: 16px; background: rgba(255,255,255,.08); }
+  section { margin: 32px 0; }
+  h2 { font-size: 21px; margin-bottom: 14px; }
+  .card { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 22px; box-shadow: 0 1px 3px rgba(0,0,0,.04); }
+  .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 18px; }
+  .kpi { background: #f8fafc; border: 1px solid var(--line); border-radius: 8px; padding: 14px; }
+  .kpi .k { font-size: 12.5px; color: var(--soft); font-weight: 700; }
+  .kpi .v { font-size: 26px; font-weight: 800; color: var(--accent); }
+  .kpi .s { font-size: 12px; color: var(--mute); }
+  .weak { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .row { display: grid; grid-template-columns: 90px 1fr 70px; gap: 8px; align-items: center; font-size: 13px; margin-bottom: 7px; }
+  .bar { height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; } .bar > div { height: 100%; background: var(--accent); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+  .test { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; gap: 10px; transition: box-shadow .15s, transform .15s; }
+  .test:hover { box-shadow: 0 6px 18px rgba(15,23,42,.08); transform: translateY(-1px); }
+  .test .top { display: flex; justify-content: space-between; align-items: baseline; }
+  .test .num { font-size: 22px; font-weight: 800; color: var(--accent); }
+  .badge { font-size: 11.5px; padding: 2px 8px; border-radius: 10px; background: #f1f5f9; color: var(--soft); font-weight: 700; }
+  .badge.done { background: #dcfce7; color: #166534; }
+  .meta { font-size: 12.5px; color: var(--soft); }
+  .go { display: block; text-align: center; padding: 9px; background: var(--accent); color: #fff; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 14px; }
+  .go:hover { background: #0f2537; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { background: #f8fafc; color: var(--soft); font-size: 12.5px; }
+  .btn { font-size: 12.5px; padding: 6px 12px; border: 1px solid #cbd5e1; background: #fff; border-radius: 6px; cursor: pointer; }
+  .btn.danger { color: var(--bad); }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .empty { color: var(--mute); font-size: 14px; padding: 8px 0; }
+  .fmt td:first-child { font-weight: 700; white-space: nowrap; }
+  footer { color: var(--mute); font-size: 12.5px; padding: 30px 0 50px; }
+  @media (max-width: 760px) { .hero h1 { font-size: 26px; } .kpis { grid-template-columns: repeat(2, 1fr); } .weak { grid-template-columns: 1fr; } .hist-hide { display: none; } }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">GRE General Test · Quantitative Reasoning</div>
+    <h1>GRE Quant 고난도 실전 모의고사 20회</h1>
+    <p>2023년 9월부터 시행 중인 단축형 GRE General Test의 Quant 규격(2개 섹션, 12문항/21분 + 15문항/26분)에 맞춘 실전 모의고사입니다. GRE Quant 기준 상위권(160–170) 대비용 고난도 문항 위주이며, 모든 문항에 한국어 단계별 해설과 오답 함정 분석이 들어 있습니다.</p>
+    <div class="chips"><span class="chip">20회 × 27문항 = 540문항</span><span class="chip">QC · MC · 복수정답 · Numeric Entry · Data Interpretation</span><span class="chip">ETS 스타일 UI · 계산기 · Review/Mark</span><span class="chip">오답노트 · 성적 기록</span></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>📊 나의 성적 리포트</h2>
+    <div class="card" id="dash"></div>
+  </section>
+
+  <section>
+    <h2>모의고사 회차 선택</h2>
+    <div class="grid" id="tests"></div>
+  </section>
+
+  <section>
+    <h2>시험 구성 (현행 GRE 규격)</h2>
+    <div class="card">
+      <table class="fmt">
+        <tr><td>섹션</td><td>Section 1: 12문항 / 21분 · Section 2: 15문항 / 26분 (총 27문항, 47분)</td></tr>
+        <tr><td>Quantitative Comparison</td><td>회차당 8문항 (섹션마다 앞쪽 4문항). 보기 (A)–(D) 고정</td></tr>
+        <tr><td>Multiple Choice</td><td>단일 정답 5지선다 8문항 + 복수 정답(Select all that apply) 2문항</td></tr>
+        <tr><td>Numeric Entry</td><td>6문항 (정수·소수 한 칸 / 분수 두 칸)</td></tr>
+        <tr><td>Data Interpretation</td><td>Section 2에 표 1개 + 연계 3문항</td></tr>
+        <tr><td>영역</td><td>산술 · 대수 · 기하 · 자료 분석을 섹션마다 고르게 배치</td></tr>
+        <tr><td>점수</td><td>130–170 환산은 원점수 비례 추정치입니다(ETS 공식 환산표가 아님).</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>응시 기록</h2>
+    <div class="card" id="hist"></div>
+  </section>
+</main>
+<footer class="wrap">모든 문항은 이 저장소의 생성기(gen/)로 직접 만든 창작 문항입니다. ETS 공식 문항이나 시판 교재 문항을 옮겨 오지 않았습니다. GRE®는 ETS의 등록상표이며, 이 사이트는 ETS와 관련이 없습니다.</footer>
+
+<script>
+(function () {
+  const AREA = { Arithmetic: '산술', Algebra: '대수', Geometry: '기하', 'Data Analysis': '자료 분석' };
+  const TYPES = { QC: 'QC', MC: 'MC', MA: '복수정답', NE: 'NE' };
+  const H = window.QuantHistory;
+  function draw() {
+    const all = H.getAll().sort((a, b) => b.timestamp - a.timestamp);
+    const tests = window.QUANT_TESTS || [];
+    // dashboard
+    const dash = document.getElementById('dash');
+    if (!all.length) dash.innerHTML = '<div class="empty">아직 응시 기록이 없습니다. 아래에서 1회부터 시작해 보세요. 기록은 이 브라우저에만 저장됩니다.</div>';
+    else {
+      const avg = Math.round(all.reduce((s, a) => s + a.accuracy, 0) / all.length);
+      const best = all.reduce((m, a) => a.scoreScaled > m.scoreScaled ? a : m, all[0]);
+      const done = new Set(all.map(a => a.round)).size;
+      const agg = (key) => { const o = {}; all.forEach(a => Object.entries(a[key] || {}).forEach(([k, v]) => { o[k] = o[k] || { c: 0, t: 0 }; o[k].c += v.correct; o[k].t += v.total; })); return o; };
+      const rows = (o, names) => Object.keys(names).filter(k => o[k]).map(k => { const p = Math.round(o[k].c / o[k].t * 100); return `<div class="row"><span>${names[k]}</span><div class="bar"><div style="width:${p}%"></div></div><span>${p}% (${o[k].c}/${o[k].t})</span></div>`; }).join('');
+      dash.innerHTML = `<div class="kpis">
+        <div class="kpi"><div class="k">총 응시</div><div class="v">${all.length}</div><div class="s">${done}/20 회차 완료</div></div>
+        <div class="kpi"><div class="k">평균 정답률</div><div class="v">${avg}%</div><div class="s">전체 응시 기준</div></div>
+        <div class="kpi"><div class="k">최고 추정 점수</div><div class="v">${best.scoreScaled}</div><div class="s">${best.round} · ${best.scoreRaw}/${best.totalQuestions}</div></div>
+        <div class="kpi"><div class="k">최근 응시</div><div class="v">${all[0].scoreScaled}</div><div class="s">${all[0].round} · ${new Date(all[0].timestamp).toLocaleDateString()}</div></div></div>
+        <div class="weak"><div><h3 style="font-size:14px;margin-bottom:8px">영역별 정답률</h3>${rows(agg('areaBreakdown'), AREA)}</div><div><h3 style="font-size:14px;margin-bottom:8px">유형별 정답률</h3>${rows(agg('typeBreakdown'), TYPES)}</div></div>`;
+    }
+    // test cards
+    document.getElementById('tests').innerHTML = tests.map(t => {
+      const h = all.filter(a => a.round === `${t.n}회`);
+      const best = h.length ? Math.max(...h.map(a => a.scoreRaw)) : null;
+      return `<div class="test"><div class="top"><span class="num">${t.n}회</span><span class="badge ${h.length ? 'done' : ''}">${h.length ? `응시 ${h.length}회 · 최고 ${best}/27` : '미응시'}</span></div>
+        <div class="meta">Section 1 (12) + Section 2 (15) · 47분<br>QC ${t.types.QC || 0} · MC ${t.types.MC || 0} · 복수정답 ${t.types.MA || 0} · NE ${t.types.NE || 0}</div>
+        <a class="go" href="${t.file}">${t.n}회 응시하기 →</a></div>`;
+    }).join('');
+    // history
+    const hist = document.getElementById('hist');
+    hist.innerHTML = (all.length ? `<table><thead><tr><th>일시</th><th>회차</th><th>원점수</th><th>추정</th><th class="hist-hide">S1 / S2</th><th class="hist-hide">모드</th><th></th></tr></thead><tbody>
+      ${all.map(a => `<tr><td>${new Date(a.timestamp).toLocaleString()}</td><td>${a.round}</td><td>${a.scoreRaw}/${a.totalQuestions}</td><td>${a.scoreScaled}</td><td class="hist-hide">${(a.sections || []).map(s => `${s.correct}/${s.total}`).join(' · ')}</td><td class="hist-hide">${a.timed ? '실전' : '연습'}</td><td><button class="btn danger" data-del="${a.id}">삭제</button></td></tr>`).join('')}
+      </tbody></table>` : '<div class="empty">기록 없음</div>') + `<div class="tools"><button class="btn" id="exp">기록 내보내기(JSON)</button><label class="btn">기록 가져오기<input type="file" id="imp" accept="application/json" hidden></label>${all.length ? '<button class="btn danger" id="clr">전체 삭제</button>' : ''}</div>`;
+    hist.querySelectorAll('[data-del]').forEach(b => b.onclick = () => { if (confirm('이 기록을 삭제할까요?')) { H.remove(b.dataset.del); draw(); } });
+    document.getElementById('exp').onclick = () => { const blob = new Blob([H.export()], { type: 'application/json' }); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'gre_quant_history.json'; a.click(); };
+    document.getElementById('imp').onchange = e => { const f = e.target.files[0]; if (!f) return; f.text().then(t => { try { H.import(t); draw(); } catch (err) { alert('가져오기 실패: ' + err.message); } }); };
+    const clr = document.getElementById('clr'); if (clr) clr.onclick = () => { if (confirm('모든 기록을 삭제할까요?')) { H.clear(); draw(); } };
+  }
+  draw();
+})();
+</script>
+</body>
+</html>

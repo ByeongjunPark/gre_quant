@@ -6,19 +6,21 @@ const { Rng } = require('./lib');
 const { finalize } = require('./make');
 const { diGrowth, diBudget } = require('./t_di');
 
-const TEMPLATES = [...require('./t_arith'), ...require('./t_alg'), ...require('./t_qc'), ...require('./t_geo'), ...require('./t_data')];
+const TEMPLATES = [...require('./t_arith'), ...require('./t_alg'), ...require('./t_qc'), ...require('./t_geo'), ...require('./t_data'), ...require('./t_fig')];
 const ROOT = path.join(__dirname, '..');
 const NUM_TESTS = 20;
 const SEED = 20261106;
 
+const FIG_IDS = new Set(['rectpd', 'lineaxes', 'circsq', 'segment', 'eqtri', 'similar', 'qc_tri3']);
+TEMPLATES.forEach(t => { if (FIG_IDS.has(t.id)) t.fig = true; });
 const usage = {};
 TEMPLATES.forEach(t => { usage[t.id] = 0; });
 
-function pickTemplate(r, fmt, usedInTest, areaCount) {
+function pickTemplate(r, fmt, usedInTest, areaCount, wantFig) {
   const cands = TEMPLATES.filter(t => t.formats.includes(fmt) && !usedInTest.has(t.id));
   let best = null, bestScore = Infinity;
   for (const t of cands) {
-    const s = usage[t.id] * 10 + (areaCount[t.area] || 0) * 4 + r.next() * 6;
+    const s = usage[t.id] * 10 + (areaCount[t.area] || 0) * 4 + r.next() * 6 - (wantFig && t.fig ? 25 : 0);
     if (s < bestScore) { bestScore = s; best = t; }
   }
   return best;
@@ -38,14 +40,17 @@ function genItem(t, fmt, r) {
 
 function buildSection(r, number, plan, usedInTest, withDI, diKind) {
   const areaCount = {};
-  const take = fmt => {
-    const t = pickTemplate(r, fmt, usedInTest, areaCount);
+  let figs = 0;
+  const take = (fmt, slot) => {
+    const t = pickTemplate(r, fmt, usedInTest, areaCount, figs < 2 && (slot === 1 || slot >= 5));
+    if (t.fig) figs++;
     usedInTest.add(t.id); usage[t.id]++; areaCount[t.area] = (areaCount[t.area] || 0) + 1;
     return genItem(t, fmt, r);
   };
-  const qcs = []; for (let i = 0; i < plan.QC; i++) qcs.push(take('QC'));
+  let slot = 0;
+  const qcs = []; for (let i = 0; i < plan.QC; i++) qcs.push(take('QC', slot++));
   const others = [];
-  for (const fmt of ['MC', 'MA', 'NE']) for (let i = 0; i < plan[fmt]; i++) others.push(take(fmt));
+  for (const fmt of ['MC', 'MA', 'NE']) for (let i = 0; i < plan[fmt]; i++) others.push(take(fmt, slot++));
   const shuffled = r.shuffle(others);
   let seq = [...qcs];
   if (withDI) {

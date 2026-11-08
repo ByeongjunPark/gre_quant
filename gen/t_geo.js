@@ -1,6 +1,7 @@
 'use strict';
 const { Frac, gcd, fmtInt, show, sup, expr, sqrtDisp, simplifySqrt } = require('./lib');
 const T = [];
+const { Fig, it, deg, bbox, SHADE } = require('./fig');
 const add = (id, area, topic, formats, gen) => T.push({ id, area, topic, formats, gen });
 const PI = 'π', R3 = '√3';
 const E = (a, b, c) => ({ disp: expr([[a, PI], [b, R3], [c, '']]), v: null }); // a·π + b·√3 + c
@@ -11,9 +12,12 @@ add('rectpd', 'Geometry', '직사각형: 둘레와 대각선으로 넓이', ['NE
   const k = r.int(1, 3);
   const l = l0 * k, w = w0 * k, d = d0 * k, P = 2 * (l + w);
   const A = l * w;
+  const fg = new Fig({ w: 320, h: 200, box: [-0.5, -0.5, l + 0.5, w + 0.5] });
+  fg.poly([[0, 0], [l, 0], [l, w], [0, w]]).line([0, 0], [l, w]).label([l / 2, w / 2], String(d), [l / 2 + w / l, w / 2 - 1], 14);
   return {
+    fig: fg.svg({ alt: 'rectangle with a diagonal' }),
     ctx: `A rectangle has a perimeter of ${P} and a diagonal of length ${d}.`,
-    q: `A rectangle has a perimeter of ${P} and a diagonal of length ${d}. What is the area of the rectangle?`,
+    q: `The rectangle shown above has a perimeter of ${P}, and the diagonal shown has length ${d}. What is the area of the rectangle?`,
     noun: 'The area of the rectangle', ans: A,
     distract: [{ val: P * P / 16, why: '정사각형이라고 가정한 넓이입니다.' }, { val: (P / 2) ** 2 - d * d, why: '(l + w)² − d² = 2lw이므로 2로 나눠야 하는데 나누지 않은 값입니다.' }, { val: d * d / 2, why: '대각선만으로 정사각형 넓이를 구한 값입니다.' }, { val: A + l, why: '계산 실수 값입니다.' }],
     trap: { val: P * P / 16, why: '정사각형이라고 가정한 넓이입니다(둘레가 같으면 정사각형의 넓이가 최대).' },
@@ -34,9 +38,17 @@ add('lineaxes', 'Geometry', '좌표평면: 직선과 축이 만드는 삼각형'
   const p1 = [b * i, q - a * i], p2 = [b * j, q - a * j];
   const xint = new Frac(q * b, a);
   const area = xint.mul(q).div(2);
+  const xs = [p1[0], p2[0], 0, xint.v], ys = [p1[1], p2[1], 0, q];
+  const X0 = Math.min(...xs) - 1, X1 = Math.max(...xs) + 1.5, Y0 = Math.min(...ys) - 1, Y1 = Math.max(...ys) + 1.5;
+  const fg = new Fig({ w: 340, h: 280, box: [X0, Y0, X1, Y1] });
+  fg.axes(X0 + 0.2, X1 - 0.2, Y0 + 0.2, Y1 - 0.2);
+  const yAt = x => q - a * x / b; const lx0 = Math.max(X0 + 0.3, (q - (Y1 - 0.3)) * b / a), lx1 = Math.min(X1 - 0.3, (q - (Y0 + 0.3)) * b / a);
+  fg.line([lx0, yAt(lx0)], [lx1, yAt(lx1)]).text([lx0, yAt(lx0)], it('k'), { dx: -4, dy: -14 });
+  [p1, p2].forEach(p => { fg.dot(p); fg.text(p, `(${p[0]}, ${p[1]})`.replace(/-/g, '−'), { dx: 6, dy: 16, size: 14, anchor: 'start' }); });
   return {
+    fig: fg.svg({ alt: 'line k in the xy-plane' }),
     ctx: `Line <i>k</i> passes through the points (${p1[0]}, ${p1[1]}) and (${p2[0]}, ${p2[1]}) in the <i>xy</i>-plane.`,
-    q: `In the <i>xy</i>-plane, line <i>k</i> passes through the points (${p1[0]}, ${p1[1]}) and (${p2[0]}, ${p2[1]}). What is the area of the triangular region bounded by line <i>k</i>, the <i>x</i>-axis, and the <i>y</i>-axis?`,
+    q: `In the <i>xy</i>-plane above, line <i>k</i> passes through the points (${p1[0]}, ${p1[1]}) and (${p2[0]}, ${p2[1]}). What is the area of the triangular region bounded by line <i>k</i>, the <i>x</i>-axis, and the <i>y</i>-axis?`,
     noun: 'The area of the triangular region bounded by line <i>k</i>, the <i>x</i>-axis, and the <i>y</i>-axis', ans: area,
     distract: [{ val: xint.mul(q), why: '밑변 × 높이에서 2로 나누지 않은 값입니다.' }, { val: new Frac(q * q * a, 2 * b), why: '기울기를 뒤집어 x절편을 잘못 구한 값입니다.' }, { val: new Frac(q * q, 2), why: 'x절편과 y절편이 같다고 본 값입니다.' }, { val: area.add(1), why: '계산 실수 값입니다.' }],
     trap: { val: new Frac(q * q * a, 2 * b), why: '기울기의 역수로 x절편을 구한 값입니다.' },
@@ -56,8 +68,11 @@ add('circsq', 'Geometry', '원과 정사각형 사이 영역', ['MC'], r => {
   if (v === 'sqInCircle') {
     const r2 = new Frac(s * s, 2); // radius^2
     const ans = E(r2, 0, -s * s);
+    const R = s / Math.SQRT2, fg = new Fig({ w: 250, h: 250, box: [-R - 0.3, -R - 0.3, R + 0.3, R + 0.3] });
+    fg.circle([0, 0], R, { fill: SHADE }).poly([[-s / 2, -s / 2], [s / 2, -s / 2], [s / 2, s / 2], [-s / 2, s / 2]], { fill: '#fff' }).text([0, -s / 2], String(s), { dy: -12 });
     return {
-      q: `A square with sides of length ${s} is inscribed in a circle. What is the area of the region inside the circle but outside the square?`,
+      fig: fg.svg({ alt: 'square inscribed in a circle, region outside the square shaded' }),
+      q: `In the figure above, a square with sides of length ${s} is inscribed in a circle. What is the area of the shaded region?`,
       ans, disp: ans.disp, distract: [
         { val: E(new Frac(s * s, 4), 0, -s * s), why: '원의 반지름을 s/2로 잡은 값입니다(정사각형에 내접하는 원과 혼동).' },
         { val: E(s * s, 0, -s * s), why: '반지름을 대각선 전체 길이처럼 잘못 잡은 값입니다.' },
@@ -69,8 +84,11 @@ add('circsq', 'Geometry', '원과 정사각형 사이 영역', ['MC'], r => {
     };
   }
   const ans = E(new Frac(-s * s, 4), 0, s * s);
+  const fg = new Fig({ w: 250, h: 250, box: [-s / 2 - 0.3, -s / 2 - 0.3, s / 2 + 0.3, s / 2 + 0.3] });
+  fg.poly([[-s / 2, -s / 2], [s / 2, -s / 2], [s / 2, s / 2], [-s / 2, s / 2]], { fill: SHADE }).circle([0, 0], s / 2, { fill: '#fff' }).text([0, -s / 2], String(s), { dy: 13 });
   return {
-    q: `A circle is inscribed in a square with sides of length ${s}. What is the total area of the four regions inside the square but outside the circle?`,
+    fig: fg.svg({ alt: 'circle inscribed in a square, corners shaded' }),
+    q: `In the figure above, a circle is inscribed in a square with sides of length ${s}. What is the total area of the shaded regions?`,
     ans, disp: ans.disp, distract: [
       { val: E(-s * s, 0, s * s), why: '반지름 대신 지름을 써서 원의 넓이를 구한 값입니다.' },
       { val: E(new Frac(-s * s, 2), 0, s * s), why: '반지름을 s/√2로 잡은 값입니다(외접원과 혼동).' },
@@ -92,8 +110,14 @@ add('segment', 'Geometry', '활꼴의 넓이 (부채꼴 − 삼각형)', ['MC'],
   if (theta === 90) { tri = E(0, 0, new Frac(rr, 2)); triTxt = `직각이등변삼각형: (1/2)r² = ${show(new Frac(rr, 2))}`; }
   else { tri = E(0, new Frac(rr, 4), 0); triTxt = theta === 60 ? `정삼각형: (√3/4)r² = ${expr([[new Frac(rr, 4), R3]])}` : `(1/2)r²·sin120° = (√3/4)r² = ${expr([[new Frac(rr, 4), R3]])}`; }
   const ans = theta === 90 ? E(sector, 0, new Frac(-rr, 2)) : E(sector, new Frac(-rr, 4), 0);
+  const Pa = deg(90 + theta / 2), Pb = deg(90 - theta / 2);
+  const fg = new Fig({ w: 260, h: 260, box: [-1.2, -1.2, 1.2, 1.2] });
+  fg.path(`${fg.M(Pa)} ${fg.arcTo(Pb, 1, 0, 1)} Z`, { fill: SHADE });
+  fg.circle([0, 0], 1).line([0, 0], Pa).line([0, 0], Pb).line(Pa, Pb).dot([0, 0]);
+  fg.text([0, 0], 'O', { dy: 14 }).label(Pa, 'A', [0, 0]).label(Pb, 'B', [0, 0]).angleLabel([0, 0], Pa, Pb, `${theta}°`, 24);
   return {
-    q: `In a circle with center O and radius ${rad}, points A and B lie on the circle, and the measure of angle AOB is ${theta}°. What is the area of the region bounded by chord AB and the minor arc AB?`,
+    fig: fg.svg({ alt: 'circle with center O, shaded segment cut off by chord AB' }),
+    q: `In the figure above, O is the center of the circle, the radius of the circle is ${rad}, and points A and B lie on the circle. What is the area of the shaded region?`,
     ans, disp: ans.disp,
     distract: [
       { val: E(sector, 0, 0), why: '부채꼴의 넓이만 구하고 삼각형을 빼지 않은 값입니다.' },
@@ -208,8 +232,11 @@ add('eqtri', 'Geometry', '정삼각형과 원 (내접·외접)', ['MC'], r => {
   const K = r.pick([4, 12, 16, 36, 48, 64]);
   if (v === 'inscribedTri') {
     const ans = expr([[new Frac(3 * K, 4), R3]]);
+    const fg = new Fig({ w: 240, h: 240, box: [-1.15, -1.15, 1.15, 1.15] });
+    fg.circle([0, 0], 1).poly([deg(90), deg(210), deg(330)], { fill: SHADE }).dot([0, 0]);
     return {
-      q: `An equilateral triangle is inscribed in a circle that has area ${K}π. What is the area of the triangle?`,
+      fig: fg.svg({ alt: 'equilateral triangle inscribed in a circle' }),
+      q: `In the figure above, an equilateral triangle is inscribed in a circle. If the area of the circle is ${K}π, what is the area of the shaded triangular region?`,
       ans: { disp: ans, v: null }, disp: ans,
       distract: [{ val: { disp: expr([[new Frac(K, 4), R3]]) }, why: '한 변을 반지름과 같다고 본 값입니다.' }, { val: { disp: expr([[3 * K, R3]]) }, why: '원이 삼각형에 내접하는 경우(외접 삼각형)의 넓이입니다.' }, { val: { disp: expr([[new Frac(3 * K, 2), R3]]) }, why: '높이를 반지름 × 3으로 잡은 값입니다.' }, { val: { disp: expr([[new Frac(3 * K, 4), '']]) }, why: '√3을 빠뜨린 값입니다.' }],
       key: '정삼각형의 외접원 반지름 R = s/√3 → s = R√3, 넓이 = (√3/4)s².',
@@ -217,8 +244,11 @@ add('eqtri', 'Geometry', '정삼각형과 원 (내접·외접)', ['MC'], r => {
     };
   }
   const ans = expr([[3 * K, R3]]);
+  const fg = new Fig({ w: 240, h: 240, box: [-2.1, -1.15, 2.1, 2.1] });
+  fg.poly([mul2(deg(90), 2), mul2(deg(210), 2), mul2(deg(330), 2)], { fill: SHADE }).circle([0, 0], 1, { fill: '#fff' });
   return {
-    q: `A circle that has area ${K}π is inscribed in an equilateral triangle. What is the area of the triangle?`,
+    fig: fg.svg({ alt: 'circle inscribed in an equilateral triangle' }),
+    q: `In the figure above, a circle with area ${K}π is inscribed in an equilateral triangle. What is the area of the triangular region, including the circle?`,
     ans: { disp: ans, v: null }, disp: ans,
     distract: [{ val: { disp: expr([[new Frac(3 * K, 4), R3]]) }, why: '삼각형이 원에 내접하는 경우의 넓이입니다.' }, { val: { disp: expr([[K, R3]]) }, why: '한 변을 2r로 본 값입니다.' }, { val: { disp: expr([[new Frac(3 * K, 2), R3]]) }, why: '높이를 2r로 잡은 값입니다.' }, { val: { disp: expr([[6 * K, R3]]) }, why: '넓이 공식에서 1/2을 빠뜨린 값입니다.' }],
     key: '정삼각형의 내접원 반지름 r = 높이의 1/3 → 높이 = 3r.',
@@ -272,9 +302,15 @@ add('similar', 'Geometry', '닮음: 평행선이 나누는 넓이', ['NE', 'MC',
   let p, q; do { p = r.int(1, 5); q = r.int(1, 5); } while (gcd(p, q) !== 1);
   const small = p * p, big = (p + q) ** 2;
   const ans = new Frac(small, big - small);
+  const Ap = [1.6, 3.2], Bp = [0, 0], Cp = [5, 0], tt = p / (p + q);
+  const Dp = [Ap[0] + (Bp[0] - Ap[0]) * tt, Ap[1] + (Bp[1] - Ap[1]) * tt], Ep = [Ap[0] + (Cp[0] - Ap[0]) * tt, Ap[1] + (Cp[1] - Ap[1]) * tt];
+  const fg = new Fig({ w: 320, h: 220, box: [-0.4, -0.4, 5.4, 3.6] });
+  fg.poly([Dp, Bp, Cp, Ep], { fill: SHADE }).poly([Ap, Bp, Cp]).line(Dp, Ep);
+  fg.text(Ap, 'A', { dy: -12 }).text(Bp, 'B', { dx: -10, dy: 6 }).text(Cp, 'C', { dx: 10, dy: 6 }).text(Dp, 'D', { dx: -12 }).text(Ep, 'E', { dx: 12 });
   return {
+    fig: fg.svg({ alt: 'triangle ABC with segment DE parallel to BC; quadrilateral DBCE shaded' }),
     ctx: `In triangle ABC, point D lies on side AB and point E lies on side AC so that DE is parallel to BC. The ratio of AD to DB is ${p} to ${q}.`,
-    q: `In triangle ABC, point D lies on side AB and point E lies on side AC so that DE is parallel to BC. If the ratio of AD to DB is ${p} to ${q}, what is the ratio of the area of triangle ADE to the area of quadrilateral DBCE?`,
+    q: `In triangle ABC, point D lies on side AB and point E lies on side AC so that DE is parallel to BC. If the ratio of AD to DB is ${p} to ${q}, what is the ratio of the area of triangle ADE to the area of the shaded region DBCE?`,
     noun: 'The ratio of the area of triangle ADE to the area of quadrilateral DBCE', ans,
     distract: [{ val: new Frac(p, q), why: '길이의 비를 그대로 넓이의 비로 쓴 값입니다.' }, { val: new Frac(small, big), why: '삼각형 ADE와 삼각형 ABC 전체의 넓이 비입니다.' }, { val: new Frac(p * p, q * q), why: 'AD:DB를 제곱했지만 닮음비는 AD:AB입니다.' }, { val: new Frac(p, p + q), why: '닮음비(AD:AB)만 구한 값입니다.' }],
     trap: { val: new Frac(p * p, q * q), why: 'AD:DB를 제곱한 값입니다(닮음비는 AD:AB).' },
@@ -299,4 +335,5 @@ add('sqdiag', 'Geometry', '좌표평면: 대각선 꼭짓점으로 정사각형 
   };
 });
 
+function mul2(p, k) { return [p[0] * k, p[1] * k]; }
 module.exports = T;

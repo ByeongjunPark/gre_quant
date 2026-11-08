@@ -31,8 +31,8 @@ const examData = {
           "id": "S1-Q1",
           "type": "QC",
           "stimulus": "<i>k</i> is an integer greater than 1.",
-          "qa": "(<i>k</i> + 1)!/(<i>k</i> − 1)!",
-          "qb": "<i>k</i><sup>2</sup>",
+          "qa": "(<i>k</i> + 1)<sup>2</sup>",
+          "qb": "(<i>k</i> + 1)!/(<i>k</i> − 1)!",
           "choices": [
             {
               "label": "A",
@@ -60,9 +60,9 @@ const examData = {
         {
           "id": "S1-Q2",
           "type": "QC",
-          "stimulus": "3<sup><i>x</i> + 3</sup> − 3<sup><i>x</i> − 1</sup> = 720",
-          "qa": "<i>x</i>",
-          "qb": "2",
+          "stimulus": "<div class=\"fig\"><svg viewBox=\"0 0 380 240\" width=\"380\" role=\"img\" aria-label=\"right triangle ABC with altitude CD to the hypotenuse\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"'Times New Roman', Times, serif\"><defs><marker id=\"arr\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1e293b\"/></marker></defs><polygon points=\"36.15,170.46 343.85,170.46 97.69,47.38\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"97.69\" y1=\"47.38\" x2=\"97.69\" y2=\"170.46\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><polyline points=\"93.22,56.32 102.16,60.8 106.63,51.85\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><polyline points=\"107.69,170.46 107.69,160.46 97.69,160.46\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><text x=\"26.15\" y=\"176.46\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"16\" fill=\"#1e293b\">A</text><text x=\"353.85\" y=\"176.46\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"16\" fill=\"#1e293b\">B</text><text x=\"97.69\" y=\"35.38\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"16\" fill=\"#1e293b\">C</text><text x=\"97.69\" y=\"184.46\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"16\" fill=\"#1e293b\">D</text><text x=\"66.92\" y=\"214.46\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"16\" fill=\"#1e293b\">5</text><text x=\"220.77\" y=\"214.46\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"16\" fill=\"#1e293b\">20</text><line x1=\"36.15\" y1=\"200.46\" x2=\"97.69\" y2=\"200.46\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"97.69\" y1=\"200.46\" x2=\"343.85\" y2=\"200.46\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"36.15\" y1=\"195.46\" x2=\"36.15\" y2=\"205.46\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"97.69\" y1=\"195.46\" x2=\"97.69\" y2=\"205.46\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"343.85\" y1=\"195.46\" x2=\"343.85\" y2=\"205.46\" stroke=\"#64748b\" stroke-width=\"1\"/></svg></div>In the figure, angle ACB and angle CDB are right angles, AD = 5, and DB = 20.",
+          "qa": "The area of triangle ABC",
+          "qb": "250",
           "choices": [
             {
               "label": "A",
@@ -82,17 +82,48 @@ const examData = {
             }
           ],
           "answer": [
-            "A"
+            "B"
           ],
-          "area": "Algebra",
-          "template": "expsolve"
+          "area": "Geometry",
+          "template": "fig_altitude",
+          "hasFigure": true
         },
         {
           "id": "S1-Q3",
           "type": "QC",
-          "stimulus": "−4 &lt; <i>x</i> &lt; 2",
-          "qa": "17",
-          "qb": "<i>x</i><sup>2</sup>",
+          "stimulus": "<i>x</i><sup>2</sup> + 2<i>x</i> − 15 = 0",
+          "qa": "−7",
+          "qb": "<i>x</i>",
+          "choices": [
+            {
+              "label": "A",
+              "text": "Quantity A is greater."
+            },
+            {
+              "label": "B",
+              "text": "Quantity B is greater."
+            },
+            {
+              "label": "C",
+              "text": "The two quantities are equal."
+            },
+            {
+              "label": "D",
+              "text": "The relationship cannot be determined from the information given."
+            }
+          ],
+          "answer": [
+            "B"
+          ],
+          "area": "Algebra",
+          "template": "qc_quadroot"
+        },
+        {
+          "id": "S1-Q4",
+          "type": "QC",
+          "stimulus": "−3 &lt; <i>x</i> &lt; 3",
+          "qa": "|<i>x</i>|",
+          "qb": "−1",
           "choices": [
             {
               "label": "A",
@@ -118,11 +149,334 @@ const examData = {
           "template": "qc_interval"
         },
         {
-          "id": "S1-Q4",
+          "id": "S1-Q5",
+          "type": "MC",
+          "stimulus": "Three fair six-sided dice, each with faces numbered 1 through 6, are rolled.",
+          "questionText": "Three fair six-sided dice, each with faces numbered 1 through 6, are rolled. What is the probability that the three numbers are all different?",
+          "choices": [
+            {
+              "label": "A",
+              "text": "4/9"
+            },
+            {
+              "label": "B",
+              "text": "59/108"
+            },
+            {
+              "label": "C",
+              "text": "5/9"
+            },
+            {
+              "label": "D",
+              "text": "121/216"
+            },
+            {
+              "label": "E",
+              "text": "15/7"
+            }
+          ],
+          "answer": [
+            "C"
+          ],
+          "area": "Data Analysis",
+          "template": "dice"
+        },
+        {
+          "id": "S1-Q6",
+          "type": "NE",
+          "stimulus": "In a certain regular polygon, each interior angle is 150° greater than each exterior angle.",
+          "questionText": "In a certain regular polygon, each interior angle is 150° greater than each exterior angle. How many diagonals does the polygon have?",
+          "answer": [
+            "252"
+          ],
+          "ne": {
+            "value": 252,
+            "fraction": false,
+            "tol": 1e-9,
+            "prefix": "",
+            "suffix": ""
+          },
+          "area": "Geometry",
+          "template": "polygon"
+        },
+        {
+          "id": "S1-Q7",
+          "type": "MC",
+          "stimulus": "<i>r</i> and <i>s</i> are the two solutions of the equation <i>x</i><sup>2</sup> + 5<i>x</i> − 9 = 0.",
+          "questionText": "If <i>r</i> and <i>s</i> are the two solutions of the equation <i>x</i><sup>2</sup> + 5<i>x</i> − 9 = 0, what is the value of <i>r</i><sup>2</sup> + <i>s</i><sup>2</sup>?",
+          "choices": [
+            {
+              "label": "A",
+              "text": "7"
+            },
+            {
+              "label": "B",
+              "text": "25"
+            },
+            {
+              "label": "C",
+              "text": "34"
+            },
+            {
+              "label": "D",
+              "text": "43"
+            },
+            {
+              "label": "E",
+              "text": "61"
+            }
+          ],
+          "answer": [
+            "D"
+          ],
+          "area": "Algebra",
+          "template": "vieta"
+        },
+        {
+          "id": "S1-Q8",
+          "type": "MC",
+          "stimulus": "",
+          "questionText": "<div class=\"fig\"><svg viewBox=\"0 0 240 240\" width=\"240\" role=\"img\" aria-label=\"circle inscribed in an equilateral triangle\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"'Times New Roman', Times, serif\"><defs><marker id=\"arr\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1e293b\"/></marker></defs><polygon points=\"120,54.64 45.77,183.21 194.23,183.21\" fill=\"#cbd5e1\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><circle cx=\"120\" cy=\"140.36\" r=\"42.86\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/></svg></div>In the figure above, a circle with area 4π is inscribed in an equilateral triangle. What is the area of the triangular region, including the circle?",
+          "choices": [
+            {
+              "label": "A",
+              "text": "24√3"
+            },
+            {
+              "label": "B",
+              "text": "12√3"
+            },
+            {
+              "label": "C",
+              "text": "3√3"
+            },
+            {
+              "label": "D",
+              "text": "6√3"
+            },
+            {
+              "label": "E",
+              "text": "4√3"
+            }
+          ],
+          "answer": [
+            "B"
+          ],
+          "area": "Geometry",
+          "template": "eqtri",
+          "hasFigure": true
+        },
+        {
+          "id": "S1-Q9",
+          "type": "NE",
+          "stimulus": "For all numbers <i>a</i> and <i>b</i>, the operation ◆ is defined by <i>a</i> ◆ <i>b</i> = <i>ab</i> + <i>a</i> − 5<i>b</i>.",
+          "questionText": "For all numbers <i>a</i> and <i>b</i>, the operation ◆ is defined by <i>a</i> ◆ <i>b</i> = <i>ab</i> + <i>a</i> − 5<i>b</i>. If 4 ◆ <i>x</i> = 10, what is the value of <i>x</i> ◆ 4?",
+          "answer": [
+            "−50"
+          ],
+          "ne": {
+            "value": -50,
+            "fraction": false,
+            "tol": 1e-9,
+            "prefix": "",
+            "suffix": ""
+          },
+          "area": "Algebra",
+          "template": "customop"
+        },
+        {
+          "id": "S1-Q10",
+          "type": "NE",
+          "stimulus": "",
+          "questionText": "5 people—Ana, Ben, Cara, Dev, Eli—are to stand in a row for a photograph. How many different arrangements are possible if Ana and Ben must not stand next to each other?",
+          "answer": [
+            "72"
+          ],
+          "ne": {
+            "value": 72,
+            "fraction": false,
+            "tol": 1e-9,
+            "prefix": "",
+            "suffix": ""
+          },
+          "area": "Data Analysis",
+          "template": "arrange"
+        },
+        {
+          "id": "S1-Q11",
+          "type": "MC",
+          "stimulus": "",
+          "questionText": "<div class=\"fig\"><svg viewBox=\"0 0 250 250\" width=\"250\" role=\"img\" aria-label=\"circle inscribed in a square, corners shaded\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"'Times New Roman', Times, serif\"><defs><marker id=\"arr\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1e293b\"/></marker></defs><polygon points=\"38.64,211.36 211.36,211.36 211.36,38.64 38.64,38.64\" fill=\"#cbd5e1\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><circle cx=\"125\" cy=\"125\" r=\"86.36\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"125\" y=\"224.36\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"16\" fill=\"#1e293b\">6</text></svg></div>In the figure above, a circle is inscribed in a square with sides of length 6. What is the total area of the shaded regions?",
+          "choices": [
+            {
+              "label": "A",
+              "text": "−36π + 36"
+            },
+            {
+              "label": "B",
+              "text": "−9π/4 + 9"
+            },
+            {
+              "label": "C",
+              "text": "−9π/2 + 36"
+            },
+            {
+              "label": "D",
+              "text": "−18π + 36"
+            },
+            {
+              "label": "E",
+              "text": "−9π + 36"
+            }
+          ],
+          "answer": [
+            "E"
+          ],
+          "area": "Geometry",
+          "template": "circsq",
+          "hasFigure": true
+        },
+        {
+          "id": "S1-Q12",
+          "type": "MA",
+          "stimulus": "",
+          "questionText": "When the positive integer <i>n</i> is divided by 15, the remainder is 10. Which of the following could be the remainder when <i>n</i><sup>2</sup> is divided by 12?<br><br>Indicate <u>all</u> such remainders.",
+          "choices": [
+            {
+              "label": "A",
+              "text": "0"
+            },
+            {
+              "label": "B",
+              "text": "3"
+            },
+            {
+              "label": "C",
+              "text": "4"
+            },
+            {
+              "label": "D",
+              "text": "5"
+            },
+            {
+              "label": "E",
+              "text": "7"
+            },
+            {
+              "label": "F",
+              "text": "11"
+            }
+          ],
+          "answer": [
+            "C"
+          ],
+          "directions": "Select <strong>all</strong> the answer choices that apply.",
+          "area": "Arithmetic",
+          "template": "remmod"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "timeLimit": 26,
+      "questions": [
+        {
+          "id": "S2-Q1",
           "type": "QC",
-          "stimulus": "Two sides of a triangle have lengths 9 and 16. The third side has length <i>x</i>.",
-          "qa": "26",
-          "qb": "<i>x</i>",
+          "stimulus": "Account X earns interest at 5 percent per year, compounded annually. Account Y earns simple interest at 5.5 percent per year. 2,000 dollars is deposited in each account, and no other deposits or withdrawals are made.",
+          "qa": "The interest earned by account X in 2 years, in dollars",
+          "qb": "The interest earned by account Y in 2 years, in dollars",
+          "choices": [
+            {
+              "label": "A",
+              "text": "Quantity A is greater."
+            },
+            {
+              "label": "B",
+              "text": "Quantity B is greater."
+            },
+            {
+              "label": "C",
+              "text": "The two quantities are equal."
+            },
+            {
+              "label": "D",
+              "text": "The relationship cannot be determined from the information given."
+            }
+          ],
+          "answer": [
+            "B"
+          ],
+          "area": "Arithmetic",
+          "template": "qc_interest"
+        },
+        {
+          "id": "S2-Q2",
+          "type": "QC",
+          "stimulus": "<div class=\"fig\"><svg viewBox=\"0 0 340 280\" width=\"340\" role=\"img\" aria-label=\"line k in the xy-plane\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"'Times New Roman', Times, serif\"><defs><marker id=\"arr\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1e293b\"/></marker></defs><line x1=\"32.73\" y1=\"170.73\" x2=\"307.27\" y2=\"170.73\" stroke=\"#1e293b\" stroke-width=\"1.2\" marker-end=\"url(#arr)\"/><line x1=\"125.61\" y1=\"195.32\" x2=\"125.61\" y2=\"84.68\" stroke=\"#1e293b\" stroke-width=\"1.2\" marker-end=\"url(#arr)\"/><text x=\"311.27\" y=\"158.73\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"16\" fill=\"#1e293b\"><tspan font-style=\"italic\">x</tspan></text><text x=\"137.61\" y=\"88.68\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"16\" fill=\"#1e293b\"><tspan font-style=\"italic\">y</tspan></text><text x=\"115.61\" y=\"181.73\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#1e293b\">O</text><line x1=\"34.1\" y1=\"99.25\" x2=\"305.9\" y2=\"189.85\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"30.1\" y=\"85.25\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"16\" fill=\"#1e293b\"><tspan font-style=\"italic\">k</tspan></text><circle cx=\"43.66\" cy=\"102.44\" r=\"2.8\" fill=\"#1e293b\"/><text x=\"49.66\" y=\"118.44\" text-anchor=\"start\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#1e293b\">(−6, 5)</text><circle cx=\"289.51\" cy=\"184.39\" r=\"2.8\" fill=\"#1e293b\"/><text x=\"295.51\" y=\"200.39\" text-anchor=\"start\" dominant-baseline=\"central\" font-size=\"14\" fill=\"#1e293b\">(12, −1)</text></svg></div>Line <i>k</i> passes through the points (−6, 5) and (12, −1) in the <i>xy</i>-plane.",
+          "qa": "27/2",
+          "qb": "The area of the triangular region bounded by line <i>k</i>, the <i>x</i>-axis, and the <i>y</i>-axis",
+          "choices": [
+            {
+              "label": "A",
+              "text": "Quantity A is greater."
+            },
+            {
+              "label": "B",
+              "text": "Quantity B is greater."
+            },
+            {
+              "label": "C",
+              "text": "The two quantities are equal."
+            },
+            {
+              "label": "D",
+              "text": "The relationship cannot be determined from the information given."
+            }
+          ],
+          "answer": [
+            "C"
+          ],
+          "area": "Geometry",
+          "template": "lineaxes",
+          "hasFigure": true
+        },
+        {
+          "id": "S2-Q3",
+          "type": "QC",
+          "stimulus": "<i>x</i> &gt; 0 and <i>x</i> ≠ 1",
+          "qa": "2",
+          "qb": "<i>x</i> + 1/<i>x</i>",
+          "choices": [
+            {
+              "label": "A",
+              "text": "Quantity A is greater."
+            },
+            {
+              "label": "B",
+              "text": "Quantity B is greater."
+            },
+            {
+              "label": "C",
+              "text": "The two quantities are equal."
+            },
+            {
+              "label": "D",
+              "text": "The relationship cannot be determined from the information given."
+            }
+          ],
+          "answer": [
+            "B"
+          ],
+          "area": "Algebra",
+          "template": "qc_recip"
+        },
+        {
+          "id": "S2-Q4",
+          "type": "QC",
+          "stimulus": "<i>a</i> and <i>b</i> are positive numbers such that <i>a</i> + <i>b</i> = 16 and <i>a</i> ≠ <i>b</i>.",
+          "qa": "64",
+          "qb": "<i>ab</i>",
           "choices": [
             {
               "label": "A",
@@ -144,469 +498,143 @@ const examData = {
           "answer": [
             "A"
           ],
-          "area": "Geometry",
-          "template": "qc_tri3"
+          "area": "Algebra",
+          "template": "qc_amgm"
         },
         {
-          "id": "S1-Q5",
+          "id": "S2-Q5",
           "type": "MC",
           "stimulus": "",
-          "questionText": "What is the 77th digit to the right of the decimal point in the decimal equivalent of 17/21?",
+          "questionText": "<div class=\"fig\"><svg viewBox=\"0 0 260 260\" width=\"260\" role=\"img\" aria-label=\"circle with center O, shaded segment cut off by chord AB\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"'Times New Roman', Times, serif\"><defs><marker id=\"arr\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1e293b\"/></marker></defs><path d=\"M 71.07 71.07 A 83.33 83.33 0 0 1 188.93 71.07 Z\" fill=\"#cbd5e1\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><circle cx=\"130\" cy=\"130\" r=\"83.33\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"130\" y1=\"130\" x2=\"71.07\" y2=\"71.07\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"130\" y1=\"130\" x2=\"188.93\" y2=\"71.07\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"71.07\" y1=\"71.07\" x2=\"188.93\" y2=\"71.07\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><circle cx=\"130\" cy=\"130\" r=\"2.8\" fill=\"#1e293b\"/><text x=\"130\" y=\"144\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"16\" fill=\"#1e293b\">O</text><text x=\"61.17\" y=\"61.17\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"16\" fill=\"#1e293b\">A</text><text x=\"198.83\" y=\"61.17\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"16\" fill=\"#1e293b\">B</text><text x=\"130\" y=\"106\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"15\" fill=\"#1e293b\">90°</text></svg></div>In the figure above, O is the center of the circle, the radius of the circle is 12, and points A and B lie on the circle. What is the area of the shaded region?",
           "choices": [
             {
               "label": "A",
-              "text": "0"
+              "text": "36π + 72"
             },
             {
               "label": "B",
-              "text": "2"
+              "text": "36π"
             },
             {
               "label": "C",
-              "text": "3"
+              "text": "36π − 144"
             },
             {
               "label": "D",
-              "text": "5"
+              "text": "36π − 72"
             },
             {
               "label": "E",
-              "text": "8"
+              "text": "108π + 72"
             }
           ],
           "answer": [
-            "B"
-          ],
-          "area": "Arithmetic",
-          "template": "repdec"
-        },
-        {
-          "id": "S1-Q6",
-          "type": "NE",
-          "stimulus": "The average (arithmetic mean) score of the 11 students in class A is 66, and the average score of the students in class B is 74. The average score of all the students in both classes combined is 72.",
-          "questionText": "The average (arithmetic mean) score of the 11 students in class A is 66, and the average score of the students in class B is 74. If the average score of all the students in both classes combined is 72, how many students are in class B?",
-          "answer": [
-            "33"
-          ],
-          "ne": {
-            "value": 33,
-            "fraction": false,
-            "tol": 1e-9,
-            "prefix": "",
-            "suffix": ""
-          },
-          "area": "Data Analysis",
-          "template": "weighted"
-        },
-        {
-          "id": "S1-Q7",
-          "type": "MC",
-          "stimulus": "",
-          "questionText": "In a circle with center O and radius 6, points A and B lie on the circle, and the measure of angle AOB is 90°. What is the area of the region bounded by chord AB and the minor arc AB?",
-          "choices": [
-            {
-              "label": "A",
-              "text": "27π + 18"
-            },
-            {
-              "label": "B",
-              "text": "9π − 36"
-            },
-            {
-              "label": "C",
-              "text": "9π"
-            },
-            {
-              "label": "D",
-              "text": "9π + 18"
-            },
-            {
-              "label": "E",
-              "text": "9π − 18"
-            }
-          ],
-          "answer": [
-            "E"
+            "D"
           ],
           "area": "Geometry",
-          "template": "segment"
+          "template": "segment",
+          "hasFigure": true
         },
         {
-          "id": "S1-Q8",
+          "id": "S2-Q6",
           "type": "NE",
           "stimulus": "",
-          "questionText": "How many distinct arrangements of the letters in the word LETTER have both T's next to each other?",
+          "questionText": "Working alone at its constant rate, machine A can complete a certain job in 15 hours. Working together at their constant rates, machines A and B can complete the same job in 6 hours. If machine A works alone on the job for 14 hours and then machine B alone completes the job, how many hours does machine B work?<div class=\"ne-hint\">Give your answer as a fraction.</div>",
           "answer": [
-            "60"
+            "2/3"
           ],
           "ne": {
-            "value": 60,
+            "value": 0.6666666666666666,
             "fraction": false,
             "tol": 1e-9,
             "prefix": "",
             "suffix": ""
           },
-          "area": "Data Analysis",
-          "template": "letters"
+          "area": "Algebra",
+          "template": "work"
         },
         {
-          "id": "S1-Q9",
-          "type": "NE",
-          "stimulus": "",
-          "questionText": "What is the sum of all the integers from 30 to 371, inclusive, that are multiples of 6 but are <u>not</u> multiples of 12?",
-          "answer": [
-            "5,742"
-          ],
-          "ne": {
-            "value": 5742,
-            "fraction": false,
-            "tol": 1e-9,
-            "prefix": "",
-            "suffix": ""
-          },
-          "area": "Arithmetic",
-          "template": "summult"
-        },
-        {
-          "id": "S1-Q10",
+          "id": "S2-Q7",
           "type": "MA",
           "stimulus": "",
-          "questionText": "If <i>x</i> &lt; −1, which of the following must be greater than <i>x</i>?<br><br>Indicate <u>all</u> such expressions.",
+          "questionText": "If −1 &lt; <i>x</i> &lt; 0, which of the following must be less than <i>x</i>?<br><br>Indicate <u>all</u> such expressions.",
           "choices": [
             {
               "label": "A",
+              "text": "<i>x</i><sup>2</sup>"
+            },
+            {
+              "label": "B",
+              "text": "<i>x</i>/2"
+            },
+            {
+              "label": "C",
               "text": "2<i>x</i>"
             },
             {
-              "label": "B",
-              "text": "<i>x</i><sup>2</sup> − <i>x</i>"
-            },
-            {
-              "label": "C",
-              "text": "<i>x</i><sup>3</sup>"
-            },
-            {
               "label": "D",
-              "text": "−<i>x</i>"
+              "text": "<i>x</i><sup>2</sup> − <i>x</i>"
             },
             {
               "label": "E",
               "text": "1/<i>x</i><sup>2</sup>"
+            },
+            {
+              "label": "F",
+              "text": "1/<i>x</i>"
             }
           ],
           "answer": [
-            "B",
-            "D",
-            "E"
+            "C",
+            "F"
           ],
           "directions": "Select <strong>all</strong> the answer choices that apply.",
           "area": "Algebra",
           "template": "mustgt"
         },
         {
-          "id": "S1-Q11",
-          "type": "MC",
-          "stimulus": "The sum of 13 consecutive multiples of 3 is 117.",
-          "questionText": "The sum of 13 consecutive multiples of 3 is 117. What is the greatest of these integers?",
-          "choices": [
-            {
-              "label": "A",
-              "text": "9"
-            },
-            {
-              "label": "B",
-              "text": "24"
-            },
-            {
-              "label": "C",
-              "text": "27"
-            },
-            {
-              "label": "D",
-              "text": "30"
-            },
-            {
-              "label": "E",
-              "text": "45"
-            }
-          ],
-          "answer": [
-            "C"
-          ],
-          "area": "Arithmetic",
-          "template": "consec"
-        },
-        {
-          "id": "S1-Q12",
-          "type": "MC",
-          "stimulus": "<i>r</i> and <i>s</i> are the two solutions of the equation <i>x</i><sup>2</sup> − 8<i>x</i> + 2 = 0.",
-          "questionText": "If <i>r</i> and <i>s</i> are the two solutions of the equation <i>x</i><sup>2</sup> − 8<i>x</i> + 2 = 0, what is the value of <i>r</i><sup>2</sup> + <i>s</i><sup>2</sup>?",
-          "choices": [
-            {
-              "label": "A",
-              "text": "56"
-            },
-            {
-              "label": "B",
-              "text": "60"
-            },
-            {
-              "label": "C",
-              "text": "62"
-            },
-            {
-              "label": "D",
-              "text": "64"
-            },
-            {
-              "label": "E",
-              "text": "68"
-            }
-          ],
-          "answer": [
-            "B"
-          ],
-          "area": "Algebra",
-          "template": "vieta"
-        }
-      ]
-    },
-    {
-      "number": 2,
-      "timeLimit": 26,
-      "questions": [
-        {
-          "id": "S2-Q1",
-          "type": "QC",
-          "stimulus": "0 &lt; <i>x</i> &lt; <i>y</i>",
-          "qa": "<i>x</i><sup>2</sup><i>y</i>",
-          "qb": "<i>x</i><i>y</i><sup>2</sup>",
-          "choices": [
-            {
-              "label": "A",
-              "text": "Quantity A is greater."
-            },
-            {
-              "label": "B",
-              "text": "Quantity B is greater."
-            },
-            {
-              "label": "C",
-              "text": "The two quantities are equal."
-            },
-            {
-              "label": "D",
-              "text": "The relationship cannot be determined from the information given."
-            }
-          ],
-          "answer": [
-            "B"
-          ],
-          "area": "Algebra",
-          "template": "qc_xy"
-        },
-        {
-          "id": "S2-Q2",
-          "type": "QC",
-          "stimulus": "A retailer sets the list price of an item at <i>x</i> percent above its cost. The item is then sold at a discount of 15 percent off the list price, and the retailer's profit on the sale is 70 percent of the cost.",
-          "qa": "85",
-          "qb": "<i>x</i>",
-          "choices": [
-            {
-              "label": "A",
-              "text": "Quantity A is greater."
-            },
-            {
-              "label": "B",
-              "text": "Quantity B is greater."
-            },
-            {
-              "label": "C",
-              "text": "The two quantities are equal."
-            },
-            {
-              "label": "D",
-              "text": "The relationship cannot be determined from the information given."
-            }
-          ],
-          "answer": [
-            "B"
-          ],
-          "area": "Arithmetic",
-          "template": "markup"
-        },
-        {
-          "id": "S2-Q3",
-          "type": "QC",
-          "stimulus": "List X: 24, 30, 25, 18, 23<br>List Y: 35, 17, 26, 23, 29",
-          "qa": "The standard deviation of the numbers in list X",
-          "qb": "The standard deviation of the numbers in list Y",
-          "choices": [
-            {
-              "label": "A",
-              "text": "Quantity A is greater."
-            },
-            {
-              "label": "B",
-              "text": "Quantity B is greater."
-            },
-            {
-              "label": "C",
-              "text": "The two quantities are equal."
-            },
-            {
-              "label": "D",
-              "text": "The relationship cannot be determined from the information given."
-            }
-          ],
-          "answer": [
-            "B"
-          ],
-          "area": "Data Analysis",
-          "template": "qc_sd"
-        },
-        {
-          "id": "S2-Q4",
-          "type": "QC",
-          "stimulus": "<i>x</i> &gt; 0",
-          "qa": "<i>x</i> + 1/<i>x</i>",
-          "qb": "2",
-          "choices": [
-            {
-              "label": "A",
-              "text": "Quantity A is greater."
-            },
-            {
-              "label": "B",
-              "text": "Quantity B is greater."
-            },
-            {
-              "label": "C",
-              "text": "The two quantities are equal."
-            },
-            {
-              "label": "D",
-              "text": "The relationship cannot be determined from the information given."
-            }
-          ],
-          "answer": [
-            "D"
-          ],
-          "area": "Algebra",
-          "template": "qc_recip"
-        },
-        {
-          "id": "S2-Q5",
-          "type": "MC",
-          "stimulus": "",
-          "questionText": "How many positive integers less than or equal to 370 have a remainder of 1 when divided by 8 and a remainder of 7 when divided by 11?",
-          "choices": [
-            {
-              "label": "A",
-              "text": "2"
-            },
-            {
-              "label": "B",
-              "text": "3"
-            },
-            {
-              "label": "C",
-              "text": "4"
-            },
-            {
-              "label": "D",
-              "text": "5"
-            },
-            {
-              "label": "E",
-              "text": "6"
-            }
-          ],
-          "answer": [
-            "C"
-          ],
-          "area": "Arithmetic",
-          "template": "remainder2"
-        },
-        {
-          "id": "S2-Q6",
-          "type": "NE",
-          "stimulus": "Two fair six-sided dice, each with faces numbered 1 through 6, are rolled.",
-          "questionText": "Two fair six-sided dice, each with faces numbered 1 through 6, are rolled. What is the probability that the product of the two numbers is greater than their sum?<div class=\"ne-hint\">Give your answer as a fraction.</div>",
-          "answer": [
-            "2/3"
-          ],
-          "ne": {
-            "value": 0.6666666666666666,
-            "fraction": true,
-            "tol": 1e-9,
-            "prefix": "",
-            "suffix": ""
-          },
-          "area": "Data Analysis",
-          "template": "dice"
-        },
-        {
-          "id": "S2-Q7",
-          "type": "MC",
-          "stimulus": "A driver traveled from town P to town Q at an average speed of 45 miles per hour and then returned from Q to P along the same route. The average speed for the entire round trip was 60 miles per hour.",
-          "questionText": "A driver traveled from town P to town Q at an average speed of 45 miles per hour and then returned from Q to P along the same route. If the average speed for the entire round trip was 60 miles per hour, what was the average speed, in miles per hour, for the return trip?",
-          "choices": [
-            {
-              "label": "A",
-              "text": "53"
-            },
-            {
-              "label": "B",
-              "text": "75"
-            },
-            {
-              "label": "C",
-              "text": "90"
-            },
-            {
-              "label": "D",
-              "text": "92"
-            },
-            {
-              "label": "E",
-              "text": "100"
-            }
-          ],
-          "answer": [
-            "C"
-          ],
-          "area": "Algebra",
-          "template": "avgspeed"
-        },
-        {
           "id": "S2-Q8",
-          "type": "NE",
-          "stimulus": "",
-          "questionText": "How many three-digit positive integers are there whose digits have a sum of 8?",
-          "answer": [
-            "36"
+          "type": "MC",
+          "stimulus": "Of the 77 students in a program, 29 study French, 35 study Spanish, and 22 study Latin. 17 students study exactly two of these languages, and 5 students study all three.",
+          "questionText": "Of the 77 students in a program, 29 study French, 35 study Spanish, and 22 study Latin. 17 students study exactly two of these languages, and 5 students study all three. How many of the students study none of the three languages?",
+          "choices": [
+            {
+              "label": "A",
+              "text": "8"
+            },
+            {
+              "label": "B",
+              "text": "13"
+            },
+            {
+              "label": "C",
+              "text": "18"
+            },
+            {
+              "label": "D",
+              "text": "20"
+            },
+            {
+              "label": "E",
+              "text": "23"
+            }
           ],
-          "ne": {
-            "value": 36,
-            "fraction": false,
-            "tol": 1e-9,
-            "prefix": "",
-            "suffix": ""
-          },
-          "area": "Arithmetic",
-          "template": "digits"
+          "answer": [
+            "C"
+          ],
+          "area": "Data Analysis",
+          "template": "venn3"
         },
         {
           "id": "S2-Q9",
           "type": "NE",
-          "stimulus": "<div class=\"di-label\">Questions are based on the following data.</div><p>The Smith family's total annual spending was $68,000 in 2024 and $64,000 in 2025.</p><table class=\"q-table\"><caption>Distribution of the Smith Family's Annual Spending</caption><thead><tr><th>Category</th><th>2024</th><th>2025</th></tr></thead><tbody><tr><td>Housing</td><td>16%</td><td>15%</td></tr><tr><td>Food</td><td>18%</td><td>18%</td></tr><tr><td>Transportation</td><td>7%</td><td>4%</td></tr><tr><td>Health care</td><td>21%</td><td>20%</td></tr><tr><td>Entertainment</td><td>22%</td><td>22%</td></tr><tr><td>Other</td><td>16%</td><td>21%</td></tr></tbody></table>",
-          "questionText": "By how many dollars did the amount the Smith family spent on food change from 2024 to 2025? (Enter a negative number if the amount decreased.)",
+          "stimulus": "<div class=\"di-label\">Questions are based on the following data.</div><p>The Smith family's total annual spending was $55,000 in 2022 and $59,000 in 2023.</p><table class=\"q-table\"><caption>Distribution of the Smith Family's Annual Spending</caption><thead><tr><th>Category</th><th>2022</th><th>2023</th></tr></thead><tbody><tr><td>Housing</td><td>13%</td><td>20%</td></tr><tr><td>Food</td><td>11%</td><td>8%</td></tr><tr><td>Transportation</td><td>11%</td><td>9%</td></tr><tr><td>Health care</td><td>30%</td><td>29%</td></tr><tr><td>Entertainment</td><td>16%</td><td>20%</td></tr><tr><td>Other</td><td>19%</td><td>14%</td></tr></tbody></table>",
+          "questionText": "By how many dollars did the amount the Smith family spent on housing change from 2022 to 2023? (Enter a negative number if the amount decreased.)",
           "answer": [
-            "−720"
+            "4,650"
           ],
           "ne": {
-            "value": -720,
+            "value": 4650,
             "fraction": false,
             "tol": 1e-9,
             "prefix": "$",
@@ -619,13 +647,13 @@ const examData = {
         {
           "id": "S2-Q10",
           "type": "NE",
-          "stimulus": "<div class=\"di-label\">Questions are based on the following data.</div><p>The Smith family's total annual spending was $68,000 in 2024 and $64,000 in 2025.</p><table class=\"q-table\"><caption>Distribution of the Smith Family's Annual Spending</caption><thead><tr><th>Category</th><th>2024</th><th>2025</th></tr></thead><tbody><tr><td>Housing</td><td>16%</td><td>15%</td></tr><tr><td>Food</td><td>18%</td><td>18%</td></tr><tr><td>Transportation</td><td>7%</td><td>4%</td></tr><tr><td>Health care</td><td>21%</td><td>20%</td></tr><tr><td>Entertainment</td><td>22%</td><td>22%</td></tr><tr><td>Other</td><td>16%</td><td>21%</td></tr></tbody></table>",
-          "questionText": "For how many of the six categories was the amount the Smith family spent greater in 2025 than in 2024?",
+          "stimulus": "<div class=\"di-label\">Questions are based on the following data.</div><p>The Smith family's total annual spending was $55,000 in 2022 and $59,000 in 2023.</p><table class=\"q-table\"><caption>Distribution of the Smith Family's Annual Spending</caption><thead><tr><th>Category</th><th>2022</th><th>2023</th></tr></thead><tbody><tr><td>Housing</td><td>13%</td><td>20%</td></tr><tr><td>Food</td><td>11%</td><td>8%</td></tr><tr><td>Transportation</td><td>11%</td><td>9%</td></tr><tr><td>Health care</td><td>30%</td><td>29%</td></tr><tr><td>Entertainment</td><td>16%</td><td>20%</td></tr><tr><td>Other</td><td>19%</td><td>14%</td></tr></tbody></table>",
+          "questionText": "For how many of the six categories was the amount the Smith family spent greater in 2023 than in 2022?",
           "answer": [
-            "1"
+            "3"
           ],
           "ne": {
-            "value": 1,
+            "value": 3,
             "fraction": false,
             "tol": 1e-9,
             "prefix": "",
@@ -638,24 +666,24 @@ const examData = {
         {
           "id": "S2-Q11",
           "type": "MA",
-          "stimulus": "<div class=\"di-label\">Questions are based on the following data.</div><p>The Smith family's total annual spending was $68,000 in 2024 and $64,000 in 2025.</p><table class=\"q-table\"><caption>Distribution of the Smith Family's Annual Spending</caption><thead><tr><th>Category</th><th>2024</th><th>2025</th></tr></thead><tbody><tr><td>Housing</td><td>16%</td><td>15%</td></tr><tr><td>Food</td><td>18%</td><td>18%</td></tr><tr><td>Transportation</td><td>7%</td><td>4%</td></tr><tr><td>Health care</td><td>21%</td><td>20%</td></tr><tr><td>Entertainment</td><td>22%</td><td>22%</td></tr><tr><td>Other</td><td>16%</td><td>21%</td></tr></tbody></table>",
-          "questionText": "For which of the following categories was the amount spent in 2025 at least 10 percent greater than the amount spent in 2024?<br><br>Indicate <u>all</u> such categories.",
+          "stimulus": "<div class=\"di-label\">Questions are based on the following data.</div><p>The Smith family's total annual spending was $55,000 in 2022 and $59,000 in 2023.</p><table class=\"q-table\"><caption>Distribution of the Smith Family's Annual Spending</caption><thead><tr><th>Category</th><th>2022</th><th>2023</th></tr></thead><tbody><tr><td>Housing</td><td>13%</td><td>20%</td></tr><tr><td>Food</td><td>11%</td><td>8%</td></tr><tr><td>Transportation</td><td>11%</td><td>9%</td></tr><tr><td>Health care</td><td>30%</td><td>29%</td></tr><tr><td>Entertainment</td><td>16%</td><td>20%</td></tr><tr><td>Other</td><td>19%</td><td>14%</td></tr></tbody></table>",
+          "questionText": "For which of the following categories was the amount spent in 2023 at least 10 percent greater than the amount spent in 2022?<br><br>Indicate <u>all</u> such categories.",
           "choices": [
             {
               "label": "A",
-              "text": "Food"
-            },
-            {
-              "label": "B",
               "text": "Transportation"
             },
             {
+              "label": "B",
+              "text": "Health care"
+            },
+            {
               "label": "C",
-              "text": "Other"
+              "text": "Food"
             },
             {
               "label": "D",
-              "text": "Health care"
+              "text": "Other"
             },
             {
               "label": "E",
@@ -667,7 +695,8 @@ const examData = {
             }
           ],
           "answer": [
-            "C"
+            "E",
+            "F"
           ],
           "directions": "Select <strong>all</strong> the answer choices that apply.",
           "area": "Data Analysis",
@@ -676,127 +705,105 @@ const examData = {
         },
         {
           "id": "S2-Q12",
-          "type": "MC",
-          "stimulus": "",
-          "questionText": "What is the greatest integer <i>k</i> such that 6<sup><i>k</i></sup> is a factor of 50!?",
-          "choices": [
-            {
-              "label": "A",
-              "text": "8"
-            },
-            {
-              "label": "B",
-              "text": "16"
-            },
-            {
-              "label": "C",
-              "text": "22"
-            },
-            {
-              "label": "D",
-              "text": "23"
-            },
-            {
-              "label": "E",
-              "text": "47"
-            }
-          ],
+          "type": "NE",
+          "stimulus": "A bag contains 3 red marbles, 5 blue marbles, and 4 green marbles and no other marbles.",
+          "questionText": "A bag contains 3 red marbles, 5 blue marbles, and 4 green marbles and no other marbles. If 2 marbles are selected at random without replacement, what is the probability that both marbles are the same color?<div class=\"ne-hint\">Give your answer as a fraction.</div>",
           "answer": [
-            "C"
+            "19/66"
           ],
-          "area": "Arithmetic",
-          "template": "factpow"
+          "ne": {
+            "value": 0.2878787878787879,
+            "fraction": true,
+            "tol": 1e-9,
+            "prefix": "",
+            "suffix": ""
+          },
+          "area": "Data Analysis",
+          "template": "draw"
         },
         {
           "id": "S2-Q13",
-          "type": "MA",
-          "stimulus": "",
-          "questionText": "Two sides of a triangle have lengths 9 and 7. Which of the following could be the area of the triangle?<br><br>Indicate <u>all</u> such values.",
-          "choices": [
-            {
-              "label": "A",
-              "text": "1"
-            },
-            {
-              "label": "B",
-              "text": "16"
-            },
-            {
-              "label": "C",
-              "text": "31.5"
-            },
-            {
-              "label": "D",
-              "text": "32"
-            },
-            {
-              "label": "E",
-              "text": "32.5"
-            },
-            {
-              "label": "F",
-              "text": "47"
-            }
-          ],
-          "answer": [
-            "A",
-            "B",
-            "C"
-          ],
-          "directions": "Select <strong>all</strong> the answer choices that apply.",
-          "area": "Geometry",
-          "template": "triarea"
-        },
-        {
-          "id": "S2-Q14",
-          "type": "MC",
-          "stimulus": "",
-          "questionText": "The radius of a right circular cylinder is increased by 20 percent, and its height is decreased by 20 percent. Which of the following describes the change in the volume of the cylinder?",
-          "choices": [
-            {
-              "label": "A",
-              "text": "The volume decreases by 4%."
-            },
-            {
-              "label": "B",
-              "text": "The volume increases by 20%."
-            },
-            {
-              "label": "C",
-              "text": "The volume does not change."
-            },
-            {
-              "label": "D",
-              "text": "The volume increases by 24%."
-            },
-            {
-              "label": "E",
-              "text": "The volume increases by 15.2%."
-            }
-          ],
-          "answer": [
-            "E"
-          ],
-          "area": "Geometry",
-          "template": "cylinder"
-        },
-        {
-          "id": "S2-Q15",
           "type": "NE",
           "stimulus": "",
-          "questionText": "How many integers <i>x</i> satisfy both |<i>x</i> − 6| ≤ 11 and |<i>x</i> − 8| ≥ 3?",
+          "questionText": "What is the sum of all the integers from 48 to 292, inclusive, that are multiples of 7 but are <u>not</u> multiples of 35?",
           "answer": [
-            "18"
+            "4,655"
           ],
           "ne": {
-            "value": 18,
+            "value": 4655,
             "fraction": false,
             "tol": 1e-9,
             "prefix": "",
             "suffix": ""
           },
+          "area": "Arithmetic",
+          "template": "summult"
+        },
+        {
+          "id": "S2-Q14",
+          "type": "MC",
+          "stimulus": "",
+          "questionText": "Two towns, A and B, are 465 miles apart. Car X leaves town A and travels toward town B at a constant speed of 45 miles per hour. 1 hour later, car Y leaves town B and travels toward town A along the same road at a constant speed of 60 miles per hour. When the two cars meet, how many miles will car X be from town A?",
+          "choices": [
+            {
+              "label": "A",
+              "text": "180"
+            },
+            {
+              "label": "B",
+              "text": "1,395/7"
+            },
+            {
+              "label": "C",
+              "text": "225"
+            },
+            {
+              "label": "D",
+              "text": "240"
+            },
+            {
+              "label": "E",
+              "text": "285"
+            }
+          ],
+          "answer": [
+            "C"
+          ],
           "area": "Algebra",
-          "template": "abscount"
+          "template": "meet"
+        },
+        {
+          "id": "S2-Q15",
+          "type": "MC",
+          "stimulus": "",
+          "questionText": "The radius of a right circular cylinder is increased by 10 percent, and its height is decreased by 50 percent. Which of the following describes the change in the volume of the cylinder?",
+          "choices": [
+            {
+              "label": "A",
+              "text": "The volume decreases by 45%."
+            },
+            {
+              "label": "B",
+              "text": "The volume decreases by 30%."
+            },
+            {
+              "label": "C",
+              "text": "The volume decreases by 39.5%."
+            },
+            {
+              "label": "D",
+              "text": "The volume decreases by 29%."
+            },
+            {
+              "label": "E",
+              "text": "The volume decreases by 40%."
+            }
+          ],
+          "answer": [
+            "C"
+          ],
+          "area": "Geometry",
+          "template": "cylinder"
         }
       ]
     }

@@ -5,85 +5,85 @@ window.QEXPLANATIONS_17 = {
     "stepByStep": [
       {
         "step": "Step 1: 값의 범위",
-        "desc": "x² 의 범위: 0 ≤ x² &lt; 25 (끝값은 포함되지 않음)"
+        "desc": "|x| 의 범위: 0 ≤ |x| &lt; 3 (끝값은 포함되지 않음)"
       },
       {
         "step": "Step 2: 비교",
-        "desc": "Quantity B = 26가 이 범위의 바깥에 있으므로 대소가 하나로 정해집니다."
+        "desc": "Quantity B = 0가 이 범위의 안쪽에 있으므로 대소가 바뀔 수 있습니다."
       },
       {
         "step": "Step 3: 확인",
-        "desc": "x = 0이면 Quantity A = 0, Quantity B = 26"
+        "desc": "x = −1/2이면 Quantity A = 1/2, Quantity B = 0<br>x = 0이면 Quantity A = 0, Quantity B = 0"
       },
       {
         "step": "Step 4: 결론",
-        "desc": "따라서 정답은 (B)입니다."
+        "desc": "따라서 정답은 (D)입니다."
       }
     ],
     "whySelectedWrong": {
-      "A": "Quantity A가 항상 더 크다고 판단했지만 그렇지 않습니다.",
-      "C": "두 양이 항상 같다고 판단했지만 그렇지 않습니다.",
-      "D": "주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요."
+      "A": "조건을 만족하는 값에 따라 두 양의 관계가 바뀝니다. 한두 개의 값만 대입해 보고 결론을 내리면 이 함정에 빠집니다.",
+      "B": "조건을 만족하는 값에 따라 두 양의 관계가 바뀝니다. 한두 개의 값만 대입해 보고 결론을 내리면 이 함정에 빠집니다.",
+      "C": "조건을 만족하는 값에 따라 두 양의 관계가 바뀝니다. 한두 개의 값만 대입해 보고 결론을 내리면 이 함정에 빠집니다."
     },
     "choicesAnalysis": [
       {
         "label": "A",
         "isCorrect": false,
         "text": "Quantity A is greater.",
-        "analysis": "오답. Quantity A가 항상 더 크다고 판단했지만 그렇지 않습니다."
+        "analysis": "오답. 조건을 만족하는 값에 따라 두 양의 관계가 바뀝니다. 한두 개의 값만 대입해 보고 결론을 내리면 이 함정에 빠집니다."
       },
       {
         "label": "B",
-        "isCorrect": true,
+        "isCorrect": false,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "오답. 조건을 만족하는 값에 따라 두 양의 관계가 바뀝니다. 한두 개의 값만 대입해 보고 결론을 내리면 이 함정에 빠집니다."
       },
       {
         "label": "C",
         "isCorrect": false,
         "text": "The two quantities are equal.",
-        "analysis": "오답. 두 양이 항상 같다고 판단했지만 그렇지 않습니다."
+        "analysis": "오답. 조건을 만족하는 값에 따라 두 양의 관계가 바뀝니다. 한두 개의 값만 대입해 보고 결론을 내리면 이 함정에 빠집니다."
       },
       {
         "label": "D",
-        "isCorrect": false,
+        "isCorrect": true,
         "text": "The relationship cannot be determined from the information given.",
-        "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요."
+        "analysis": "정답."
       }
     ]
   },
   "S1-Q2": {
-    "topic": "약수의 개수 (조건부)",
-    "clue": "약수의 개수는 소인수분해 후 각 지수의 선택지 개수를 곱해서 구합니다.",
+    "topic": "등변사다리꼴의 넓이 (그림)",
+    "clue": "등변사다리꼴에서 윗변 양 끝에서 수선을 내리면 양쪽에 합동인 직각삼각형이 생기고, 밑변 차이의 절반이 그 밑변입니다.",
     "stepByStep": [
       {
-        "step": "Step 1: 소인수분해",
-        "desc": "N = 2<sup>3</sup> × 3<sup>3</sup> × 5<sup>2</sup>이고, 전체 약수의 개수는 (3+1)(3+1)(2+1) = 48개입니다."
+        "step": "Step 1: 양쪽 삼각형의 밑변",
+        "desc": "(25 − 9)/2 = 8"
       },
       {
-        "step": "Step 2: 조건 해석",
-        "desc": "홀수 약수는 소인수 2를 하나도 포함하지 않습니다. 즉 2의 지수가 0이어야 합니다."
+        "step": "Step 2: 높이",
+        "desc": "√(17² − 8²) = 15"
       },
       {
-        "step": "Step 3: 개수 계산",
-        "desc": "3의 지수 4가지 × 5의 지수 3가지 = <strong>12</strong>개입니다."
+        "step": "Step 3: 넓이",
+        "desc": "(9 + 25)/2 × 15 = <strong>255</strong>"
       },
       {
         "step": "Step 4: 결론",
-        "desc": "The number of positive divisors of N that are odd = 12이고 비교 대상은 36이므로 정답은 (B)입니다."
+        "desc": "The area of the trapezoid = 255이고 비교 대상은 289이므로 정답은 (B)입니다."
       }
     ],
     "whySelectedWrong": {
-      "A": "Quantity A가 항상 더 크다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 12, Quantity B = 36) 참고로 36은(는) 짝수 약수의 개수입니다(전체 − 홀수).",
-      "C": "두 양이 항상 같다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 12, Quantity B = 36) 참고로 36은(는) 짝수 약수의 개수입니다(전체 − 홀수).",
-      "D": "주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 12, Quantity B = 36) 참고로 36은(는) 짝수 약수의 개수입니다(전체 − 홀수)."
+      "A": "Quantity A가 항상 더 크다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 255, Quantity B = 289) 참고로 289은(는) 빗변(다리)의 길이를 높이로 쓴 값입니다.",
+      "C": "두 양이 항상 같다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 255, Quantity B = 289) 참고로 289은(는) 빗변(다리)의 길이를 높이로 쓴 값입니다.",
+      "D": "주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 255, Quantity B = 289) 참고로 289은(는) 빗변(다리)의 길이를 높이로 쓴 값입니다."
     },
     "choicesAnalysis": [
       {
         "label": "A",
         "isCorrect": false,
         "text": "Quantity A is greater.",
-        "analysis": "오답. Quantity A가 항상 더 크다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 12, Quantity B = 36) 참고로 36은(는) 짝수 약수의 개수입니다(전체 − 홀수)."
+        "analysis": "오답. Quantity A가 항상 더 크다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 255, Quantity B = 289) 참고로 289은(는) 빗변(다리)의 길이를 높이로 쓴 값입니다."
       },
       {
         "label": "B",
@@ -95,693 +95,34 @@ window.QEXPLANATIONS_17 = {
         "label": "C",
         "isCorrect": false,
         "text": "The two quantities are equal.",
-        "analysis": "오답. 두 양이 항상 같다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 12, Quantity B = 36) 참고로 36은(는) 짝수 약수의 개수입니다(전체 − 홀수)."
+        "analysis": "오답. 두 양이 항상 같다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 255, Quantity B = 289) 참고로 289은(는) 빗변(다리)의 길이를 높이로 쓴 값입니다."
       },
       {
         "label": "D",
         "isCorrect": false,
         "text": "The relationship cannot be determined from the information given.",
-        "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 12, Quantity B = 36) 참고로 36은(는) 짝수 약수의 개수입니다(전체 − 홀수)."
+        "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 255, Quantity B = 289) 참고로 289은(는) 빗변(다리)의 길이를 높이로 쓴 값입니다."
       }
     ]
   },
   "S1-Q3": {
-    "topic": "표준편차 비교 (변환·퍼짐)",
-    "clue": "표준편차는 평균으로부터의 퍼짐입니다. 평행이동은 영향이 없고, k배 하면 |k|배가 됩니다.",
+    "topic": "복리 vs 단리 비교",
+    "clue": "복리 이자 = P(1 + r)ⁿ − P, 단리 이자 = P·r·n. 소수점까지 정확히 계산해 비교합니다.",
     "stepByStep": [
       {
-        "step": "Step 1: 정렬해서 구조 보기",
-        "desc": "X: 30, 33, 37, 41, 44 / Y: 69, 72, 76, 80, 83"
+        "step": "Step 1: 복리 이자",
+        "desc": "2,000 × (1.2)<sup>3</sup> − 2,000 = 1,456"
       },
       {
-        "step": "Step 2: 핵심 비교",
-        "desc": "List Y의 각 값은 List X의 각 값에 39를 더한 것입니다. 모든 값을 같은 수만큼 이동하면 퍼짐(표준편차)은 변하지 않습니다."
+        "step": "Step 2: 단리 이자",
+        "desc": "2,000 × 0.24 × 3 = 1,440"
       },
       {
-        "step": "Step 3: 결론",
-        "desc": "따라서 정답은 (C)입니다."
-      }
-    ],
-    "whySelectedWrong": {
-      "A": "Quantity A가 항상 더 크다고 판단했지만 그렇지 않습니다.",
-      "B": "Quantity B가 항상 더 크다고 판단했지만 그렇지 않습니다.",
-      "D": "주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요."
-    },
-    "choicesAnalysis": [
-      {
-        "label": "A",
-        "isCorrect": false,
-        "text": "Quantity A is greater.",
-        "analysis": "오답. Quantity A가 항상 더 크다고 판단했지만 그렇지 않습니다."
-      },
-      {
-        "label": "B",
-        "isCorrect": false,
-        "text": "Quantity B is greater.",
-        "analysis": "오답. Quantity B가 항상 더 크다고 판단했지만 그렇지 않습니다."
-      },
-      {
-        "label": "C",
-        "isCorrect": true,
-        "text": "The two quantities are equal.",
-        "analysis": "정답."
-      },
-      {
-        "label": "D",
-        "isCorrect": false,
-        "text": "The relationship cannot be determined from the information given.",
-        "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요."
-      }
-    ]
-  },
-  "S1-Q4": {
-    "topic": "정가·할인·이익률",
-    "clue": "원가를 100으로 두면 판매가 = 100(1 + x/100)(1 − d/100) = 100 + 이익.",
-    "stepByStep": [
-      {
-        "step": "Step 1: 원가 100으로 두기",
-        "desc": "판매가 = 100 + 5 = 105"
-      },
-      {
-        "step": "Step 2: 정가 역산",
-        "desc": "정가 × 0.7 = 105 → 정가 = 150"
-      },
-      {
-        "step": "Step 3: 답",
-        "desc": "정가는 원가보다 <strong>50%</strong> 높습니다."
+        "step": "Step 3: 비교",
+        "desc": "1,456 vs 1,440"
       },
       {
         "step": "Step 4: 결론",
-        "desc": "<i>x</i> = 50이고 비교 대상은 35이므로 정답은 (A)입니다."
-      }
-    ],
-    "whySelectedWrong": {
-      "B": "Quantity B가 항상 더 크다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 50, Quantity B = 35) 참고로 35은(는) 이익률과 할인율을 더한 값입니다.",
-      "C": "두 양이 항상 같다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 50, Quantity B = 35) 참고로 35은(는) 이익률과 할인율을 더한 값입니다.",
-      "D": "주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 50, Quantity B = 35) 참고로 35은(는) 이익률과 할인율을 더한 값입니다."
-    },
-    "choicesAnalysis": [
-      {
-        "label": "A",
-        "isCorrect": true,
-        "text": "Quantity A is greater.",
-        "analysis": "정답."
-      },
-      {
-        "label": "B",
-        "isCorrect": false,
-        "text": "Quantity B is greater.",
-        "analysis": "오답. Quantity B가 항상 더 크다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 50, Quantity B = 35) 참고로 35은(는) 이익률과 할인율을 더한 값입니다."
-      },
-      {
-        "label": "C",
-        "isCorrect": false,
-        "text": "The two quantities are equal.",
-        "analysis": "오답. 두 양이 항상 같다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 50, Quantity B = 35) 참고로 35은(는) 이익률과 할인율을 더한 값입니다."
-      },
-      {
-        "label": "D",
-        "isCorrect": false,
-        "text": "The relationship cannot be determined from the information given.",
-        "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 50, Quantity B = 35) 참고로 35은(는) 이익률과 할인율을 더한 값입니다."
-      }
-    ]
-  },
-  "S1-Q5": {
-    "topic": "마주 보고 출발 (시간차)",
-    "clue": "먼저 출발한 차가 앞서간 거리를 뺀 뒤, 남은 거리를 두 속력의 합으로 나눕니다.",
-    "stepByStep": [
-      {
-        "step": "Step 1: 먼저 이동한 거리",
-        "desc": "X가 2시간 동안 100마일 이동 → 남은 거리 630마일"
-      },
-      {
-        "step": "Step 2: 만나는 시간",
-        "desc": "630 ÷ (50 + 55) = 6시간 후"
-      },
-      {
-        "step": "Step 3: X의 위치",
-        "desc": "100 + 50 × 6 = <strong>400</strong>마일"
-      }
-    ],
-    "commonTraps": [
-      {
-        "value": 347.6190476190476,
-        "display": "7,300/21",
-        "why": "두 차가 동시에 출발했다고 보고 속력 비로 나눈 값입니다."
-      },
-      {
-        "value": 300,
-        "display": "300",
-        "why": "Y가 출발한 뒤 X가 이동한 거리만 센 값입니다."
-      },
-      {
-        "value": 330,
-        "display": "330",
-        "why": "B로부터의 거리입니다."
-      },
-      {
-        "value": 430,
-        "display": "430",
-        "why": "X의 이동 거리에 Y의 속력을 쓴 값입니다."
-      }
-    ]
-  },
-  "S1-Q6": {
-    "topic": "미지수가 포함된 자료의 평균·중앙값",
-    "clue": "x의 위치에 따라 중앙값(가운데 두 수의 평균)이 바뀝니다. 각 보기마다 평균과 중앙값을 직접 계산하는 것이 가장 확실합니다.",
-    "stepByStep": [
-      {
-        "step": "Step 1: 평균",
-        "desc": "(50 + x)/6"
-      },
-      {
-        "step": "Step 2: 중앙값",
-        "desc": "x를 넣고 정렬한 뒤 3, 4번째 수의 평균 (x가 12 이하/사이/13 이상인지에 따라 달라짐)"
-      },
-      {
-        "step": "Step 3: 정답 확정",
-        "desc": "정답은 D, E, F입니다. 다중 선택 문항은 정답 보기를 모두, 정확히 골라야 점수를 받습니다(부분 점수 없음)."
-      }
-    ],
-    "whySelectedWrong": {
-      "A": "x = 11이면 평균 = 61/6, 중앙값 = 23/2 → 조건 불만족",
-      "B": "x = 14이면 평균 = 32/3, 중앙값 = 25/2 → 조건 불만족",
-      "C": "x = 17이면 평균 = 67/6, 중앙값 = 25/2 → 조건 불만족"
-    },
-    "choicesAnalysis": [
-      {
-        "label": "A",
-        "isCorrect": false,
-        "text": "11",
-        "analysis": "오답. x = 11이면 평균 = 61/6, 중앙값 = 23/2 → 조건 불만족"
-      },
-      {
-        "label": "B",
-        "isCorrect": false,
-        "text": "14",
-        "analysis": "오답. x = 14이면 평균 = 32/3, 중앙값 = 25/2 → 조건 불만족"
-      },
-      {
-        "label": "C",
-        "isCorrect": false,
-        "text": "17",
-        "analysis": "오답. x = 17이면 평균 = 67/6, 중앙값 = 25/2 → 조건 불만족"
-      },
-      {
-        "label": "D",
-        "isCorrect": true,
-        "text": "29",
-        "analysis": "정답. x = 29이면 평균 = 79/6, 중앙값 = 25/2 → 조건 만족"
-      },
-      {
-        "label": "E",
-        "isCorrect": true,
-        "text": "30",
-        "analysis": "정답. x = 30이면 평균 = 40/3, 중앙값 = 25/2 → 조건 만족"
-      },
-      {
-        "label": "F",
-        "isCorrect": true,
-        "text": "38",
-        "analysis": "정답. x = 38이면 평균 = 44/3, 중앙값 = 25/2 → 조건 만족"
-      }
-    ]
-  },
-  "S1-Q7": {
-    "topic": "활꼴의 넓이 (부채꼴 − 삼각형)",
-    "clue": "활꼴 넓이 = 부채꼴 넓이 − 중심각을 낀 삼각형 넓이.",
-    "stepByStep": [
-      {
-        "step": "Step 1: 부채꼴",
-        "desc": "(90/360) × π × 4 = π"
-      },
-      {
-        "step": "Step 2: 삼각형 OAB",
-        "desc": "직각이등변삼각형: (1/2)r² = 2"
-      },
-      {
-        "step": "Step 3: 차",
-        "desc": "<strong>π − 2</strong>"
-      }
-    ],
-    "whySelectedWrong": {
-      "A": "삼각형을 빼야 하는데 더한 값입니다.",
-      "B": "부채꼴의 넓이만 구하고 삼각형을 빼지 않은 값입니다.",
-      "D": "삼각형 넓이에서 1/2을 빠뜨린 값입니다.",
-      "E": "큰 활꼴(major arc 쪽)의 넓이입니다."
-    },
-    "choicesAnalysis": [
-      {
-        "label": "A",
-        "isCorrect": false,
-        "text": "π + 2",
-        "analysis": "오답. 삼각형을 빼야 하는데 더한 값입니다."
-      },
-      {
-        "label": "B",
-        "isCorrect": false,
-        "text": "π",
-        "analysis": "오답. 부채꼴의 넓이만 구하고 삼각형을 빼지 않은 값입니다."
-      },
-      {
-        "label": "C",
-        "isCorrect": true,
-        "text": "π − 2",
-        "analysis": "정답. 위 풀이 과정의 결과와 일치합니다."
-      },
-      {
-        "label": "D",
-        "isCorrect": false,
-        "text": "π − 4",
-        "analysis": "오답. 삼각형 넓이에서 1/2을 빠뜨린 값입니다."
-      },
-      {
-        "label": "E",
-        "isCorrect": false,
-        "text": "3π + 2",
-        "analysis": "오답. 큰 활꼴(major arc 쪽)의 넓이입니다."
-      }
-    ]
-  },
-  "S1-Q8": {
-    "topic": "정수 범위에서 최댓값·최솟값",
-    "clue": "가능한 정수는 끝값을 제외한 범위입니다. 음수를 제곱하면 커질 수 있으므로 양 끝 후보를 모두 확인합니다.",
-    "stepByStep": [
-      {
-        "step": "Step 1: 가능한 값",
-        "desc": "x ∈ {−1, …, 3}, y ∈ {−2, …, 4}"
-      },
-      {
-        "step": "Step 2: 극값 후보 점검",
-        "desc": "식 <i>x</i><i>y</i> − <i>x</i>에서 각 항을 키우는 방향을 따지면 후보는 각 범위의 양 끝 정수입니다(제곱 항은 절댓값이 큰 쪽)."
-      },
-      {
-        "step": "Step 3: 결론",
-        "desc": "x = 3, y = 4일 때 최댓값 <strong>9</strong>"
-      }
-    ],
-    "whySelectedWrong": {
-      "A": "x 최대, y 최소를 대입한 값입니다.",
-      "B": "두 변수 모두 가장 작은 값을 대입한 값입니다.",
-      "C": "두 번째로 큰 값입니다. 음수의 제곱/세제곱 처리를 다시 확인하세요.",
-      "E": "부등호에 등호가 없는데 끝값을 대입한 값입니다."
-    },
-    "choicesAnalysis": [
-      {
-        "label": "A",
-        "isCorrect": false,
-        "text": "−9",
-        "analysis": "오답. x 최대, y 최소를 대입한 값입니다."
-      },
-      {
-        "label": "B",
-        "isCorrect": false,
-        "text": "3",
-        "analysis": "오답. 두 변수 모두 가장 작은 값을 대입한 값입니다."
-      },
-      {
-        "label": "C",
-        "isCorrect": false,
-        "text": "6",
-        "analysis": "오답. 두 번째로 큰 값입니다. 음수의 제곱/세제곱 처리를 다시 확인하세요."
-      },
-      {
-        "label": "D",
-        "isCorrect": true,
-        "text": "9",
-        "analysis": "정답. 위 풀이 과정의 결과와 일치합니다."
-      },
-      {
-        "label": "E",
-        "isCorrect": false,
-        "text": "16",
-        "analysis": "오답. 부등호에 등호가 없는데 끝값을 대입한 값입니다."
-      }
-    ]
-  },
-  "S1-Q9": {
-    "topic": "비율 변화로 원래 개수 구하기",
-    "clue": "변하지 않는 양(파란 구슬)을 기준으로 식을 세웁니다.",
-    "stepByStep": [
-      {
-        "step": "Step 1: 미지수 설정",
-        "desc": "빨강 = 5m, 파랑 = 6m"
-      },
-      {
-        "step": "Step 2: 비 조건",
-        "desc": "(5m + 3) : 6m = 8 : 9 → 9(5m + 3) = 8·6m → m = 9"
-      },
-      {
-        "step": "Step 3: 답",
-        "desc": "원래 개수 = 11 × 9 = <strong>99</strong>"
-      }
-    ],
-    "commonTraps": [
-      {
-        "value": 102,
-        "display": "102",
-        "why": "빨간 구슬을 추가한 뒤의 개수입니다."
-      },
-      {
-        "value": 54,
-        "display": "54",
-        "why": "파란 구슬의 개수입니다."
-      },
-      {
-        "value": 45,
-        "display": "45",
-        "why": "원래 빨간 구슬의 개수입니다."
-      },
-      {
-        "value": 110,
-        "display": "110",
-        "why": "배수를 하나 크게 잡은 값입니다."
-      },
-      {
-        "value": 102,
-        "display": "102",
-        "why": "추가 후의 전체 개수입니다."
-      }
-    ]
-  },
-  "S1-Q10": {
-    "topic": "등차수열 합 + 배수 제외",
-    "clue": "합 = (k의 배수 합) − (j의 배수 합). 각 합은 (항수) × (첫항 + 끝항)/2 입니다.",
-    "stepByStep": [
-      {
-        "step": "Step 1: 4의 배수 합",
-        "desc": "첫 항 28, 끝 항 252, 항수 (252 − 28)/4 + 1 = 57 → 합 = 57 × (28 + 252)/2 = 7,980"
-      },
-      {
-        "step": "Step 2: 8의 배수 합 (모두 4의 배수)",
-        "desc": "첫 항 32, 끝 항 248, 항수 28 → 합 = 3,920"
-      },
-      {
-        "step": "Step 3: 차이",
-        "desc": "7,980 − 3,920 = <strong>4,060</strong>"
-      }
-    ],
-    "commonTraps": [
-      {
-        "value": 7980,
-        "display": "7,980",
-        "why": "8의 배수를 빼지 않은 값입니다."
-      },
-      {
-        "value": 4068,
-        "display": "4,068",
-        "why": "8의 배수 개수를 하나 적게 센 값입니다."
-      },
-      {
-        "value": 4056,
-        "display": "4,056",
-        "why": "끝 항을 하나 빼먹은 값입니다."
-      },
-      {
-        "value": 140,
-        "display": "140",
-        "why": "8의 배수를 두 번 뺀 값입니다."
-      }
-    ]
-  },
-  "S1-Q11": {
-    "topic": "좌표평면: 대각선 꼭짓점으로 정사각형 넓이",
-    "clue": "정사각형 넓이 = (대각선)²/2.",
-    "stepByStep": [
-      {
-        "step": "Step 1: 대각선의 제곱",
-        "desc": "(5 − (−3))² + (3 − (0))² = 73"
-      },
-      {
-        "step": "Step 2: 넓이",
-        "desc": "73/2 = <strong>73/2</strong>"
-      }
-    ],
-    "whySelectedWrong": {
-      "A": "d²/4로 계산한 값입니다.",
-      "B": "두 점을 꼭짓점으로 하는 축에 평행한 직사각형의 넓이입니다.",
-      "D": "계산 실수 값입니다.",
-      "E": "대각선 길이의 제곱을 넓이로 쓴 값입니다(d²/2가 넓이)."
-    },
-    "choicesAnalysis": [
-      {
-        "label": "A",
-        "isCorrect": false,
-        "text": "73/4",
-        "analysis": "오답. d²/4로 계산한 값입니다."
-      },
-      {
-        "label": "B",
-        "isCorrect": false,
-        "text": "24",
-        "analysis": "오답. 두 점을 꼭짓점으로 하는 축에 평행한 직사각형의 넓이입니다."
-      },
-      {
-        "label": "C",
-        "isCorrect": true,
-        "text": "73/2",
-        "analysis": "정답. 위 풀이 과정의 결과와 일치합니다."
-      },
-      {
-        "label": "D",
-        "isCorrect": false,
-        "text": "75/2",
-        "analysis": "오답. 계산 실수 값입니다."
-      },
-      {
-        "label": "E",
-        "isCorrect": false,
-        "text": "73",
-        "analysis": "오답. 대각선 길이의 제곱을 넓이로 쓴 값입니다(d²/2가 넓이)."
-      }
-    ]
-  },
-  "S1-Q12": {
-    "topic": "조합: “적어도” 조건",
-    "clue": "“적어도”는 여사건(전체 − 조건 불만족) 또는 정확한 경우별 합으로 셉니다. “하나 고정 후 나머지 자유”는 중복을 만듭니다.",
-    "stepByStep": [
-      {
-        "step": "Step 1: 전체",
-        "desc": "C(9, 5) = 126"
-      },
-      {
-        "step": "Step 2: 여사건",
-        "desc": "여자가 0명 또는 1명인 경우 = 21"
-      },
-      {
-        "step": "Step 3: 답",
-        "desc": "126 − 21 = <strong>105</strong> (경우별 합: C(4,2)·C(5,3) = 60 + C(4,3)·C(5,2) = 40 + C(4,4)·C(5,1) = 5)"
-      }
-    ],
-    "whySelectedWrong": {
-      "A": "조건을 만족하지 않는 경우(여사건)의 수입니다.",
-      "B": "여자가 정확히 2명인 경우만 센 값입니다.",
-      "D": "조건 없이 전체 경우의 수입니다.",
-      "E": "“먼저 여자 j명 고정 후 나머지 자유 선택” 방식으로 중복해서 센 값입니다."
-    },
-    "choicesAnalysis": [
-      {
-        "label": "A",
-        "isCorrect": false,
-        "text": "21",
-        "analysis": "오답. 조건을 만족하지 않는 경우(여사건)의 수입니다."
-      },
-      {
-        "label": "B",
-        "isCorrect": false,
-        "text": "60",
-        "analysis": "오답. 여자가 정확히 2명인 경우만 센 값입니다."
-      },
-      {
-        "label": "C",
-        "isCorrect": true,
-        "text": "105",
-        "analysis": "정답. 위 풀이 과정의 결과와 일치합니다."
-      },
-      {
-        "label": "D",
-        "isCorrect": false,
-        "text": "126",
-        "analysis": "오답. 조건 없이 전체 경우의 수입니다."
-      },
-      {
-        "label": "E",
-        "isCorrect": false,
-        "text": "210",
-        "analysis": "오답. “먼저 여자 j명 고정 후 나머지 자유 선택” 방식으로 중복해서 센 값입니다."
-      }
-    ]
-  },
-  "S2-Q1": {
-    "topic": "평균 속력 (조화평균)",
-    "clue": "평균 속력 = 전체 거리 ÷ 전체 시간. 거리가 같으면 평균 속력은 산술평균이 아니라 조화평균 2uv/(u + v)입니다.",
-    "stepByStep": [
-      {
-        "step": "Step 1: 거리 설정",
-        "desc": "편도 거리를 d라 하면 전체 시간 = 2d/72"
-      },
-      {
-        "step": "Step 2: 식 세우기",
-        "desc": "d/60 + d/v = 2d/72 → 1/v = 2/72 − 1/60 = 1/90"
-      },
-      {
-        "step": "Step 3: 답",
-        "desc": "v = <strong>90</strong> mph"
-      },
-      {
-        "step": "Step 4: 결론",
-        "desc": "The average speed, in miles per hour, for the return trip = 90이고 비교 대상은 90이므로 정답은 (C)입니다."
-      }
-    ],
-    "whySelectedWrong": {
-      "A": "Quantity A가 항상 더 크다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 90, Quantity B = 90)",
-      "B": "Quantity B가 항상 더 크다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 90, Quantity B = 90)",
-      "D": "주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 90, Quantity B = 90)"
-    },
-    "choicesAnalysis": [
-      {
-        "label": "A",
-        "isCorrect": false,
-        "text": "Quantity A is greater.",
-        "analysis": "오답. Quantity A가 항상 더 크다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 90, Quantity B = 90)"
-      },
-      {
-        "label": "B",
-        "isCorrect": false,
-        "text": "Quantity B is greater.",
-        "analysis": "오답. Quantity B가 항상 더 크다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 90, Quantity B = 90)"
-      },
-      {
-        "label": "C",
-        "isCorrect": true,
-        "text": "The two quantities are equal.",
-        "analysis": "정답."
-      },
-      {
-        "label": "D",
-        "isCorrect": false,
-        "text": "The relationship cannot be determined from the information given.",
-        "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 90, Quantity B = 90)"
-      }
-    ]
-  },
-  "S2-Q2": {
-    "topic": "팩토리얼 식 정리",
-    "clue": "(k + 1)! = (k + 1)·k·(k − 1)! 이므로 (k + 1)!/(k − 1)! = k(k + 1) = k² + k.",
-    "stepByStep": [
-      {
-        "step": "Step 1: 팩토리얼 약분",
-        "desc": "(k + 1)!/(k − 1)! = (k + 1)k"
-      },
-      {
-        "step": "Step 2: 비교",
-        "desc": "k² + k 와 <i>k</i><sup>2</sup>를 비교합니다."
-      },
-      {
-        "step": "Step 3: 결론",
-        "desc": "따라서 정답은 (B)입니다."
-      }
-    ],
-    "whySelectedWrong": {
-      "A": "Quantity A가 항상 더 크다고 판단했지만 그렇지 않습니다.",
-      "C": "두 양이 항상 같다고 판단했지만 그렇지 않습니다.",
-      "D": "주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요."
-    },
-    "choicesAnalysis": [
-      {
-        "label": "A",
-        "isCorrect": false,
-        "text": "Quantity A is greater.",
-        "analysis": "오답. Quantity A가 항상 더 크다고 판단했지만 그렇지 않습니다."
-      },
-      {
-        "label": "B",
-        "isCorrect": true,
-        "text": "Quantity B is greater.",
-        "analysis": "정답."
-      },
-      {
-        "label": "C",
-        "isCorrect": false,
-        "text": "The two quantities are equal.",
-        "analysis": "오답. 두 양이 항상 같다고 판단했지만 그렇지 않습니다."
-      },
-      {
-        "label": "D",
-        "isCorrect": false,
-        "text": "The relationship cannot be determined from the information given.",
-        "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요."
-      }
-    ]
-  },
-  "S2-Q3": {
-    "topic": "절댓값 부등식의 정수해",
-    "clue": "|x − a| ≤ b는 a − b ≤ x ≤ a + b, |x − c| ≥ d는 c − d &lt; x &lt; c + d를 제외한다는 뜻입니다.",
-    "stepByStep": [
-      {
-        "step": "Step 1: 첫 번째 조건",
-        "desc": "−11 ≤ x ≤ 5 → 정수 17개"
-      },
-      {
-        "step": "Step 2: 두 번째 조건",
-        "desc": "3 &lt; x &lt; 7인 정수(4부터 6까지)를 제외"
-      },
-      {
-        "step": "Step 3: 겹치는 부분만 제외",
-        "desc": "첫 구간 안에서 실제로 제외되는 정수는 2개 → 17 − 2 = <strong>15</strong>"
-      },
-      {
-        "step": "Step 4: 결론",
-        "desc": "The number of integers <i>x</i> that satisfy both |<i>x</i> + 3| ≤ 8 and |<i>x</i> − 5| ≥ 2 = 15이고 비교 대상은 14이므로 정답은 (B)입니다."
-      }
-    ],
-    "whySelectedWrong": {
-      "A": "Quantity A가 항상 더 크다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 14, Quantity B = 15) 참고로 14은(는) 제외 구간이 첫 번째 구간 안에 완전히 들어간다고 가정한 값입니다. 경계가 넘치는지 확인해야 합니다.",
-      "C": "두 양이 항상 같다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 14, Quantity B = 15) 참고로 14은(는) 제외 구간이 첫 번째 구간 안에 완전히 들어간다고 가정한 값입니다. 경계가 넘치는지 확인해야 합니다.",
-      "D": "주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 14, Quantity B = 15) 참고로 14은(는) 제외 구간이 첫 번째 구간 안에 완전히 들어간다고 가정한 값입니다. 경계가 넘치는지 확인해야 합니다."
-    },
-    "choicesAnalysis": [
-      {
-        "label": "A",
-        "isCorrect": false,
-        "text": "Quantity A is greater.",
-        "analysis": "오답. Quantity A가 항상 더 크다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 14, Quantity B = 15) 참고로 14은(는) 제외 구간이 첫 번째 구간 안에 완전히 들어간다고 가정한 값입니다. 경계가 넘치는지 확인해야 합니다."
-      },
-      {
-        "label": "B",
-        "isCorrect": true,
-        "text": "Quantity B is greater.",
-        "analysis": "정답."
-      },
-      {
-        "label": "C",
-        "isCorrect": false,
-        "text": "The two quantities are equal.",
-        "analysis": "오답. 두 양이 항상 같다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 14, Quantity B = 15) 참고로 14은(는) 제외 구간이 첫 번째 구간 안에 완전히 들어간다고 가정한 값입니다. 경계가 넘치는지 확인해야 합니다."
-      },
-      {
-        "label": "D",
-        "isCorrect": false,
-        "text": "The relationship cannot be determined from the information given.",
-        "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 14, Quantity B = 15) 참고로 14은(는) 제외 구간이 첫 번째 구간 안에 완전히 들어간다고 가정한 값입니다. 경계가 넘치는지 확인해야 합니다."
-      }
-    ]
-  },
-  "S2-Q4": {
-    "topic": "퍼센트 관계 비교",
-    "clue": "증가 p%, 감소 q%는 (1 + p/100), (1 − q/100)을 곱합니다. p%와 q%를 단순 비교하면 함정입니다.",
-    "stepByStep": [
-      {
-        "step": "Step 1: 연결",
-        "desc": "x = 1.4y, y = 0.7z → x = 0.98z"
-      },
-      {
-        "step": "Step 2: 비교",
-        "desc": "계수 0.98과 1을 비교합니다."
-      },
-      {
-        "step": "Step 3: 결론",
         "desc": "따라서 정답은 (A)입니다."
       }
     ],
@@ -817,219 +158,904 @@ window.QEXPLANATIONS_17 = {
       }
     ]
   },
-  "S2-Q5": {
-    "topic": "제곱수의 약수 조건 (반드시 참)",
-    "clue": "n²의 소인수 지수는 모두 짝수입니다. n² ≥ 180의 각 소인수 지수를 만족하려면 n의 지수는 (필요 지수/2)를 올림한 값 이상이어야 합니다.",
+  "S1-Q4": {
+    "topic": "직육면체: 세 면의 넓이",
+    "clue": "(lw)(wh)(lh) = (lwh)² 입니다.",
     "stepByStep": [
       {
-        "step": "Step 1: 소인수분해",
-        "desc": "180 = 2<sup>2</sup> × 3<sup>2</sup> × 5"
+        "step": "Step 1: 세 넓이의 곱",
+        "desc": "18 × 54 × 27 = 26,244 = (lwh)²"
       },
       {
-        "step": "Step 2: n에 반드시 들어 있어야 할 인수",
-        "desc": "2: n²에 2<sup>2</sup> 이상 → n에 2<sup>1</sup> 이상<br>3: n²에 3<sup>2</sup> 이상 → n에 3<sup>1</sup> 이상<br>5: n²에 5<sup>1</sup> 이상 → n에 5<sup>1</sup> 이상<br>따라서 n은 반드시 <strong>30</strong>의 배수이고, 가장 작은 n은 30입니다."
+        "step": "Step 2: 제곱근",
+        "desc": "lwh = √26,244 = <strong>162</strong>"
       },
       {
-        "step": "Step 3: 판정 방법",
-        "desc": "보기 중 30의 약수인 것만 항상 n을 나눕니다. 나머지는 n = 30을 반례로 쓸 수 있습니다."
+        "step": "Step 3: 검산",
+        "desc": "l, w, h = 3, 6, 9"
       },
       {
-        "step": "Step 4: 정답 확정",
-        "desc": "정답은 A, C, D입니다. 다중 선택 문항은 정답 보기를 모두, 정확히 골라야 점수를 받습니다(부분 점수 없음)."
+        "step": "Step 4: 결론",
+        "desc": "The volume of the box = 162이고 비교 대상은 26,244이므로 정답은 (B)입니다."
       }
     ],
     "whySelectedWrong": {
-      "B": "n = 30이면 n² = 900은 180로 나누어떨어지지만 30은(는) 4로 나누어떨어지지 않습니다.",
-      "E": "n = 30이면 n² = 900은 180로 나누어떨어지지만 30은(는) 18로 나누어떨어지지 않습니다.",
-      "F": "n = 30이면 n² = 900은 180로 나누어떨어지지만 30은(는) 180로 나누어떨어지지 않습니다."
+      "A": "Quantity A가 항상 더 크다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 162, Quantity B = 26,244) 참고로 26,244은(는) 세 넓이의 곱은 V²입니다. 제곱근을 취해야 합니다.",
+      "C": "두 양이 항상 같다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 162, Quantity B = 26,244) 참고로 26,244은(는) 세 넓이의 곱은 V²입니다. 제곱근을 취해야 합니다.",
+      "D": "주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 162, Quantity B = 26,244) 참고로 26,244은(는) 세 넓이의 곱은 V²입니다. 제곱근을 취해야 합니다."
     },
     "choicesAnalysis": [
       {
         "label": "A",
-        "isCorrect": true,
-        "text": "2",
-        "analysis": "정답. n은 반드시 30의 배수이고 2은(는) 30의 약수이므로 항상 n을 나눕니다."
+        "isCorrect": false,
+        "text": "Quantity A is greater.",
+        "analysis": "오답. Quantity A가 항상 더 크다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 162, Quantity B = 26,244) 참고로 26,244은(는) 세 넓이의 곱은 V²입니다. 제곱근을 취해야 합니다."
       },
       {
         "label": "B",
-        "isCorrect": false,
-        "text": "4",
-        "analysis": "오답. n = 30이면 n² = 900은 180로 나누어떨어지지만 30은(는) 4로 나누어떨어지지 않습니다."
+        "isCorrect": true,
+        "text": "Quantity B is greater.",
+        "analysis": "정답."
       },
       {
         "label": "C",
-        "isCorrect": true,
-        "text": "6",
-        "analysis": "정답. n은 반드시 30의 배수이고 6은(는) 30의 약수이므로 항상 n을 나눕니다."
+        "isCorrect": false,
+        "text": "The two quantities are equal.",
+        "analysis": "오답. 두 양이 항상 같다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 162, Quantity B = 26,244) 참고로 26,244은(는) 세 넓이의 곱은 V²입니다. 제곱근을 취해야 합니다."
       },
       {
         "label": "D",
-        "isCorrect": true,
-        "text": "15",
-        "analysis": "정답. n은 반드시 30의 배수이고 15은(는) 30의 약수이므로 항상 n을 나눕니다."
-      },
-      {
-        "label": "E",
         "isCorrect": false,
-        "text": "18",
-        "analysis": "오답. n = 30이면 n² = 900은 180로 나누어떨어지지만 30은(는) 18로 나누어떨어지지 않습니다."
-      },
-      {
-        "label": "F",
-        "isCorrect": false,
-        "text": "180",
-        "analysis": "오답. n = 30이면 n² = 900은 180로 나누어떨어지지만 30은(는) 180로 나누어떨어지지 않습니다."
+        "text": "The relationship cannot be determined from the information given.",
+        "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 162, Quantity B = 26,244) 참고로 26,244은(는) 세 넓이의 곱은 V²입니다. 제곱근을 취해야 합니다."
       }
     ]
   },
-  "S2-Q6": {
-    "topic": "지수방정식 (공통인수 묶기)",
-    "clue": "지수가 다른 항의 덧셈·뺄셈은 가장 작은 거듭제곱으로 묶어 정리합니다.",
+  "S1-Q5": {
+    "topic": "같은 거듭제곱의 합",
+    "clue": "같은 수 8개를 더하면 8를 곱한 것과 같습니다: 8·8<sup>n</sup> = 8<sup>n+1</sup>.",
     "stepByStep": [
       {
-        "step": "Step 1: 공통인수로 묶기",
-        "desc": "3<sup>x−1</sup>(3<sup>3</sup> − 1) = 3<sup>x−1</sup> × 26"
+        "step": "Step 1: 덧셈을 곱셈으로",
+        "desc": "8개의 8<sup>n</sup>의 합 = 8 × 8<sup>n</sup> = 8<sup>n + 1</sup>"
       },
       {
-        "step": "Step 2: 나누기",
-        "desc": "3<sup>x−1</sup> = 702 ÷ 26 = 27 = 3<sup>3</sup>"
+        "step": "Step 2: 밑 통일",
+        "desc": "8 = 2<sup>3</sup>이므로 8<sup>n+1</sup> = 2<sup>3(n + 1)</sup>"
       },
       {
         "step": "Step 3: 지수 비교",
-        "desc": "x − 1 = 3 → x = <strong>4</strong>"
-      }
-    ],
-    "commonTraps": [
-      {
-        "value": 3,
-        "display": "3",
-        "why": "공통인수 b^(x−1)의 지수 x − 1을 x로 착각한 값입니다."
-      },
-      {
-        "value": 5,
-        "display": "5",
-        "why": "지수 계산에서 1을 더한 값입니다."
-      },
-      {
-        "value": 6,
-        "display": "6",
-        "why": "지수 x + a를 답으로 쓴 값입니다."
-      },
-      {
-        "value": 6,
-        "display": "6",
-        "why": "계산 실수 값입니다."
-      },
-      {
-        "value": 3,
-        "display": "3",
-        "why": "공통인수의 지수(x − 1)를 답으로 쓴 값입니다."
-      }
-    ]
-  },
-  "S2-Q7": {
-    "topic": "원과 정사각형 사이 영역",
-    "clue": "원이 정사각형에 내접하면 지름 = 한 변입니다.",
-    "stepByStep": [
-      {
-        "step": "Step 1: 반지름",
-        "desc": "지름 = 10 → r = 5"
-      },
-      {
-        "step": "Step 2: 넓이 차",
-        "desc": "100 − 25π"
-      },
-      {
-        "step": "Step 3: 답",
-        "desc": "−25π + 100"
+        "desc": "m = 3(n + 1) = <strong>3<i>n</i> + 3</strong>"
       }
     ],
     "whySelectedWrong": {
-      "A": "반지름 대신 지름을 써서 원의 넓이를 구한 값입니다.",
-      "C": "네 영역 중 하나의 넓이만 구한 값입니다.",
-      "D": "반지름을 s/√2로 잡은 값입니다(외접원과 혼동).",
-      "E": "원의 넓이를 절반(반원)만 뺀 값입니다."
+      "A": "8개를 더한 것을 2를 한 번 곱한 것으로 착각한 값입니다.",
+      "C": "밑을 2로 바꿀 때 n에 3를 곱하지 않은 값입니다.",
+      "D": "항의 개수를 지수에 곱한 값입니다.",
+      "E": "8개를 더하면 8를 한 번 더 곱하는 것인데, 이를 빠뜨린 값입니다."
     },
     "choicesAnalysis": [
       {
         "label": "A",
         "isCorrect": false,
-        "text": "−100π + 100",
-        "analysis": "오답. 반지름 대신 지름을 써서 원의 넓이를 구한 값입니다."
+        "text": "3<i>n</i> + 1",
+        "analysis": "오답. 8개를 더한 것을 2를 한 번 곱한 것으로 착각한 값입니다."
       },
       {
         "label": "B",
         "isCorrect": true,
-        "text": "−25π + 100",
+        "text": "3<i>n</i> + 3",
         "analysis": "정답. 위 풀이 과정의 결과와 일치합니다."
       },
       {
         "label": "C",
         "isCorrect": false,
-        "text": "−25π/4 + 25",
-        "analysis": "오답. 네 영역 중 하나의 넓이만 구한 값입니다."
+        "text": "<i>n</i> + 3",
+        "analysis": "오답. 밑을 2로 바꿀 때 n에 3를 곱하지 않은 값입니다."
       },
       {
         "label": "D",
         "isCorrect": false,
-        "text": "−50π + 100",
-        "analysis": "오답. 반지름을 s/√2로 잡은 값입니다(외접원과 혼동)."
+        "text": "24<i>n</i>",
+        "analysis": "오답. 항의 개수를 지수에 곱한 값입니다."
       },
       {
         "label": "E",
         "isCorrect": false,
-        "text": "−25π/2 + 100",
-        "analysis": "오답. 원의 넓이를 절반(반원)만 뺀 값입니다."
+        "text": "3<i>n</i>",
+        "analysis": "오답. 8개를 더하면 8를 한 번 더 곱하는 것인데, 이를 빠뜨린 값입니다."
       }
     ]
   },
-  "S2-Q8": {
-    "topic": "팩토리얼의 소인수 지수 (Legendre)",
-    "clue": "n!에 소수 p가 몇 번 들어 있는지는 ⌊n/p⌋ + ⌊n/p²⌋ + ⌊n/p³⌋ + … 로 셉니다(Legendre 공식).",
+  "S1-Q6": {
+    "topic": "도수분포표의 사분위수",
+    "clue": "GRE 방식: 자료를 크기순으로 놓고 아래쪽 절반의 중앙값이 Q1, 위쪽 절반의 중앙값이 Q3 (n이 홀수면 중앙값은 양쪽 절반에서 제외).",
     "stepByStep": [
       {
-        "step": "Step 1: 25!에 들어 있는 2의 개수",
-        "desc": "⌊25/2⌋ + ⌊25/2²⌋ + … = 12 + 6 + 3 + 1 = <strong>22</strong>"
+        "step": "Step 1: 누적 도수",
+        "desc": "1: 1번째까지, 2: 6번째까지, 3: 8번째까지, 4: 13번째까지, 5: 14번째까지, 6: 18번째까지"
       },
       {
-        "step": "Step 2: 25!에 들어 있는 5의 개수",
-        "desc": "⌊25/5⌋ + ⌊25/5²⌋ = 5 + 1 = <strong>6</strong>"
+        "step": "Step 2: 중앙값",
+        "desc": "n = 18 → 중앙값 = 4"
       },
       {
-        "step": "Step 3: 병목 소인수 찾기",
-        "desc": "10 = 2 × 5이므로 가능한 지수는 각 소인수 묶음 개수 중 최솟값 = <strong>6</strong>입니다."
+        "step": "Step 3: 사분위수",
+        "desc": "아래쪽 9개의 중앙값 Q1 = 2, 위쪽 9개의 중앙값 Q3 = 5"
+      },
+      {
+        "step": "Step 4: 답",
+        "desc": "Q3 − 중앙값 = <strong>1</strong>"
+      }
+    ],
+    "whySelectedWrong": {
+      "A": "사분위수 위치를 한 칸 잘못 잡은 값입니다.",
+      "C": "사분위수 위치를 한 칸 잘못 잡은 값입니다.",
+      "D": "사분위범위입니다.",
+      "E": "범위(최댓값 − 최솟값)입니다."
+    },
+    "choicesAnalysis": [
+      {
+        "label": "A",
+        "isCorrect": false,
+        "text": "0",
+        "analysis": "오답. 사분위수 위치를 한 칸 잘못 잡은 값입니다."
+      },
+      {
+        "label": "B",
+        "isCorrect": true,
+        "text": "1",
+        "analysis": "정답. 위 풀이 과정의 결과와 일치합니다."
+      },
+      {
+        "label": "C",
+        "isCorrect": false,
+        "text": "2",
+        "analysis": "오답. 사분위수 위치를 한 칸 잘못 잡은 값입니다."
+      },
+      {
+        "label": "D",
+        "isCorrect": false,
+        "text": "3",
+        "analysis": "오답. 사분위범위입니다."
+      },
+      {
+        "label": "E",
+        "isCorrect": false,
+        "text": "5",
+        "analysis": "오답. 범위(최댓값 − 최솟값)입니다."
+      }
+    ]
+  },
+  "S1-Q7": {
+    "topic": "색칠한 영역의 넓이 (그림)",
+    "clue": "반원 넓이 = (π/8)·(지름)². 큰 반원 − 작은 반원 두 개 = (π/8)[(a + b)² − a² − b²] = πab/4.",
+    "stepByStep": [
+      {
+        "step": "Step 1: 큰 반원",
+        "desc": "(π/8)(15)² = 225π/8"
+      },
+      {
+        "step": "Step 2: 작은 반원 두 개",
+        "desc": "(π/8)(7² + 8²) = 113π/8"
+      },
+      {
+        "step": "Step 3: 차",
+        "desc": "<strong>14π</strong>"
+      }
+    ],
+    "whySelectedWrong": {
+      "A": "반원이 아니라 원 전체로 계산한 값입니다.",
+      "C": "작은 반원 두 개의 넓이 합입니다.",
+      "D": "큰 반원 전체의 넓이입니다. 작은 반원 두 개를 빼야 합니다.",
+      "E": "반지름 대신 지름을 넣은 뒤 절반을 한 번 더 한 값입니다."
+    },
+    "choicesAnalysis": [
+      {
+        "label": "A",
+        "isCorrect": false,
+        "text": "28π",
+        "analysis": "오답. 반원이 아니라 원 전체로 계산한 값입니다."
+      },
+      {
+        "label": "B",
+        "isCorrect": true,
+        "text": "14π",
+        "analysis": "정답. 위 풀이 과정의 결과와 일치합니다."
+      },
+      {
+        "label": "C",
+        "isCorrect": false,
+        "text": "113π/8",
+        "analysis": "오답. 작은 반원 두 개의 넓이 합입니다."
+      },
+      {
+        "label": "D",
+        "isCorrect": false,
+        "text": "225π/8",
+        "analysis": "오답. 큰 반원 전체의 넓이입니다. 작은 반원 두 개를 빼야 합니다."
+      },
+      {
+        "label": "E",
+        "isCorrect": false,
+        "text": "7π",
+        "analysis": "오답. 반지름 대신 지름을 넣은 뒤 절반을 한 번 더 한 값입니다."
+      }
+    ]
+  },
+  "S1-Q8": {
+    "topic": "등차수열 (항과 합)",
+    "clue": "두 항의 차 = (항 번호 차) × 공차. 합 = 항수 × (첫 항 + 끝 항)/2.",
+    "stepByStep": [
+      {
+        "step": "Step 1: 공차",
+        "desc": "(60 − 18) ÷ (11 − 4) = 6"
+      },
+      {
+        "step": "Step 2: 첫 항과 끝 항",
+        "desc": "a₁ = 18 − 3(6) = 0, a22 = 0 + 21(6) = 126"
+      },
+      {
+        "step": "Step 3: 합",
+        "desc": "22 × (0 + 126) / 2 = <strong>1,386</strong>"
       }
     ],
     "commonTraps": [
       {
-        "value": 2,
-        "display": "2",
-        "why": "⌊25/10⌋만 계산한 값입니다."
+        "value": 1260,
+        "display": "1,260",
+        "why": "21개 항의 합입니다."
       },
       {
-        "value": 5,
-        "display": "5",
-        "why": "5²·5³ 등 고차 거듭제곱의 기여를 빼먹은 값입니다."
+        "value": 2772,
+        "display": "2,772",
+        "why": "마지막 항 × 항수로 계산했습니다."
       },
       {
-        "value": 7,
-        "display": "7",
-        "why": "나눗셈 몫을 올림한 값입니다."
+        "value": 1452,
+        "display": "1,452",
+        "why": "마지막 항을 a₁ + nd로 잘못 잡은 값입니다."
       },
       {
-        "value": 22,
-        "display": "22",
-        "why": "병목(최솟값)이 아니라 가장 많은 소인수 개수를 택한 값입니다."
+        "value": 1408,
+        "display": "1,408",
+        "why": "계산 실수 값입니다."
       },
       {
-        "value": 5,
-        "display": "5",
-        "why": "고차 거듭제곱 항 하나를 빼먹은 값입니다."
+        "value": 1452,
+        "display": "1,452",
+        "why": "마지막 항을 a₁ + nd로 잡은 값입니다."
+      }
+    ]
+  },
+  "S1-Q9": {
+    "topic": "새로운 연산 정의",
+    "clue": "정의식에 순서대로 대입합니다. a ◆ b ≠ b ◆ a일 수 있다는 점이 함정입니다.",
+    "stepByStep": [
+      {
+        "step": "Step 1: x 구하기",
+        "desc": "5 ◆ x = 5x + 2(5) − 3x = 2x + 10 = 2 → x = <strong>−4</strong>"
       },
       {
-        "value": 2,
-        "display": "2",
-        "why": "25/10의 몫만 구한 값입니다. 10의 배수만이 아니라 모든 소인수의 개수를 세야 합니다."
+        "step": "Step 2: 순서를 바꿔 계산",
+        "desc": "x ◆ 5 = (−4)(5) + 2(−4) − 3(5)"
+      },
+      {
+        "step": "Step 3: 계산",
+        "desc": "= −20 − 8 − 15 = <strong>−43</strong>"
+      }
+    ],
+    "whySelectedWrong": {
+      "A": "a와 b의 역할을 일부만 바꿔 대입한 값입니다.",
+      "C": "x의 값만 구한 값입니다.",
+      "D": "연산의 순서가 바뀌면 값이 달라집니다(교환법칙 불성립). k ◆ x와 같다고 본 값입니다.",
+      "E": "부호 실수 값입니다."
+    },
+    "choicesAnalysis": [
+      {
+        "label": "A",
+        "isCorrect": false,
+        "text": "−88",
+        "analysis": "오답. a와 b의 역할을 일부만 바꿔 대입한 값입니다."
+      },
+      {
+        "label": "B",
+        "isCorrect": true,
+        "text": "−43",
+        "analysis": "정답. 위 풀이 과정의 결과와 일치합니다."
+      },
+      {
+        "label": "C",
+        "isCorrect": false,
+        "text": "−4",
+        "analysis": "오답. x의 값만 구한 값입니다."
+      },
+      {
+        "label": "D",
+        "isCorrect": false,
+        "text": "2",
+        "analysis": "오답. 연산의 순서가 바뀌면 값이 달라집니다(교환법칙 불성립). k ◆ x와 같다고 본 값입니다."
+      },
+      {
+        "label": "E",
+        "isCorrect": false,
+        "text": "43",
+        "analysis": "오답. 부호 실수 값입니다."
+      }
+    ]
+  },
+  "S1-Q10": {
+    "topic": "평균의 변화로 값 구하기",
+    "clue": "필요한 총점 − 현재 총점 = 추가로 필요한 점수.",
+    "stepByStep": [
+      {
+        "step": "Step 1: 필요한 총점",
+        "desc": "8 × 78 = 624"
+      },
+      {
+        "step": "Step 2: 현재 총점",
+        "desc": "6 × 75 = 450"
+      },
+      {
+        "step": "Step 3: 두 시험",
+        "desc": "(624 − 450) ÷ 2 = <strong>87</strong>"
+      }
+    ],
+    "commonTraps": [
+      {
+        "value": 96,
+        "display": "96",
+        "why": "시험을 1회만 더 보는 경우의 값입니다."
+      },
+      {
+        "value": 81,
+        "display": "81",
+        "why": "평균 차이만큼만 더 받으면 된다고 본 값입니다."
+      },
+      {
+        "value": 174,
+        "display": "174",
+        "why": "두 시험 점수의 합입니다."
+      },
+      {
+        "value": 88,
+        "display": "88",
+        "why": "계산 실수 값입니다."
+      },
+      {
+        "value": 81,
+        "display": "81",
+        "why": "평균 차이만큼만 더한 값입니다."
+      }
+    ]
+  },
+  "S1-Q11": {
+    "topic": "약수의 개수 (조건부)",
+    "clue": "약수의 개수는 소인수분해 후 각 지수의 선택지 개수를 곱해서 구합니다.",
+    "stepByStep": [
+      {
+        "step": "Step 1: 소인수분해",
+        "desc": "1,440 = 2<sup>5</sup> × 3<sup>2</sup> × 5이고, 전체 약수의 개수는 (5+1)(2+1)(1+1) = 36개입니다."
+      },
+      {
+        "step": "Step 2: 조건 해석",
+        "desc": "6의 배수인 약수는 6·k 꼴이며, 이때 k는 N/6 = 2<sup>4</sup> × 3 × 5의 약수여야 합니다."
+      },
+      {
+        "step": "Step 3: 개수 계산",
+        "desc": "N/6의 약수 개수 = <strong>20</strong>개입니다."
+      }
+    ],
+    "commonTraps": [
+      {
+        "value": 18,
+        "display": "18",
+        "why": "전체 약수의 절반이라고 어림한 값입니다."
+      },
+      {
+        "value": 36,
+        "display": "36",
+        "why": "조건 없이 전체 약수를 센 값입니다."
+      },
+      {
+        "value": 4,
+        "display": "4",
+        "why": "6의 약수 개수로, 묻는 것과 다릅니다."
+      },
+      {
+        "value": 16,
+        "display": "16",
+        "why": "6의 배수가 아닌 약수의 개수입니다."
+      },
+      {
+        "value": 18,
+        "display": "18",
+        "why": "전체 약수의 절반이라고 어림한 값입니다."
+      }
+    ]
+  },
+  "S1-Q12": {
+    "topic": "부등식 연립: 가능한 값",
+    "clue": "곱이 음수 ↔ x가 두 근 사이. x² > c ↔ x > √c 또는 x &lt; −√c.",
+    "stepByStep": [
+      {
+        "step": "Step 1: 첫째 조건",
+        "desc": "2 &lt; x &lt; 11"
+      },
+      {
+        "step": "Step 2: 둘째 조건",
+        "desc": "x &lt; −3 또는 x > 3"
+      },
+      {
+        "step": "Step 3: 교집합",
+        "desc": "두 구간이 겹치는 부분의 값만 정답입니다(끝값 제외)."
+      },
+      {
+        "step": "Step 4: 정답 확정",
+        "desc": "정답은 C, D, E입니다. 다중 선택 문항은 정답 보기를 모두, 정확히 골라야 점수를 받습니다(부분 점수 없음)."
+      }
+    ],
+    "whySelectedWrong": {
+      "A": "x = 1: (x − 2)(x − 11) = 10, x² = 1 → 조건 불만족",
+      "B": "x = 3: (x − 2)(x − 11) = −8, x² = 9 → 조건 불만족",
+      "F": "x = 11: (x − 2)(x − 11) = 0, x² = 121 → 조건 불만족"
+    },
+    "choicesAnalysis": [
+      {
+        "label": "A",
+        "isCorrect": false,
+        "text": "1",
+        "analysis": "오답. x = 1: (x − 2)(x − 11) = 10, x² = 1 → 조건 불만족"
+      },
+      {
+        "label": "B",
+        "isCorrect": false,
+        "text": "3",
+        "analysis": "오답. x = 3: (x − 2)(x − 11) = −8, x² = 9 → 조건 불만족"
+      },
+      {
+        "label": "C",
+        "isCorrect": true,
+        "text": "13/2",
+        "analysis": "정답. x = 13/2: (x − 2)(x − 11) = −81/4, x² = 169/4 → 두 조건 모두 만족"
+      },
+      {
+        "label": "D",
+        "isCorrect": true,
+        "text": "15/2",
+        "analysis": "정답. x = 15/2: (x − 2)(x − 11) = −77/4, x² = 225/4 → 두 조건 모두 만족"
+      },
+      {
+        "label": "E",
+        "isCorrect": true,
+        "text": "21/2",
+        "analysis": "정답. x = 21/2: (x − 2)(x − 11) = −17/4, x² = 441/4 → 두 조건 모두 만족"
+      },
+      {
+        "label": "F",
+        "isCorrect": false,
+        "text": "11",
+        "analysis": "오답. x = 11: (x − 2)(x − 11) = 0, x² = 121 → 조건 불만족"
+      }
+    ]
+  },
+  "S2-Q1": {
+    "topic": "x + 1/x와 2 (산술-기하 평균)",
+    "clue": "x + 1/x − 2 = (x − 1)²/x 입니다.",
+    "stepByStep": [
+      {
+        "step": "Step 1: 차이 정리",
+        "desc": "x + 1/x − 2 = (x² − 2x + 1)/x = (x − 1)²/x"
+      },
+      {
+        "step": "Step 2: 부호",
+        "desc": "x &lt; 0이면 분모가 음수 → 차이 &lt; 0 (x + 1/x ≤ −2)"
+      },
+      {
+        "step": "Step 3: 확인",
+        "desc": "x = −1이면 Quantity A = −2, Quantity B = 2"
+      },
+      {
+        "step": "Step 4: 결론",
+        "desc": "따라서 정답은 (B)입니다."
+      }
+    ],
+    "whySelectedWrong": {
+      "A": "Quantity A가 항상 더 크다고 판단했지만 그렇지 않습니다.",
+      "C": "두 양이 항상 같다고 판단했지만 그렇지 않습니다.",
+      "D": "주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요."
+    },
+    "choicesAnalysis": [
+      {
+        "label": "A",
+        "isCorrect": false,
+        "text": "Quantity A is greater.",
+        "analysis": "오답. Quantity A가 항상 더 크다고 판단했지만 그렇지 않습니다."
+      },
+      {
+        "label": "B",
+        "isCorrect": true,
+        "text": "Quantity B is greater.",
+        "analysis": "정답."
+      },
+      {
+        "label": "C",
+        "isCorrect": false,
+        "text": "The two quantities are equal.",
+        "analysis": "오답. 두 양이 항상 같다고 판단했지만 그렇지 않습니다."
+      },
+      {
+        "label": "D",
+        "isCorrect": false,
+        "text": "The relationship cannot be determined from the information given.",
+        "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요."
+      }
+    ]
+  },
+  "S2-Q2": {
+    "topic": "이등변삼각형 연쇄 (외각)",
+    "clue": "같은 표시(틱)의 변은 길이가 같습니다. 이등변삼각형의 밑각 + 삼각형 외각 정리를 연쇄로 씁니다.",
+    "stepByStep": [
+      {
+        "step": "Step 1: △ADC",
+        "desc": "AD = DC → ∠DAC = ∠C = 38°"
+      },
+      {
+        "step": "Step 2: 외각",
+        "desc": "∠ADB는 △ADC의 외각 → 38° + 38° = 76°"
+      },
+      {
+        "step": "Step 3: △ABD",
+        "desc": "AB = AD → ∠ABD = ∠ADB = 76° → ∠BAD = 180° − 152° = 28°"
+      },
+      {
+        "step": "Step 4: 답",
+        "desc": "x = ∠BAD + ∠DAC = 28 + 38 = <strong>66</strong>"
+      },
+      {
+        "step": "Step 5: 결론",
+        "desc": "<i>x</i> = 66이고 비교 대상은 28이므로 정답은 (A)입니다."
+      }
+    ],
+    "whySelectedWrong": {
+      "B": "Quantity B가 항상 더 크다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 66, Quantity B = 28) 참고로 28은(는) ∠BAD만 구한 값입니다.",
+      "C": "두 양이 항상 같다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 66, Quantity B = 28) 참고로 28은(는) ∠BAD만 구한 값입니다.",
+      "D": "주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 66, Quantity B = 28) 참고로 28은(는) ∠BAD만 구한 값입니다."
+    },
+    "choicesAnalysis": [
+      {
+        "label": "A",
+        "isCorrect": true,
+        "text": "Quantity A is greater.",
+        "analysis": "정답."
+      },
+      {
+        "label": "B",
+        "isCorrect": false,
+        "text": "Quantity B is greater.",
+        "analysis": "오답. Quantity B가 항상 더 크다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 66, Quantity B = 28) 참고로 28은(는) ∠BAD만 구한 값입니다."
+      },
+      {
+        "label": "C",
+        "isCorrect": false,
+        "text": "The two quantities are equal.",
+        "analysis": "오답. 두 양이 항상 같다고 판단했지만 그렇지 않습니다. (실제 값: Quantity A = 66, Quantity B = 28) 참고로 28은(는) ∠BAD만 구한 값입니다."
+      },
+      {
+        "label": "D",
+        "isCorrect": false,
+        "text": "The relationship cannot be determined from the information given.",
+        "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 66, Quantity B = 28) 참고로 28은(는) ∠BAD만 구한 값입니다."
+      }
+    ]
+  },
+  "S2-Q3": {
+    "topic": "팩토리얼 식 정리",
+    "clue": "(k + 1)! = (k + 1)·k·(k − 1)! 이므로 (k + 1)!/(k − 1)! = k(k + 1) = k² + k.",
+    "stepByStep": [
+      {
+        "step": "Step 1: 팩토리얼 약분",
+        "desc": "(k + 1)!/(k − 1)! = (k + 1)k"
+      },
+      {
+        "step": "Step 2: 비교",
+        "desc": "k² + k 와 <i>k</i><sup>2</sup> + 2를 비교합니다. 차이는 k − 2이므로 k = 2이면 같고 k > 2이면 A가 큽니다."
+      },
+      {
+        "step": "Step 3: 결론",
+        "desc": "따라서 정답은 (D)입니다."
+      }
+    ],
+    "whySelectedWrong": {
+      "A": "조건을 만족하는 값에 따라 두 양의 관계가 바뀝니다. 한두 개의 값만 대입해 보고 결론을 내리면 이 함정에 빠집니다.",
+      "B": "조건을 만족하는 값에 따라 두 양의 관계가 바뀝니다. 한두 개의 값만 대입해 보고 결론을 내리면 이 함정에 빠집니다.",
+      "C": "조건을 만족하는 값에 따라 두 양의 관계가 바뀝니다. 한두 개의 값만 대입해 보고 결론을 내리면 이 함정에 빠집니다."
+    },
+    "choicesAnalysis": [
+      {
+        "label": "A",
+        "isCorrect": false,
+        "text": "Quantity A is greater.",
+        "analysis": "오답. 조건을 만족하는 값에 따라 두 양의 관계가 바뀝니다. 한두 개의 값만 대입해 보고 결론을 내리면 이 함정에 빠집니다."
+      },
+      {
+        "label": "B",
+        "isCorrect": false,
+        "text": "Quantity B is greater.",
+        "analysis": "오답. 조건을 만족하는 값에 따라 두 양의 관계가 바뀝니다. 한두 개의 값만 대입해 보고 결론을 내리면 이 함정에 빠집니다."
+      },
+      {
+        "label": "C",
+        "isCorrect": false,
+        "text": "The two quantities are equal.",
+        "analysis": "오답. 조건을 만족하는 값에 따라 두 양의 관계가 바뀝니다. 한두 개의 값만 대입해 보고 결론을 내리면 이 함정에 빠집니다."
+      },
+      {
+        "label": "D",
+        "isCorrect": true,
+        "text": "The relationship cannot be determined from the information given.",
+        "analysis": "정답."
+      }
+    ]
+  },
+  "S2-Q4": {
+    "topic": "역수의 대소 (부호 주의)",
+    "clue": "1/x − 1/y = (y − x)/(xy). x > y이면 분자는 음수이므로 부호는 xy가 결정합니다.",
+    "stepByStep": [
+      {
+        "step": "Step 1: 차이",
+        "desc": "1/x − 1/y = (y − x)/(xy), 그리고 y − x &lt; 0"
+      },
+      {
+        "step": "Step 2: xy의 부호",
+        "desc": "xy의 부호가 정해지지 않음"
+      },
+      {
+        "step": "Step 3: 확인",
+        "desc": "x = 1, y = −1이면 Quantity A = 1, Quantity B = −1<br>x = 2, y = 1이면 Quantity A = 1/2, Quantity B = 1"
+      },
+      {
+        "step": "Step 4: 결론",
+        "desc": "따라서 정답은 (D)입니다."
+      }
+    ],
+    "whySelectedWrong": {
+      "A": "조건을 만족하는 값에 따라 두 양의 관계가 바뀝니다. 한두 개의 값만 대입해 보고 결론을 내리면 이 함정에 빠집니다.",
+      "B": "조건을 만족하는 값에 따라 두 양의 관계가 바뀝니다. 한두 개의 값만 대입해 보고 결론을 내리면 이 함정에 빠집니다.",
+      "C": "조건을 만족하는 값에 따라 두 양의 관계가 바뀝니다. 한두 개의 값만 대입해 보고 결론을 내리면 이 함정에 빠집니다."
+    },
+    "choicesAnalysis": [
+      {
+        "label": "A",
+        "isCorrect": false,
+        "text": "Quantity A is greater.",
+        "analysis": "오답. 조건을 만족하는 값에 따라 두 양의 관계가 바뀝니다. 한두 개의 값만 대입해 보고 결론을 내리면 이 함정에 빠집니다."
+      },
+      {
+        "label": "B",
+        "isCorrect": false,
+        "text": "Quantity B is greater.",
+        "analysis": "오답. 조건을 만족하는 값에 따라 두 양의 관계가 바뀝니다. 한두 개의 값만 대입해 보고 결론을 내리면 이 함정에 빠집니다."
+      },
+      {
+        "label": "C",
+        "isCorrect": false,
+        "text": "The two quantities are equal.",
+        "analysis": "오답. 조건을 만족하는 값에 따라 두 양의 관계가 바뀝니다. 한두 개의 값만 대입해 보고 결론을 내리면 이 함정에 빠집니다."
+      },
+      {
+        "label": "D",
+        "isCorrect": true,
+        "text": "The relationship cannot be determined from the information given.",
+        "analysis": "정답."
+      }
+    ]
+  },
+  "S2-Q5": {
+    "topic": "같은 것이 있는 순열",
+    "clue": "n! ÷ (각 중복 글자 개수의 팩토리얼 곱). 이웃 조건은 묶어서 하나로 봅니다.",
+    "stepByStep": [
+      {
+        "step": "Step 1: 글자 수와 중복",
+        "desc": "6글자, 중복: P×3, E×2"
+      },
+      {
+        "step": "Step 2: 공식",
+        "desc": "6! / (3!·2!)"
+      },
+      {
+        "step": "Step 3: 답",
+        "desc": "<strong>60</strong>"
+      }
+    ],
+    "whySelectedWrong": {
+      "A": "중복 처리를 한 번 더 한 값입니다.",
+      "C": "정답과 가까운 값입니다. 계산 중 작은 실수(경계값·부호·반올림)를 하면 고르게 되는 선택지입니다.",
+      "D": "중복 하나를 빠뜨린 값입니다.",
+      "E": "같은 글자를 구별해서 센 값입니다."
+    },
+    "choicesAnalysis": [
+      {
+        "label": "A",
+        "isCorrect": false,
+        "text": "30",
+        "analysis": "오답. 중복 처리를 한 번 더 한 값입니다."
+      },
+      {
+        "label": "B",
+        "isCorrect": true,
+        "text": "60",
+        "analysis": "정답. 위 풀이 과정의 결과와 일치합니다."
+      },
+      {
+        "label": "C",
+        "isCorrect": false,
+        "text": "62",
+        "analysis": "오답. 정답과 가까운 값입니다. 계산 중 작은 실수(경계값·부호·반올림)를 하면 고르게 되는 선택지입니다."
+      },
+      {
+        "label": "D",
+        "isCorrect": false,
+        "text": "120",
+        "analysis": "오답. 중복 하나를 빠뜨린 값입니다."
+      },
+      {
+        "label": "E",
+        "isCorrect": false,
+        "text": "720",
+        "analysis": "오답. 같은 글자를 구별해서 센 값입니다."
+      }
+    ]
+  },
+  "S2-Q6": {
+    "topic": "등차수열 합 + 배수 제외",
+    "clue": "합 = (k의 배수 합) − (j의 배수 합). 각 합은 (항수) × (첫항 + 끝항)/2 입니다.",
+    "stepByStep": [
+      {
+        "step": "Step 1: 4의 배수 합",
+        "desc": "첫 항 56, 끝 항 260, 항수 (260 − 56)/4 + 1 = 52 → 합 = 52 × (56 + 260)/2 = 8,216"
+      },
+      {
+        "step": "Step 2: 12의 배수 합 (모두 4의 배수)",
+        "desc": "첫 항 60, 끝 항 252, 항수 17 → 합 = 2,652"
+      },
+      {
+        "step": "Step 3: 차이",
+        "desc": "8,216 − 2,652 = <strong>5,564</strong>"
+      }
+    ],
+    "commonTraps": [
+      {
+        "value": 8216,
+        "display": "8,216",
+        "why": "12의 배수를 빼지 않은 값입니다."
+      },
+      {
+        "value": 5576,
+        "display": "5,576",
+        "why": "12의 배수 개수를 하나 적게 센 값입니다."
+      },
+      {
+        "value": 5560,
+        "display": "5,560",
+        "why": "끝 항을 하나 빼먹은 값입니다."
+      },
+      {
+        "value": 2912,
+        "display": "2,912",
+        "why": "12의 배수를 두 번 뺀 값입니다."
+      }
+    ]
+  },
+  "S2-Q7": {
+    "topic": "원기둥 부피 변화율",
+    "clue": "V = πr²h이므로 부피 배율 = (반지름 배율)² × (높이 배율).",
+    "stepByStep": [
+      {
+        "step": "Step 1: 배율",
+        "desc": "반지름 ×1.1, 높이 ×0.5"
+      },
+      {
+        "step": "Step 2: 부피 배율",
+        "desc": "(1.1)² × 0.5 = 0.605"
+      },
+      {
+        "step": "Step 3: 결론",
+        "desc": "<strong>The volume decreases by 39.5%.</strong>"
+      }
+    ],
+    "whySelectedWrong": {
+      "A": "높이의 감소를 단순히 뺀 값입니다.",
+      "B": "배율을 곱하지 않고 백분율을 더하고 뺀 값입니다.",
+      "C": "반지름 배율을 제곱하지 않은 값입니다.",
+      "D": "반지름이 제곱으로 들어간다는 것을 무시한 값입니다."
+    },
+    "choicesAnalysis": [
+      {
+        "label": "A",
+        "isCorrect": false,
+        "text": "The volume decreases by 29%.",
+        "analysis": "오답. 높이의 감소를 단순히 뺀 값입니다."
+      },
+      {
+        "label": "B",
+        "isCorrect": false,
+        "text": "The volume decreases by 30%.",
+        "analysis": "오답. 배율을 곱하지 않고 백분율을 더하고 뺀 값입니다."
+      },
+      {
+        "label": "C",
+        "isCorrect": false,
+        "text": "The volume decreases by 45%.",
+        "analysis": "오답. 반지름 배율을 제곱하지 않은 값입니다."
+      },
+      {
+        "label": "D",
+        "isCorrect": false,
+        "text": "The volume decreases by 40%.",
+        "analysis": "오답. 반지름이 제곱으로 들어간다는 것을 무시한 값입니다."
+      },
+      {
+        "label": "E",
+        "isCorrect": true,
+        "text": "The volume decreases by 39.5%.",
+        "analysis": "정답. 위 풀이 과정의 결과와 일치합니다."
+      }
+    ]
+  },
+  "S2-Q8": {
+    "topic": "닮음: 평행선이 나누는 넓이",
+    "clue": "닮음비가 m:n이면 넓이비는 m²:n². 닮음비는 AD:AB = 5:6입니다.",
+    "stepByStep": [
+      {
+        "step": "Step 1: 닮음비",
+        "desc": "△ADE ∼ △ABC, AD : AB = 5 : 6"
+      },
+      {
+        "step": "Step 2: 넓이비",
+        "desc": "△ADE : △ABC = 25 : 36"
+      },
+      {
+        "step": "Step 3: 사각형 부분",
+        "desc": "△ADE : DBCE = 25 : 11 = <strong>25/11</strong>"
+      }
+    ],
+    "whySelectedWrong": {
+      "A": "삼각형 ADE와 삼각형 ABC 전체의 넓이 비입니다.",
+      "B": "닮음비(AD:AB)만 구한 값입니다.",
+      "D": "길이의 비를 그대로 넓이의 비로 쓴 값입니다.",
+      "E": "AD:DB를 제곱했지만 닮음비는 AD:AB입니다."
+    },
+    "choicesAnalysis": [
+      {
+        "label": "A",
+        "isCorrect": false,
+        "text": "25/36",
+        "analysis": "오답. 삼각형 ADE와 삼각형 ABC 전체의 넓이 비입니다."
+      },
+      {
+        "label": "B",
+        "isCorrect": false,
+        "text": "5/6",
+        "analysis": "오답. 닮음비(AD:AB)만 구한 값입니다."
+      },
+      {
+        "label": "C",
+        "isCorrect": true,
+        "text": "25/11",
+        "analysis": "정답. 위 풀이 과정의 결과와 일치합니다."
+      },
+      {
+        "label": "D",
+        "isCorrect": false,
+        "text": "5",
+        "analysis": "오답. 길이의 비를 그대로 넓이의 비로 쓴 값입니다."
+      },
+      {
+        "label": "E",
+        "isCorrect": false,
+        "text": "25",
+        "analysis": "오답. AD:DB를 제곱했지만 닮음비는 AD:AB입니다."
       }
     ]
   },
@@ -1039,48 +1065,48 @@ window.QEXPLANATIONS_17 = {
     "stepByStep": [
       {
         "step": "Step 1: 각 증가율",
-        "desc": "North: (464 − 420)/420 ≈ 10.5%<br>South: (992 − 740)/740 ≈ 34.1%<br>East: (854 − 730)/730 ≈ 17.0%<br>West: (667 − 550)/550 ≈ 21.3%<br>Central: (962 − 940)/940 ≈ 2.3%"
+        "desc": "Plant A: (252 − 200)/200 ≈ 26.0%<br>Plant B: (449 − 380)/380 ≈ 18.2%<br>Plant C: (323 − 320)/320 ≈ 0.9%<br>Plant D: (454 − 400)/400 ≈ 13.5%<br>Plant E: (679 − 450)/450 ≈ 50.9%"
       },
       {
         "step": "Step 2: 최댓값",
-        "desc": "<strong>South</strong>"
+        "desc": "<strong>Plant E</strong>"
       }
     ],
     "whySelectedWrong": {
-      "A": "East의 증가율은 17.0%로 South(34.1%)보다 작습니다.",
-      "B": "West의 증가율은 21.3%로 South(34.1%)보다 작습니다.",
-      "C": "North의 증가율은 10.5%로 South(34.1%)보다 작습니다.",
-      "D": "Central의 증가율은 2.3%로 South(34.1%)보다 작습니다."
+      "A": "Plant B의 증가율은 18.2%로 Plant E(50.9%)보다 작습니다.",
+      "B": "Plant A의 증가율은 26.0%로 Plant E(50.9%)보다 작습니다.",
+      "C": "Plant D의 증가율은 13.5%로 Plant E(50.9%)보다 작습니다.",
+      "D": "Plant C의 증가율은 0.9%로 Plant E(50.9%)보다 작습니다."
     },
     "choicesAnalysis": [
       {
         "label": "A",
         "isCorrect": false,
-        "text": "East",
-        "analysis": "오답. East의 증가율은 17.0%로 South(34.1%)보다 작습니다."
+        "text": "Plant B",
+        "analysis": "오답. Plant B의 증가율은 18.2%로 Plant E(50.9%)보다 작습니다."
       },
       {
         "label": "B",
         "isCorrect": false,
-        "text": "West",
-        "analysis": "오답. West의 증가율은 21.3%로 South(34.1%)보다 작습니다."
+        "text": "Plant A",
+        "analysis": "오답. Plant A의 증가율은 26.0%로 Plant E(50.9%)보다 작습니다."
       },
       {
         "label": "C",
         "isCorrect": false,
-        "text": "North",
-        "analysis": "오답. North의 증가율은 10.5%로 South(34.1%)보다 작습니다."
+        "text": "Plant D",
+        "analysis": "오답. Plant D의 증가율은 13.5%로 Plant E(50.9%)보다 작습니다."
       },
       {
         "label": "D",
         "isCorrect": false,
-        "text": "Central",
-        "analysis": "오답. Central의 증가율은 2.3%로 South(34.1%)보다 작습니다."
+        "text": "Plant C",
+        "analysis": "오답. Plant C의 증가율은 0.9%로 Plant E(50.9%)보다 작습니다."
       },
       {
         "label": "E",
         "isCorrect": true,
-        "text": "South",
+        "text": "Plant E",
         "analysis": "정답. 위 풀이 과정의 결과와 일치합니다."
       }
     ]
@@ -1091,32 +1117,32 @@ window.QEXPLANATIONS_17 = {
     "stepByStep": [
       {
         "step": "Step 1: 부분 합",
-        "desc": "992 + 854 = 1846"
+        "desc": "449 + 323 = 772"
       },
       {
         "step": "Step 2: 비율",
-        "desc": "1846 ÷ 3,939 × 100 ≈ 46.86%"
+        "desc": "772 ÷ 2,157 × 100 ≈ 35.79%"
       },
       {
         "step": "Step 3: 반올림",
-        "desc": "<strong>47%</strong>"
+        "desc": "<strong>36%</strong>"
       }
     ],
     "commonTraps": [
       {
-        "value": 43,
-        "display": "43",
-        "why": "2020년 자료로 계산한 값입니다."
+        "value": 40,
+        "display": "40",
+        "why": "2019년 자료로 계산한 값입니다."
       },
       {
-        "value": 46,
-        "display": "46",
+        "value": 35,
+        "display": "35",
         "why": "반올림을 잘못한 값입니다."
       },
       {
-        "value": 25,
-        "display": "25",
-        "why": "South만 계산한 값입니다."
+        "value": 21,
+        "display": "21",
+        "why": "Plant B만 계산한 값입니다."
       },
       {
         "value": 40,
@@ -1131,7 +1157,7 @@ window.QEXPLANATIONS_17 = {
     "stepByStep": [
       {
         "step": "Step 1: 전체 증가율",
-        "desc": "3,380 → 3,939: 16.5%"
+        "desc": "1,750 → 2,157: 23.3%"
       },
       {
         "step": "Step 2: 판정",
@@ -1139,252 +1165,253 @@ window.QEXPLANATIONS_17 = {
       },
       {
         "step": "Step 3: 정답 확정",
-        "desc": "정답은 B, C, D입니다. 다중 선택 문항은 정답 보기를 모두, 정확히 골라야 점수를 받습니다(부분 점수 없음)."
+        "desc": "정답은 A, E입니다. 다중 선택 문항은 정답 보기를 모두, 정확히 골라야 점수를 받습니다(부분 점수 없음)."
       }
     ],
     "whySelectedWrong": {
-      "A": "2020: 420/3,380 ≈ 12.4%, 2022: 464/3,939 ≈ 11.8% → 증가하지 않음",
-      "E": "2020: 940/3,380 ≈ 27.8%, 2022: 962/3,939 ≈ 24.4% → 증가하지 않음"
+      "B": "2019: 380/1,750 ≈ 21.7%, 2021: 449/2,157 ≈ 20.8% → 증가하지 않음",
+      "C": "2019: 320/1,750 ≈ 18.3%, 2021: 323/2,157 ≈ 15.0% → 증가하지 않음",
+      "D": "2019: 400/1,750 ≈ 22.9%, 2021: 454/2,157 ≈ 21.0% → 증가하지 않음"
     },
     "choicesAnalysis": [
       {
         "label": "A",
-        "isCorrect": false,
-        "text": "North",
-        "analysis": "오답. 2020: 420/3,380 ≈ 12.4%, 2022: 464/3,939 ≈ 11.8% → 증가하지 않음"
+        "isCorrect": true,
+        "text": "Plant A",
+        "analysis": "정답. 2019: 200/1,750 ≈ 11.4%, 2021: 252/2,157 ≈ 11.7% → 증가"
       },
       {
         "label": "B",
-        "isCorrect": true,
-        "text": "South",
-        "analysis": "정답. 2020: 740/3,380 ≈ 21.9%, 2022: 992/3,939 ≈ 25.2% → 증가"
+        "isCorrect": false,
+        "text": "Plant B",
+        "analysis": "오답. 2019: 380/1,750 ≈ 21.7%, 2021: 449/2,157 ≈ 20.8% → 증가하지 않음"
       },
       {
         "label": "C",
-        "isCorrect": true,
-        "text": "East",
-        "analysis": "정답. 2020: 730/3,380 ≈ 21.6%, 2022: 854/3,939 ≈ 21.7% → 증가"
+        "isCorrect": false,
+        "text": "Plant C",
+        "analysis": "오답. 2019: 320/1,750 ≈ 18.3%, 2021: 323/2,157 ≈ 15.0% → 증가하지 않음"
       },
       {
         "label": "D",
-        "isCorrect": true,
-        "text": "West",
-        "analysis": "정답. 2020: 550/3,380 ≈ 16.3%, 2022: 667/3,939 ≈ 16.9% → 증가"
+        "isCorrect": false,
+        "text": "Plant D",
+        "analysis": "오답. 2019: 400/1,750 ≈ 22.9%, 2021: 454/2,157 ≈ 21.0% → 증가하지 않음"
       },
       {
         "label": "E",
-        "isCorrect": false,
-        "text": "Central",
-        "analysis": "오답. 2020: 940/3,380 ≈ 27.8%, 2022: 962/3,939 ≈ 24.4% → 증가하지 않음"
+        "isCorrect": true,
+        "text": "Plant E",
+        "analysis": "정답. 2019: 450/1,750 ≈ 25.7%, 2021: 679/2,157 ≈ 31.5% → 증가"
       }
     ]
   },
   "S2-Q12": {
-    "topic": "원기둥 부피 변화율",
-    "clue": "V = πr²h이므로 부피 배율 = (반지름 배율)² × (높이 배율).",
+    "topic": "정가·할인·이익률",
+    "clue": "원가를 100으로 두면 판매가 = 100(1 + x/100)(1 − d/100) = 100 + 이익.",
     "stepByStep": [
       {
-        "step": "Step 1: 배율",
-        "desc": "반지름 ×1.2, 높이 ×0.8"
+        "step": "Step 1: 원가 100으로 두기",
+        "desc": "판매가 = 100 + 26 = 126"
       },
       {
-        "step": "Step 2: 부피 배율",
-        "desc": "(1.2)² × 0.8 = 1.152"
+        "step": "Step 2: 정가 역산",
+        "desc": "정가 × 0.9 = 126 → 정가 = 140"
       },
       {
-        "step": "Step 3: 결론",
-        "desc": "<strong>The volume increases by 15.2%.</strong>"
+        "step": "Step 3: 답",
+        "desc": "정가는 원가보다 <strong>40%</strong> 높습니다."
       }
     ],
-    "whySelectedWrong": {
-      "A": "배율을 곱하지 않고 백분율을 더하고 뺀 값입니다.",
-      "B": "반지름이 제곱으로 들어간다는 것을 무시한 값입니다.",
-      "C": "반지름 배율을 제곱하지 않은 값입니다.",
-      "E": "높이의 감소를 단순히 뺀 값입니다."
-    },
-    "choicesAnalysis": [
+    "commonTraps": [
       {
-        "label": "A",
-        "isCorrect": false,
-        "text": "The volume increases by 20%.",
-        "analysis": "오답. 배율을 곱하지 않고 백분율을 더하고 뺀 값입니다."
+        "value": 36,
+        "display": "36",
+        "why": "할인율과 이익률을 단순히 더한 값입니다. 할인은 정가 기준이므로 곱으로 계산해야 합니다."
       },
       {
-        "label": "B",
-        "isCorrect": false,
-        "text": "The volume does not change.",
-        "analysis": "오답. 반지름이 제곱으로 들어간다는 것을 무시한 값입니다."
+        "value": 29,
+        "display": "29",
+        "why": "이익률만 할인율로 나눈 값입니다."
       },
       {
-        "label": "C",
-        "isCorrect": false,
-        "text": "The volume decreases by 4%.",
-        "analysis": "오답. 반지름 배율을 제곱하지 않은 값입니다."
+        "value": 50,
+        "display": "50",
+        "why": "계산 실수 값입니다."
       },
       {
-        "label": "D",
-        "isCorrect": true,
-        "text": "The volume increases by 15.2%.",
-        "analysis": "정답. 위 풀이 과정의 결과와 일치합니다."
+        "value": 30,
+        "display": "30",
+        "why": "계산 실수 값입니다."
       },
       {
-        "label": "E",
-        "isCorrect": false,
-        "text": "The volume increases by 24%.",
-        "analysis": "오답. 높이의 감소를 단순히 뺀 값입니다."
+        "value": 36,
+        "display": "36",
+        "why": "이익률과 할인율을 더한 값입니다."
       }
     ]
   },
   "S2-Q13": {
-    "topic": "비복원 추출 확률",
-    "clue": "비복원 추출은 조합(C)으로 분자·분모를 모두 셉니다. “적어도”는 여사건이 빠릅니다.",
+    "topic": "미지수가 포함된 자료의 평균·중앙값",
+    "clue": "x의 위치에 따라 중앙값(가운데 두 수의 평균)이 바뀝니다. 각 보기마다 평균과 중앙값을 직접 계산하는 것이 가장 확실합니다.",
     "stepByStep": [
       {
-        "step": "Step 1: 여사건",
-        "desc": "빨간 구슬이 하나도 없을 확률 = C(9, 3)/C(12, 3) = 21/55"
+        "step": "Step 1: 평균",
+        "desc": "(62 + x)/6"
       },
       {
-        "step": "Step 2: 답",
-        "desc": "1 − 21/55 = <strong>34/55</strong>"
+        "step": "Step 2: 중앙값",
+        "desc": "x를 넣고 정렬한 뒤 3, 4번째 수의 평균 (x가 13 이하/사이/18 이상인지에 따라 달라짐)"
+      },
+      {
+        "step": "Step 3: 정답 확정",
+        "desc": "정답은 F입니다. 다중 선택 문항은 정답 보기를 모두, 정확히 골라야 점수를 받습니다(부분 점수 없음)."
       }
     ],
     "whySelectedWrong": {
-      "A": "빨간 구슬이 하나도 없을 확률입니다.",
-      "B": "빨간 구슬이 정확히 1개일 확률입니다.",
-      "C": "복원 추출로 계산한 값입니다.",
-      "E": "1개를 뽑을 확률에 3을 곱한 값입니다(확률은 그렇게 더할 수 없음)."
+      "A": "x = 0이면 평균 = 31/3, 중앙값 = 21/2 → 조건 불만족",
+      "B": "x = 4이면 평균 = 11, 중앙값 = 21/2 → 조건 불만족",
+      "C": "x = 5이면 평균 = 67/6, 중앙값 = 21/2 → 조건 불만족",
+      "D": "x = 15이면 평균 = 77/6, 중앙값 = 14 → 조건 불만족",
+      "E": "x = 20이면 평균 = 41/3, 중앙값 = 31/2 → 조건 불만족"
     },
     "choicesAnalysis": [
       {
         "label": "A",
         "isCorrect": false,
-        "text": "21/55",
-        "analysis": "오답. 빨간 구슬이 하나도 없을 확률입니다."
+        "text": "0",
+        "analysis": "오답. x = 0이면 평균 = 31/3, 중앙값 = 21/2 → 조건 불만족"
       },
       {
         "label": "B",
         "isCorrect": false,
-        "text": "27/55",
-        "analysis": "오답. 빨간 구슬이 정확히 1개일 확률입니다."
+        "text": "4",
+        "analysis": "오답. x = 4이면 평균 = 11, 중앙값 = 21/2 → 조건 불만족"
       },
       {
         "label": "C",
         "isCorrect": false,
-        "text": "37/64",
-        "analysis": "오답. 복원 추출로 계산한 값입니다."
+        "text": "5",
+        "analysis": "오답. x = 5이면 평균 = 67/6, 중앙값 = 21/2 → 조건 불만족"
       },
       {
         "label": "D",
-        "isCorrect": true,
-        "text": "34/55",
-        "analysis": "정답. 위 풀이 과정의 결과와 일치합니다."
+        "isCorrect": false,
+        "text": "15",
+        "analysis": "오답. x = 15이면 평균 = 77/6, 중앙값 = 14 → 조건 불만족"
       },
       {
         "label": "E",
         "isCorrect": false,
-        "text": "3/4",
-        "analysis": "오답. 1개를 뽑을 확률에 3을 곱한 값입니다(확률은 그렇게 더할 수 없음)."
+        "text": "20",
+        "analysis": "오답. x = 20이면 평균 = 41/3, 중앙값 = 31/2 → 조건 불만족"
+      },
+      {
+        "label": "F",
+        "isCorrect": true,
+        "text": "31",
+        "analysis": "정답. x = 31이면 평균 = 31/2, 중앙값 = 31/2 → 조건 만족"
       }
     ]
   },
   "S2-Q14": {
-    "topic": "대칭형 연립방정식",
-    "clue": "계수가 서로 바뀐 연립방정식은 두 식을 더하고 빼면 x + y와 x − y가 바로 나옵니다.",
+    "topic": "정수 범위에서 최댓값·최솟값",
+    "clue": "가능한 정수는 끝값을 제외한 범위입니다. 음수를 제곱하면 커질 수 있으므로 양 끝 후보를 모두 확인합니다.",
     "stepByStep": [
       {
-        "step": "Step 1: 두 식을 더하기",
-        "desc": "13(x + y) = 39 → x + y = 3"
+        "step": "Step 1: 가능한 값",
+        "desc": "x ∈ {−3, …, 0}, y ∈ {−5, …, −1}"
       },
       {
-        "step": "Step 2: 두 식을 빼기",
-        "desc": "−5(x − y) = −45 → x − y = 9"
+        "step": "Step 2: 극값 후보 점검",
+        "desc": "식 <i>x</i><sup>2</sup><i>y</i>에서 각 항을 키우는 방향을 따지면 후보는 각 범위의 양 끝 정수입니다(제곱 항은 절댓값이 큰 쪽)."
       },
       {
-        "step": "Step 3: 인수분해 이용",
-        "desc": "x² − y² = (x + y)(x − y) = 3 × 9 = <strong>27</strong>"
+        "step": "Step 3: 결론",
+        "desc": "x = 0, y = −5일 때 최댓값 <strong>0</strong>"
       }
     ],
     "whySelectedWrong": {
-      "A": "두 식을 뺄 때 부호를 반대로 처리한 값입니다.",
-      "B": "x + y만 구한 값입니다.",
-      "C": "(x + y)²를 계산한 값입니다.",
+      "A": "두 변수 모두 가장 작은 값을 대입한 값입니다.",
+      "B": "x 최소, y 최대를 대입한 값입니다.",
+      "C": "두 번째로 큰 값입니다. 음수의 제곱/세제곱 처리를 다시 확인하세요.",
       "E": "정답과 가까운 값입니다. 계산 중 작은 실수(경계값·부호·반올림)를 하면 고르게 되는 선택지입니다."
     },
     "choicesAnalysis": [
       {
         "label": "A",
         "isCorrect": false,
-        "text": "−27",
-        "analysis": "오답. 두 식을 뺄 때 부호를 반대로 처리한 값입니다."
+        "text": "−45",
+        "analysis": "오답. 두 변수 모두 가장 작은 값을 대입한 값입니다."
       },
       {
         "label": "B",
         "isCorrect": false,
-        "text": "3",
-        "analysis": "오답. x + y만 구한 값입니다."
+        "text": "−9",
+        "analysis": "오답. x 최소, y 최대를 대입한 값입니다."
       },
       {
         "label": "C",
         "isCorrect": false,
-        "text": "9",
-        "analysis": "오답. (x + y)²를 계산한 값입니다."
+        "text": "−1",
+        "analysis": "오답. 두 번째로 큰 값입니다. 음수의 제곱/세제곱 처리를 다시 확인하세요."
       },
       {
         "label": "D",
         "isCorrect": true,
-        "text": "27",
+        "text": "0",
         "analysis": "정답. 위 풀이 과정의 결과와 일치합니다."
       },
       {
         "label": "E",
         "isCorrect": false,
-        "text": "28",
+        "text": "1",
         "analysis": "오답. 정답과 가까운 값입니다. 계산 중 작은 실수(경계값·부호·반올림)를 하면 고르게 되는 선택지입니다."
       }
     ]
   },
   "S2-Q15": {
-    "topic": "평균·중앙값 조건에서 최댓값",
-    "clue": "하나를 최대로 하려면 나머지를 조건이 허락하는 한 최소로 만듭니다.",
+    "topic": "세 집합 벤다이어그램",
+    "clue": "A + B + C를 더하면 정확히 둘인 사람은 2번, 셋인 사람은 3번 세어집니다. 적어도 하나 = (A + B + C) − (정확히 둘) − 2 × (셋 모두).",
     "stepByStep": [
       {
-        "step": "Step 1: 합",
-        "desc": "7 × 17 = 119"
+        "step": "Step 1: 합계",
+        "desc": "20 + 18 + 25 = 63"
       },
       {
-        "step": "Step 2: 나머지 최소화",
-        "desc": "중앙값 아래 3개: 1, …, 3 (합 6) / 중앙값 11 / 그 위 2개: 12, …, 13 (합 25)"
+        "step": "Step 2: 중복 제거",
+        "desc": "적어도 하나 = 63 − 15 − 2 × 4 = 40"
       },
       {
-        "step": "Step 3: 최댓값",
-        "desc": "119 − 6 − 11 − 25 = <strong>77</strong>"
+        "step": "Step 3: 답",
+        "desc": "<strong>7</strong>"
       }
     ],
     "commonTraps": [
       {
-        "value": 83,
-        "display": "83",
-        "why": "“서로 다른” 조건을 무시하고 작은 수를 모두 1, 큰 수를 모두 중앙값으로 둔 값입니다."
+        "value": 3,
+        "display": "3",
+        "why": "“정확히 셋”의 중복을 한 번만 빼거나(전부 세 번 세어짐) 2로 나누지 않은 값입니다."
       },
       {
-        "value": 108,
-        "display": "108",
-        "why": "나머지 수를 모두 0으로 본 값입니다(양의 정수 조건 무시)."
+        "value": -1,
+        "display": "−1",
+        "why": "세 언어를 모두 배우는 학생의 중복을 처리하지 않은 값입니다."
       },
       {
-        "value": 75,
-        "display": "75",
-        "why": "중앙값보다 큰 수들의 최솟값을 잘못 잡은 값입니다."
+        "value": 11,
+        "display": "11",
+        "why": "중복 처리 계수를 잘못 잡은 값입니다."
       },
       {
-        "value": 78,
-        "display": "78",
-        "why": "경계 계산 실수 값입니다."
+        "value": 9,
+        "display": "9",
+        "why": "계산 실수 값입니다."
       },
       {
-        "value": 83,
-        "display": "83",
-        "why": "“서로 다른” 조건을 무시한 값입니다."
+        "value": 3,
+        "display": "3",
+        "why": "세 집합 공통 부분의 중복을 잘못 처리한 값입니다."
       }
     ]
   }

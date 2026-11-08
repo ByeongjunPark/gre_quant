@@ -139,3 +139,9 @@ sup { font-size: 0.72em; line-height: 0; }
   .q-results { padding: 0; }
   .inline-exp-wrapper { page-break-inside: avoid; }
 }
+
+/* figures */
+.fig { text-align: center; margin: 6px 0 18px; }
+.fig svg { max-width: 100%; height: auto; background: #fff; }
+.fig-note { font-family: var(--math-font); font-style: italic; font-size: 14px; color: #334155; margin-top: 2px; }
+.qc-info .fig { margin-bottom: 10px; }

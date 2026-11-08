@@ -171,6 +171,7 @@ function buildMA(core, r) {
 }
 
 function fixStr(s) {
+  if (s.includes('<svg')) return s.split(/(<svg[\s\S]*?<\/svg>)/).map((part, i) => i % 2 ? part : fixStr(part)).join('');
   return s.replace(/(^|[\s(,=\[{:;>+×÷−·/≤≥])-(?=\d)/g, '$1−').replace(/<(?![a-zA-Z/!])/g, '&lt;');
 }
 function deepFix(o) {
@@ -179,7 +180,20 @@ function deepFix(o) {
   if (o && typeof o === 'object') { const out = {}; for (const k in o) out[k] = (k === 'value' || k === 'label' || k === 'type' || k === 'template' || k === 'area') ? o[k] : deepFix(o[k]); return out; }
   return o;
 }
-function finalize(t, core, fmt, r) { return deepFix(finalize0(t, core, fmt, r)); }
+function withFigure(core, fmt) {
+  if (!core.fig) return core;
+  const c = { ...core };
+  if (fmt === 'QC') {
+    if (c.kind === 'qc') c.ctx = c.fig + (c.ctx || '');
+    else c.qcCtx = c.fig + (c.qcCtx !== undefined ? c.qcCtx : (c.ctx || ''));
+  } else c.q = c.fig + c.q;
+  return c;
+}
+function finalize(t, core, fmt, r) {
+  const out = deepFix(finalize0(t, withFigure(core, fmt), fmt, r));
+  if (JSON.stringify(out.q).includes('<svg')) out.q.hasFigure = true;
+  return out;
+}
 function finalize0(t, core, fmt, r) {
   let built;
   if (fmt === 'MC') built = buildMC(core, r);

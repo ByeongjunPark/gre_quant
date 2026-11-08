@@ -149,8 +149,11 @@ add('qc_tri3', 'Geometry', '삼각형 세 변의 조건', r => {
   const lo = b - a, hi = a + b;
   const v = r.pick([lo, lo - 1, hi, hi + 1, Math.round((lo + hi) / 2), lo + 1, hi - 1]);
   const ans = v <= lo ? 'A' : v >= hi ? 'B' : 'D';
+  const { Fig } = require('./fig');
+  const fg = new Fig({ w: 300, h: 190, box: [-0.4, -0.5, 6.4, 3.4] });
+  fg.poly([[0, 0], [6, 0], [1.8, 3]]).text([3, 0], '<tspan font-style="italic">x</tspan>', { dy: 14 }).text([0.9, 1.5], String(a), { dx: -12 }).text([3.9, 1.5], String(b), { dx: 12 });
   return {
-    kind: 'qc', ctx: `Two sides of a triangle have lengths ${a} and ${b}. The third side has length <i>x</i>.`, A: '<i>x</i>', B: fmtInt(v), ans,
+    kind: 'qc', ctx: fg.svg({ alt: 'triangle with sides labeled', note: true }) + `In the triangle above, two sides have lengths ${a} and ${b}, and the third side has length <i>x</i>.`, A: '<i>x</i>', B: fmtInt(v), ans,
     key: '삼각형의 한 변은 나머지 두 변의 차보다 크고 합보다 작습니다(등호 불가).',
     steps: [
       ['삼각형 부등식', `${b} − ${a} < x < ${a} + ${b} → ${lo} < x < ${hi}`],

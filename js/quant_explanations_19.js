@@ -8,7 +8,11 @@ window.QEXPLANATIONS_19 = {
         "desc": "⌊43/7⌋ = 6 = <strong>6</strong>"
       },
       {
-        "step": "Step 2: 결론",
+        "step": "Step 2: 답",
+        "desc": "7<sup>k</sup>가 43!을 나누는 최대 k = <strong>6</strong>"
+      },
+      {
+        "step": "Step 3: 결론",
         "desc": "The greatest integer <i>k</i> such that 7<sup><i>k</i></sup> is a factor of 43! = 6이고 비교 대상은 7이므로 정답은 (A)입니다."
       }
     ],
@@ -22,7 +26,7 @@ window.QEXPLANATIONS_19 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다. The greatest integer <i>k</i> such that 7<sup><i>k</i></sup> is a factor of 43! = 6이고 비교 대상은 7이므로 정답은 (A)입니다."
       },
       {
         "label": "B",
@@ -89,7 +93,7 @@ window.QEXPLANATIONS_19 = {
         "label": "D",
         "isCorrect": true,
         "text": "The relationship cannot be determined from the information given.",
-        "analysis": "정답."
+        "analysis": "정답. 조건을 만족하는 값에 따라 대소 관계가 달라지므로(위 단계의 반례 참고) 관계를 하나로 정할 수 없습니다."
       }
     ]
   },
@@ -130,7 +134,7 @@ window.QEXPLANATIONS_19 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. <i>a</i><sub>1</sub> = 2이고 비교 대상은 3이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -185,7 +189,7 @@ window.QEXPLANATIONS_19 = {
         "label": "C",
         "isCorrect": true,
         "text": "The two quantities are equal.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 두 양이 같습니다."
       },
       {
         "label": "D",
@@ -648,7 +652,7 @@ window.QEXPLANATIONS_19 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다."
       },
       {
         "label": "B",
@@ -709,7 +713,7 @@ window.QEXPLANATIONS_19 = {
         "label": "C",
         "isCorrect": true,
         "text": "The two quantities are equal.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 두 양이 같습니다."
       },
       {
         "label": "D",
@@ -756,7 +760,7 @@ window.QEXPLANATIONS_19 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. <i>x</i><sup>2</sup> − <i>y</i><sup>2</sup> = −32이고 비교 대상은 32이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -803,7 +807,7 @@ window.QEXPLANATIONS_19 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다. The price at the end of March, as a percent of the price at the beginning of January = 168.75이고 비교 대상은 165이므로 정답은 (A)입니다."
       },
       {
         "label": "B",

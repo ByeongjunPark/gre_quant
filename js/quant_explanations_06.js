@@ -36,7 +36,7 @@ window.QEXPLANATIONS_06 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. The greatest of these integers = 61이고 비교 대상은 74이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -89,7 +89,7 @@ window.QEXPLANATIONS_06 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. The area of the rectangle = 48이고 비교 대상은 49이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -154,7 +154,7 @@ window.QEXPLANATIONS_06 = {
         "label": "D",
         "isCorrect": true,
         "text": "The relationship cannot be determined from the information given.",
-        "analysis": "정답."
+        "analysis": "정답. 조건을 만족하는 값에 따라 대소 관계가 달라지므로(위 단계의 반례 참고) 관계를 하나로 정할 수 없습니다."
       }
     ]
   },
@@ -197,7 +197,7 @@ window.QEXPLANATIONS_06 = {
         "label": "C",
         "isCorrect": true,
         "text": "The two quantities are equal.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 두 양이 같습니다."
       },
       {
         "label": "D",
@@ -661,7 +661,7 @@ window.QEXPLANATIONS_06 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. <i>x</i> = 45이고 비교 대상은 90이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -710,7 +710,7 @@ window.QEXPLANATIONS_06 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다."
       },
       {
         "label": "C",
@@ -769,7 +769,7 @@ window.QEXPLANATIONS_06 = {
         "label": "C",
         "isCorrect": true,
         "text": "The two quantities are equal.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 두 양이 같습니다."
       },
       {
         "label": "D",
@@ -816,7 +816,7 @@ window.QEXPLANATIONS_06 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다."
       },
       {
         "label": "C",
@@ -1207,6 +1207,10 @@ window.QEXPLANATIONS_06 = {
       {
         "step": "Step 1: 34!에 들어 있는 2의 개수",
         "desc": "⌊34/2⌋ + ⌊34/2²⌋ + … = 17 + 8 + 4 + 2 + 1 = <strong>32</strong>"
+      },
+      {
+        "step": "Step 2: 답",
+        "desc": "2<sup>k</sup>가 34!을 나누는 최대 k = <strong>32</strong>"
       }
     ],
     "commonTraps": [

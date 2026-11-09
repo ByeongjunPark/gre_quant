@@ -88,6 +88,7 @@ add('factpow', 'Arithmetic', '팩토리얼의 소인수 지수 (Legendre)', ['NE
   const naive = Math.floor(n / B);
   const maxP = Math.max(...parts.map(x => x.p));
   const steps = parts.map(x => [`${n}!에 들어 있는 ${x.p}의 개수`, `⌊${n}/${x.p}⌋${x.t.length > 1 ? ' + ⌊' + n + '/' + x.p + '²⌋' : ''}${x.t.length > 2 ? ' + …' : ''} = ${x.t.join(' + ')} = <strong>${x.s}</strong>${x.e > 1 ? ` → ${x.p}<sup>${x.e}</sup> 묶음은 ⌊${x.s}/${x.e}⌋ = ${x.k}개` : ''}`]);
+  if (parts.length === 1) steps.push(['답', `${B}<sup>k</sup>가 ${n}!을 나누는 최대 k = <strong>${k}</strong>`]);
   if (parts.length > 1) steps.push(['병목 소인수 찾기', `${B} = ${factorDisp(B)}이므로 가능한 지수는 각 소인수 묶음 개수 중 최솟값 = <strong>${k}</strong>입니다.`]);
   return {
     q: `What is the greatest integer <i>k</i> such that ${sup(B, '<i>k</i>')} is a factor of ${n}!?`,

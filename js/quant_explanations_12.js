@@ -42,7 +42,7 @@ window.QEXPLANATIONS_12 = {
         "label": "C",
         "isCorrect": true,
         "text": "The two quantities are equal.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 두 양이 같습니다. The area of the trapezoid = 42이고 비교 대상은 42이므로 정답은 (C)입니다."
       },
       {
         "label": "D",
@@ -83,7 +83,7 @@ window.QEXPLANATIONS_12 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다. The length of CD = 3이고 비교 대상은 5이므로 정답은 (A)입니다."
       },
       {
         "label": "B",
@@ -142,7 +142,7 @@ window.QEXPLANATIONS_12 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다."
       },
       {
         "label": "C",
@@ -189,7 +189,7 @@ window.QEXPLANATIONS_12 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다."
       },
       {
         "label": "B",
@@ -668,7 +668,7 @@ window.QEXPLANATIONS_12 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. The area of the square = 53/2이고 비교 대상은 53이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -727,7 +727,7 @@ window.QEXPLANATIONS_12 = {
         "label": "C",
         "isCorrect": true,
         "text": "The two quantities are equal.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 두 양이 같습니다. <i>x</i> = 143이고 비교 대상은 143이므로 정답은 (C)입니다."
       },
       {
         "label": "D",
@@ -780,7 +780,7 @@ window.QEXPLANATIONS_12 = {
         "label": "C",
         "isCorrect": true,
         "text": "The two quantities are equal.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 두 양이 같습니다."
       },
       {
         "label": "D",
@@ -821,7 +821,7 @@ window.QEXPLANATIONS_12 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다. The greatest possible value of <i>x</i><i>y</i> − <i>x</i> = 4이고 비교 대상은 9이므로 정답은 (A)입니다."
       },
       {
         "label": "B",

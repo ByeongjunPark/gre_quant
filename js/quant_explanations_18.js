@@ -32,7 +32,7 @@ window.QEXPLANATIONS_18 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다."
       },
       {
         "label": "C",
@@ -85,7 +85,7 @@ window.QEXPLANATIONS_18 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. The area of the rectangle = 108이고 비교 대상은 110.25이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -132,7 +132,7 @@ window.QEXPLANATIONS_18 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다."
       },
       {
         "label": "B",
@@ -185,7 +185,7 @@ window.QEXPLANATIONS_18 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다."
       },
       {
         "label": "B",
@@ -663,7 +663,7 @@ window.QEXPLANATIONS_18 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다."
       },
       {
         "label": "B",
@@ -722,7 +722,7 @@ window.QEXPLANATIONS_18 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. The area of the triangular region bounded by line <i>k</i>, the <i>x</i>-axis, and the <i>y</i>-axis = 243/8이고 비교 대상은 54이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -775,7 +775,7 @@ window.QEXPLANATIONS_18 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. The greatest of these integers = 14이고 비교 대상은 16이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -822,7 +822,7 @@ window.QEXPLANATIONS_18 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다. The probability that the machine passes exactly two of the 3 tests = 12/125이고 비교 대상은 4/125이므로 정답은 (A)입니다."
       },
       {
         "label": "B",

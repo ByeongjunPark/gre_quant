@@ -32,7 +32,7 @@ window.QEXPLANATIONS_08 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다."
       },
       {
         "label": "C",
@@ -81,7 +81,7 @@ window.QEXPLANATIONS_08 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. <i>y</i> = 19이고 비교 대상은 24이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -134,7 +134,7 @@ window.QEXPLANATIONS_08 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다."
       },
       {
         "label": "C",
@@ -183,7 +183,7 @@ window.QEXPLANATIONS_08 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다."
       },
       {
         "label": "C",
@@ -687,7 +687,7 @@ window.QEXPLANATIONS_08 = {
         "label": "D",
         "isCorrect": true,
         "text": "The relationship cannot be determined from the information given.",
-        "analysis": "정답."
+        "analysis": "정답. 조건을 만족하는 값에 따라 대소 관계가 달라지므로(위 단계의 반례 참고) 관계를 하나로 정할 수 없습니다."
       }
     ]
   },
@@ -734,7 +734,7 @@ window.QEXPLANATIONS_08 = {
         "label": "C",
         "isCorrect": true,
         "text": "The two quantities are equal.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 두 양이 같습니다. The area of the triangle shown = 53/2이고 비교 대상은 53/2이므로 정답은 (C)입니다."
       },
       {
         "label": "D",
@@ -781,7 +781,7 @@ window.QEXPLANATIONS_08 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. The number of positive divisors of N that are multiples of 30 = 20이고 비교 대상은 34이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -834,7 +834,7 @@ window.QEXPLANATIONS_08 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. The number of distinct arrangements of the letters in the word PEPPER that have both E's next to each other = 20이고 비교 대상은 120이므로 정답은 (B)입니다."
       },
       {
         "label": "C",

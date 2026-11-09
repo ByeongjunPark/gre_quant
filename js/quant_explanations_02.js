@@ -32,7 +32,7 @@ window.QEXPLANATIONS_02 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다."
       },
       {
         "label": "C",
@@ -85,7 +85,7 @@ window.QEXPLANATIONS_02 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. The ratio of the area of triangle ADE to the area of quadrilateral DBCE = 25/39이고 비교 대상은 25/9이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -138,7 +138,7 @@ window.QEXPLANATIONS_02 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. The probability that the greater of the two numbers is 5 (if the numbers are equal, that number is the greater) = 1/4이고 비교 대상은 5/18이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -197,7 +197,7 @@ window.QEXPLANATIONS_02 = {
         "label": "C",
         "isCorrect": true,
         "text": "The two quantities are equal.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 두 양이 같습니다. 1/<i>r</i> + 1/<i>s</i> = −1이고 비교 대상은 −1이므로 정답은 (C)입니다."
       },
       {
         "label": "D",
@@ -680,7 +680,7 @@ window.QEXPLANATIONS_02 = {
         "label": "C",
         "isCorrect": true,
         "text": "The two quantities are equal.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 두 양이 같습니다. The volume of the box = 360이고 비교 대상은 360이므로 정답은 (C)입니다."
       },
       {
         "label": "D",
@@ -717,7 +717,7 @@ window.QEXPLANATIONS_02 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다."
       },
       {
         "label": "B",
@@ -776,7 +776,7 @@ window.QEXPLANATIONS_02 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. <i>x</i><sup>2</sup> − <i>y</i><sup>2</sup> = 24이고 비교 대상은 −24이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -831,7 +831,7 @@ window.QEXPLANATIONS_02 = {
         "label": "C",
         "isCorrect": true,
         "text": "The two quantities are equal.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 두 양이 같습니다."
       },
       {
         "label": "D",

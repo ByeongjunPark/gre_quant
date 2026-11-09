@@ -26,7 +26,7 @@ window.QEXPLANATIONS_20 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다."
       },
       {
         "label": "B",
@@ -81,7 +81,7 @@ window.QEXPLANATIONS_20 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. The area of triangle ABC = 125이고 비교 대상은 250이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -130,7 +130,7 @@ window.QEXPLANATIONS_20 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다."
       },
       {
         "label": "C",
@@ -177,7 +177,7 @@ window.QEXPLANATIONS_20 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다."
       },
       {
         "label": "B",
@@ -657,7 +657,7 @@ window.QEXPLANATIONS_20 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다."
       },
       {
         "label": "C",
@@ -716,7 +716,7 @@ window.QEXPLANATIONS_20 = {
         "label": "C",
         "isCorrect": true,
         "text": "The two quantities are equal.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 두 양이 같습니다. The area of the triangular region bounded by line <i>k</i>, the <i>x</i>-axis, and the <i>y</i>-axis = 27/2이고 비교 대상은 27/2이므로 정답은 (C)입니다."
       },
       {
         "label": "D",
@@ -763,7 +763,7 @@ window.QEXPLANATIONS_20 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다."
       },
       {
         "label": "C",
@@ -810,7 +810,7 @@ window.QEXPLANATIONS_20 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다."
       },
       {
         "label": "B",

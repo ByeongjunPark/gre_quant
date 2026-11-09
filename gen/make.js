@@ -112,8 +112,14 @@ function qcWhy(ans, aDisp, bDisp, extra) {
   return why;
 }
 
-function qcAnalysis(ans, why) {
-  return QC_CHOICES.map(c => ({ label: c.label, isCorrect: c.label === ans, text: c.text, analysis: c.label === ans ? '정답.' : '오답. ' + why[c.label] }));
+const QC_RIGHT = {
+  A: '주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다.',
+  B: '주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다.',
+  C: '주어진 조건을 만족하는 모든 경우에 두 양이 같습니다.',
+  D: '조건을 만족하는 값에 따라 대소 관계가 달라지므로(위 단계의 반례 참고) 관계를 하나로 정할 수 없습니다.',
+};
+function qcAnalysis(ans, why, note) {
+  return QC_CHOICES.map(c => ({ label: c.label, isCorrect: c.label === ans, text: c.text, analysis: c.label === ans ? '정답. ' + QC_RIGHT[ans] + (note ? ' ' + note : '') : '오답. ' + why[c.label] }));
 }
 
 function buildQCfromNumeric(core, r) {
@@ -137,7 +143,7 @@ function buildQCfromNumeric(core, r) {
   const conclusion = `${core.noun} = ${aDisp}이고 비교 대상은 ${b.disp}이므로 정답은 (${finalAns})입니다.`;
   return {
     q: { type: 'QC', stimulus: core.qcCtx !== undefined ? core.qcCtx : (core.ctx || ''), qa, qb, choices: QC_CHOICES, answer: [finalAns] },
-    exp: { whySelectedWrong: why, choicesAnalysis: qcAnalysis(finalAns, why), conclusion },
+    exp: { whySelectedWrong: why, choicesAnalysis: qcAnalysis(finalAns, why, conclusion), conclusion },
   };
 }
 

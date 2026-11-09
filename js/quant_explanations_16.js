@@ -32,7 +32,7 @@ window.QEXPLANATIONS_16 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. <i>y</i> = 30이고 비교 대상은 38이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -81,7 +81,7 @@ window.QEXPLANATIONS_16 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다."
       },
       {
         "label": "C",
@@ -134,7 +134,7 @@ window.QEXPLANATIONS_16 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. The number of marbles in the jar before the red marbles were added = 45이고 비교 대상은 55이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -183,7 +183,7 @@ window.QEXPLANATIONS_16 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다."
       },
       {
         "label": "C",
@@ -643,7 +643,7 @@ window.QEXPLANATIONS_16 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다."
       },
       {
         "label": "C",
@@ -692,7 +692,7 @@ window.QEXPLANATIONS_16 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. The area of triangle ABC = 135이고 비교 대상은 270이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -739,7 +739,7 @@ window.QEXPLANATIONS_16 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다. The average speed, in miles per hour, for the return trip = 120이고 비교 대상은 80이므로 정답은 (A)입니다."
       },
       {
         "label": "B",
@@ -804,7 +804,7 @@ window.QEXPLANATIONS_16 = {
         "label": "C",
         "isCorrect": true,
         "text": "The two quantities are equal.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 두 양이 같습니다. <i>x</i><sup>2</sup> − <i>y</i><sup>2</sup> = −7이고 비교 대상은 −7이므로 정답은 (C)입니다."
       },
       {
         "label": "D",

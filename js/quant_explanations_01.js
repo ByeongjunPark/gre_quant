@@ -36,7 +36,7 @@ window.QEXPLANATIONS_01 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다."
       },
       {
         "label": "C",
@@ -89,7 +89,7 @@ window.QEXPLANATIONS_01 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. The area of the triangular region bounded by line <i>k</i>, the <i>x</i>-axis, and the <i>y</i>-axis = 75/2이고 비교 대상은 75이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -136,7 +136,7 @@ window.QEXPLANATIONS_01 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다. The number of students who study none of the three languages = 9이고 비교 대상은 4이므로 정답은 (A)입니다."
       },
       {
         "label": "B",
@@ -201,7 +201,7 @@ window.QEXPLANATIONS_01 = {
         "label": "C",
         "isCorrect": true,
         "text": "The two quantities are equal.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 두 양이 같습니다. The number of positive divisors of 900 that are perfect squares = 8이고 비교 대상은 8이므로 정답은 (C)입니다."
       },
       {
         "label": "D",
@@ -678,7 +678,7 @@ window.QEXPLANATIONS_01 = {
         "label": "C",
         "isCorrect": true,
         "text": "The two quantities are equal.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 두 양이 같습니다. The number of diagonals of the polygon = 252이고 비교 대상은 252이므로 정답은 (C)입니다."
       },
       {
         "label": "D",
@@ -725,7 +725,7 @@ window.QEXPLANATIONS_01 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. The length of CD = 8이고 비교 대상은 10이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -778,7 +778,7 @@ window.QEXPLANATIONS_01 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. The number of different arrangements of 5 people in a row if Ana must not stand at either end of the row = 72이고 비교 대상은 18이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -825,7 +825,7 @@ window.QEXPLANATIONS_01 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다. The price at the end of March, as a percent of the price at the beginning of January = 84.7이고 비교 대상은 90이므로 정답은 (A)입니다."
       },
       {
         "label": "B",

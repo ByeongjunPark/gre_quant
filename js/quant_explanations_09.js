@@ -30,7 +30,7 @@ window.QEXPLANATIONS_09 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다."
       },
       {
         "label": "B",
@@ -85,7 +85,7 @@ window.QEXPLANATIONS_09 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다."
       },
       {
         "label": "C",
@@ -138,7 +138,7 @@ window.QEXPLANATIONS_09 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다."
       },
       {
         "label": "C",
@@ -191,7 +191,7 @@ window.QEXPLANATIONS_09 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. The sum of the first 29 terms of the sequence = 1,740이고 비교 대상은 1,798이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -643,7 +643,7 @@ window.QEXPLANATIONS_09 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다. <i>x</i> = 7이고 비교 대상은 6이므로 정답은 (A)입니다."
       },
       {
         "label": "B",
@@ -702,7 +702,7 @@ window.QEXPLANATIONS_09 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. The area of the trapezoid = 192이고 비교 대상은 240이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -757,7 +757,7 @@ window.QEXPLANATIONS_09 = {
         "label": "C",
         "isCorrect": true,
         "text": "The two quantities are equal.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 두 양이 같습니다."
       },
       {
         "label": "D",
@@ -776,7 +776,11 @@ window.QEXPLANATIONS_09 = {
         "desc": "⌊26/2⌋ + ⌊26/2²⌋ + … = 13 + 6 + 3 + 1 = <strong>23</strong>"
       },
       {
-        "step": "Step 2: 결론",
+        "step": "Step 2: 답",
+        "desc": "2<sup>k</sup>가 26!을 나누는 최대 k = <strong>23</strong>"
+      },
+      {
+        "step": "Step 3: 결론",
         "desc": "The greatest integer <i>k</i> such that 2<sup><i>k</i></sup> is a factor of 26! = 23이고 비교 대상은 23이므로 정답은 (C)입니다."
       }
     ],
@@ -802,7 +806,7 @@ window.QEXPLANATIONS_09 = {
         "label": "C",
         "isCorrect": true,
         "text": "The two quantities are equal.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 두 양이 같습니다. The greatest integer <i>k</i> such that 2<sup><i>k</i></sup> is a factor of 26! = 23이고 비교 대상은 23이므로 정답은 (C)입니다."
       },
       {
         "label": "D",

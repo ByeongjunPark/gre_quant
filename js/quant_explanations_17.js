@@ -48,7 +48,7 @@ window.QEXPLANATIONS_17 = {
         "label": "D",
         "isCorrect": true,
         "text": "The relationship cannot be determined from the information given.",
-        "analysis": "정답."
+        "analysis": "정답. 조건을 만족하는 값에 따라 대소 관계가 달라지므로(위 단계의 반례 참고) 관계를 하나로 정할 수 없습니다."
       }
     ]
   },
@@ -89,7 +89,7 @@ window.QEXPLANATIONS_17 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. The area of the trapezoid = 255이고 비교 대상은 289이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -136,7 +136,7 @@ window.QEXPLANATIONS_17 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다."
       },
       {
         "label": "B",
@@ -195,7 +195,7 @@ window.QEXPLANATIONS_17 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다. The volume of the box = 162이고 비교 대상은 26,244이므로 정답은 (B)입니다."
       },
       {
         "label": "C",
@@ -676,7 +676,7 @@ window.QEXPLANATIONS_17 = {
         "label": "B",
         "isCorrect": true,
         "text": "Quantity B is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity B가 더 큽니다."
       },
       {
         "label": "C",
@@ -727,7 +727,7 @@ window.QEXPLANATIONS_17 = {
         "label": "A",
         "isCorrect": true,
         "text": "Quantity A is greater.",
-        "analysis": "정답."
+        "analysis": "정답. 주어진 조건을 만족하는 모든 경우에 Quantity A가 더 큽니다. <i>x</i> = 66이고 비교 대상은 28이므로 정답은 (A)입니다."
       },
       {
         "label": "B",
@@ -794,7 +794,7 @@ window.QEXPLANATIONS_17 = {
         "label": "D",
         "isCorrect": true,
         "text": "The relationship cannot be determined from the information given.",
-        "analysis": "정답."
+        "analysis": "정답. 조건을 만족하는 값에 따라 대소 관계가 달라지므로(위 단계의 반례 참고) 관계를 하나로 정할 수 없습니다."
       }
     ]
   },
@@ -847,7 +847,7 @@ window.QEXPLANATIONS_17 = {
         "label": "D",
         "isCorrect": true,
         "text": "The relationship cannot be determined from the information given.",
-        "analysis": "정답."
+        "analysis": "정답. 조건을 만족하는 값에 따라 대소 관계가 달라지므로(위 단계의 반례 참고) 관계를 하나로 정할 수 없습니다."
       }
     ]
   },

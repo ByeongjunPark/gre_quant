@@ -145,3 +145,9 @@ sup { font-size: 0.72em; line-height: 0; }
 .fig svg { max-width: 100%; height: auto; background: #fff; }
 .fig-note { font-family: var(--math-font); font-style: italic; font-size: 14px; color: #334155; margin-top: 2px; }
 .qc-info .fig { margin-bottom: 10px; }
+
+/* math vocabulary box in explanations */
+.q-vocab { margin: 12px 0; }
+.q-vocab .vocab-word { font-family: var(--math-font); font-size: 15.5px; }
+.q-vocab-more { margin-top: 8px; font-size: 12.5px; }
+.q-vocab-more a { color: #0369a1; text-decoration: none; }

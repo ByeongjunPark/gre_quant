@@ -20,6 +20,8 @@ GRE General Test **Quantitative Reasoning** 실전 모의고사 20회분과 **�
    - [전체 / 오답노트만 / 맞힌 문항] + 유형별 필터, 인쇄·PDF 저장
    - **🎯 내가 고른 답이 틀린 이유**: 고른 오답(또는 입력한 숫자)이 어떤 함정에서 나온 값인지 문항별로 분석
    - **💡 핵심 아이디어 + 🪜 단계별 풀이 + 선택지별 분석** (한국어)
+   - **📖 이 문제의 수학 용어**: 문항에 나온 영어 수학 표현(예: remainder, inscribed, without replacement, interquartile range)과 한글 뜻
+   - **[수학 용어집](glossary.html)**: 140여 개 GRE 수학 표현을 영역별로 정리, 영어·한글 검색, 20회 전체 등장 횟수 표시
 4. **성적 기록**: 응시 기록이 브라우저 localStorage에 저장되며, 메인 화면에 회차별 최고 점수·영역별 약점을 표시합니다(JSON 내보내기/가져오기 지원).
 
 ## 📐 난이도와 출제 범위
@@ -67,6 +69,7 @@ node gen/print_test.js 5 # 5회 문항·정답·풀이를 텍스트로 출력 (�
 | `gen/lib.js` | 난수(시드 고정), 분수 연산, 표기 도우미, QC 판정기 |
 | `gen/t_arith.js` `t_alg.js` `t_geo.js` `t_data.js` `t_qc.js` `t_di.js` | 영역별 문항 템플릿 (한국어 해설 포함) |
 | `gen/fig.js`, `gen/t_fig.js` | 기하 그림(SVG) 도우미와 그림 기반 기하 문항 |
+| `gen/glossary.js`, `gen/glossary_page.js` | 수학 용어 사전(영어 → 한글)과 문항별 용어 추출, 용어집 페이지 생성 |
 | `gen/make.js` | 템플릿 결과를 QC / MC / MA / NE 문항과 해설 데이터로 변환 |
 | `gen/build.js` | 회차 구성(형식·영역 균형, 템플릿 사용 횟수 균등화) 및 파일 출력 |
 | `js/quant_exam.js` | 시험 엔진(화면, 타이머, 계산기, 채점, 결과·해설) |

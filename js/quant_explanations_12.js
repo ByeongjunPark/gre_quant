@@ -50,6 +50,16 @@ window.QEXPLANATIONS_12 = {
         "text": "The relationship cannot be determined from the information given.",
         "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 42, Quantity B = 42)"
       }
+    ],
+    "vocab": [
+      {
+        "word": "trapezoid",
+        "meaning": "사다리꼴"
+      },
+      {
+        "word": "area",
+        "meaning": "넓이"
+      }
     ]
   },
   "S1-Q2": {
@@ -102,6 +112,20 @@ window.QEXPLANATIONS_12 = {
         "isCorrect": false,
         "text": "The relationship cannot be determined from the information given.",
         "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 5, Quantity B = 3) 참고로 5은(는) AD와 DB의 산술평균입니다. 높이는 기하평균입니다."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "right triangle / right angle",
+        "meaning": "직각삼각형 / 직각"
+      },
+      {
+        "word": "figure",
+        "meaning": "그림, 도형"
+      },
+      {
+        "word": "angle",
+        "meaning": "각"
       }
     ]
   },
@@ -156,6 +180,28 @@ window.QEXPLANATIONS_12 = {
         "text": "The relationship cannot be determined from the information given.",
         "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요."
       }
+    ],
+    "vocab": [
+      {
+        "word": "compounded annually",
+        "meaning": "연 복리 (1년마다 이자를 원금에 더해 다시 이자 계산)"
+      },
+      {
+        "word": "simple interest",
+        "meaning": "단리 (원금에만 이자가 붙음)"
+      },
+      {
+        "word": "interest",
+        "meaning": "이자"
+      },
+      {
+        "word": "deposit / withdrawal",
+        "meaning": "입금 / 출금"
+      },
+      {
+        "word": "percent",
+        "meaning": "퍼센트, 백분율"
+      }
     ]
   },
   "S1-Q4": {
@@ -209,7 +255,8 @@ window.QEXPLANATIONS_12 = {
         "text": "The relationship cannot be determined from the information given.",
         "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요."
       }
-    ]
+    ],
+    "vocab": []
   },
   "S1-Q5": {
     "topic": "닮음: 평행선이 나누는 넓이",
@@ -253,6 +300,44 @@ window.QEXPLANATIONS_12 = {
         "value": 0.0625,
         "display": "1/16",
         "why": "AD:DB를 제곱한 값입니다(닮음비는 AD:AB)."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "ratio",
+        "meaning": "비, 비율 (a to b = a : b)"
+      },
+      {
+        "word": "parallel",
+        "meaning": "평행한"
+      },
+      {
+        "word": "shaded region",
+        "meaning": "색칠한 영역"
+      },
+      {
+        "word": "lie on",
+        "meaning": "(점이) ~ 위에 있다"
+      },
+      {
+        "word": "fraction",
+        "meaning": "분수"
+      },
+      {
+        "word": "triangle",
+        "meaning": "삼각형"
+      },
+      {
+        "word": "side",
+        "meaning": "변"
+      },
+      {
+        "word": "area",
+        "meaning": "넓이"
+      },
+      {
+        "word": "point",
+        "meaning": "점"
       }
     ]
   },
@@ -310,6 +395,12 @@ window.QEXPLANATIONS_12 = {
         "text": "12",
         "analysis": "오답. B가 전체 작업을 혼자 하는 시간입니다. A가 이미 한 부분을 빼야 합니다."
       }
+    ],
+    "vocab": [
+      {
+        "word": "constant rate",
+        "meaning": "일정한 속도(작업 속도)"
+      }
     ]
   },
   "S1-Q7": {
@@ -366,6 +457,12 @@ window.QEXPLANATIONS_12 = {
         "text": "24",
         "analysis": "오답. 계산 실수 값입니다."
       }
+    ],
+    "vocab": [
+      {
+        "word": "ratio",
+        "meaning": "비, 비율 (a to b = a : b)"
+      }
     ]
   },
   "S1-Q8": {
@@ -410,6 +507,16 @@ window.QEXPLANATIONS_12 = {
         "value": 6,
         "display": "6",
         "why": "주기 길이를 잘못 잡았을 때 나오는 값입니다."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "units digit",
+        "meaning": "일의 자리 숫자"
+      },
+      {
+        "word": "digit",
+        "meaning": "숫자(0~9), 자릿수"
       }
     ]
   },
@@ -467,6 +574,12 @@ window.QEXPLANATIONS_12 = {
         "text": "4",
         "analysis": "오답. 정답과 가까운 값입니다. 계산 중 작은 실수(경계값·부호·반올림)를 하면 고르게 되는 선택지입니다."
       }
+    ],
+    "vocab": [
+      {
+        "word": "exactly",
+        "meaning": "정확히"
+      }
     ]
   },
   "S1-Q10": {
@@ -523,6 +636,20 @@ window.QEXPLANATIONS_12 = {
         "text": "100",
         "analysis": "오답. 여사건의 수입니다."
       }
+    ],
+    "vocab": [
+      {
+        "word": "arrangement",
+        "meaning": "배열 (순서 있음 → 순열)"
+      },
+      {
+        "word": "distinct",
+        "meaning": "서로 다른"
+      },
+      {
+        "word": "next to (adjacent)",
+        "meaning": "이웃한, 바로 옆의"
+      }
     ]
   },
   "S1-Q11": {
@@ -567,6 +694,32 @@ window.QEXPLANATIONS_12 = {
         "value": 0.4444444444444444,
         "display": "4/9",
         "why": "경우 하나를 더 센 값입니다."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "prime number",
+        "meaning": "소수 (1과 자기 자신만을 약수로 갖는 1보다 큰 정수)"
+      },
+      {
+        "word": "face",
+        "meaning": "(입체의) 면"
+      },
+      {
+        "word": "probability",
+        "meaning": "확률"
+      },
+      {
+        "word": "fair six-sided die (dice)",
+        "meaning": "공정한 6면 주사위"
+      },
+      {
+        "word": "fraction",
+        "meaning": "분수"
+      },
+      {
+        "word": "sum / product",
+        "meaning": "합 / 곱"
       }
     ]
   },
@@ -633,6 +786,20 @@ window.QEXPLANATIONS_12 = {
         "text": "4",
         "analysis": "정답. x = 4: (x − −1)(x − 5) = −5, x² = 16 → 두 조건 모두 만족"
       }
+    ],
+    "vocab": [
+      {
+        "word": "satisfy",
+        "meaning": "(조건·식을) 만족하다"
+      },
+      {
+        "word": "value",
+        "meaning": "값"
+      },
+      {
+        "word": "indicate all",
+        "meaning": "해당하는 것을 모두 고르시오"
+      }
     ]
   },
   "S2-Q1": {
@@ -681,6 +848,28 @@ window.QEXPLANATIONS_12 = {
         "isCorrect": false,
         "text": "The relationship cannot be determined from the information given.",
         "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 53/2, Quantity B = 53) 참고로 53은(는) 대각선의 제곱입니다."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "vertex (vertices)",
+        "meaning": "꼭짓점"
+      },
+      {
+        "word": "opposite vertices",
+        "meaning": "마주 보는 꼭짓점 (대각선의 양 끝)"
+      },
+      {
+        "word": "square",
+        "meaning": "정사각형 (수에서는 제곱)"
+      },
+      {
+        "word": "area",
+        "meaning": "넓이"
+      },
+      {
+        "word": "point",
+        "meaning": "점"
       }
     ]
   },
@@ -735,6 +924,24 @@ window.QEXPLANATIONS_12 = {
         "text": "The relationship cannot be determined from the information given.",
         "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 143, Quantity B = 143)"
       }
+    ],
+    "vocab": [
+      {
+        "word": "lie on",
+        "meaning": "(점이) ~ 위에 있다"
+      },
+      {
+        "word": "circle",
+        "meaning": "원"
+      },
+      {
+        "word": "center",
+        "meaning": "중심"
+      },
+      {
+        "word": "point",
+        "meaning": "점"
+      }
     ]
   },
   "S2-Q3": {
@@ -788,7 +995,8 @@ window.QEXPLANATIONS_12 = {
         "text": "The relationship cannot be determined from the information given.",
         "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요."
       }
-    ]
+    ],
+    "vocab": []
   },
   "S2-Q4": {
     "topic": "정수 범위에서 최댓값·최솟값",
@@ -840,6 +1048,20 @@ window.QEXPLANATIONS_12 = {
         "isCorrect": false,
         "text": "The relationship cannot be determined from the information given.",
         "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 9, Quantity B = 4) 참고로 9은(는) 부등호의 끝값(포함되지 않음)을 대입한 값입니다."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "greatest / least possible value",
+        "meaning": "가능한 최댓값 / 최솟값"
+      },
+      {
+        "word": "integer",
+        "meaning": "정수"
+      },
+      {
+        "word": "value",
+        "meaning": "값"
       }
     ]
   },
@@ -901,6 +1123,20 @@ window.QEXPLANATIONS_12 = {
         "text": "10",
         "analysis": "오답. 범위(최댓값 − 최솟값)입니다."
       }
+    ],
+    "vocab": [
+      {
+        "word": "range",
+        "meaning": "범위 (최댓값 − 최솟값)"
+      },
+      {
+        "word": "quartile / interquartile range",
+        "meaning": "사분위수 / 사분위범위 (Q3 − Q1)"
+      },
+      {
+        "word": "distribution",
+        "meaning": "분포"
+      }
     ]
   },
   "S2-Q6": {
@@ -956,6 +1192,16 @@ window.QEXPLANATIONS_12 = {
         "isCorrect": false,
         "text": "48",
         "analysis": "오답. 조건 없이 전체 약수를 센 값입니다."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "divisor / factor",
+        "meaning": "약수 (n을 나누어떨어지게 하는 수)"
+      },
+      {
+        "word": "perfect square",
+        "meaning": "완전제곱수 (1, 4, 9, 16, …)"
       }
     ]
   },
@@ -1037,6 +1283,28 @@ window.QEXPLANATIONS_12 = {
         "display": "8",
         "why": "순환마디를 잘못 구했을 때 나오는 값입니다."
       }
+    ],
+    "vocab": [
+      {
+        "word": "decimal point",
+        "meaning": "소수점"
+      },
+      {
+        "word": "decimal equivalent",
+        "meaning": "(분수를) 소수로 나타낸 값"
+      },
+      {
+        "word": "to the right of the decimal point",
+        "meaning": "소수점 아래 (오른쪽) 자리"
+      },
+      {
+        "word": "digit",
+        "meaning": "숫자(0~9), 자릿수"
+      },
+      {
+        "word": "point",
+        "meaning": "점"
+      }
     ]
   },
   "S2-Q8": {
@@ -1099,6 +1367,20 @@ window.QEXPLANATIONS_12 = {
         "text": "1/<i>x</i>",
         "analysis": "오답. x = −2이면 1/x = −1/2로 x보다 작지 않습니다."
       }
+    ],
+    "vocab": [
+      {
+        "word": "must be / could be",
+        "meaning": "반드시 ~이다 / ~일 수도 있다"
+      },
+      {
+        "word": "expression",
+        "meaning": "식"
+      },
+      {
+        "word": "indicate all",
+        "meaning": "해당하는 것을 모두 고르시오"
+      }
     ]
   },
   "S2-Q9": {
@@ -1138,6 +1420,12 @@ window.QEXPLANATIONS_12 = {
         "value": -1230,
         "display": "−1,230",
         "why": "부호를 반대로 한 값입니다."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "category",
+        "meaning": "범주, 항목"
       }
     ]
   },
@@ -1188,6 +1476,12 @@ window.QEXPLANATIONS_12 = {
         "value": 6,
         "display": "6",
         "why": "금액 비교를 일부 잘못한 값입니다."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "category",
+        "meaning": "범주, 항목"
       }
     ]
   },
@@ -1252,6 +1546,24 @@ window.QEXPLANATIONS_12 = {
         "text": "Entertainment",
         "analysis": "정답. 6,760 → 7,990 (18.2% 변화)"
       }
+    ],
+    "vocab": [
+      {
+        "word": "at least / at most",
+        "meaning": "적어도(이상) / 많아야(이하)"
+      },
+      {
+        "word": "category",
+        "meaning": "범주, 항목"
+      },
+      {
+        "word": "percent",
+        "meaning": "퍼센트, 백분율"
+      },
+      {
+        "word": "indicate all",
+        "meaning": "해당하는 것을 모두 고르시오"
+      }
     ]
   },
   "S2-Q12": {
@@ -1308,6 +1620,28 @@ window.QEXPLANATIONS_12 = {
         "text": "1,944",
         "analysis": "오답. (l + w)² − d² = 2lw이므로 2로 나눠야 하는데 나누지 않은 값입니다."
       }
+    ],
+    "vocab": [
+      {
+        "word": "perimeter",
+        "meaning": "둘레"
+      },
+      {
+        "word": "rectangle",
+        "meaning": "직사각형"
+      },
+      {
+        "word": "figure",
+        "meaning": "그림, 도형"
+      },
+      {
+        "word": "diagonal",
+        "meaning": "대각선"
+      },
+      {
+        "word": "area",
+        "meaning": "넓이"
+      }
     ]
   },
   "S2-Q13": {
@@ -1352,6 +1686,28 @@ window.QEXPLANATIONS_12 = {
         "value": 271,
         "display": "271",
         "why": "3 × 9 × 9 + … 식으로 위치별로 더해 중복을 센 값입니다."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "positive integer",
+        "meaning": "양의 정수 (1, 2, 3, …; 0은 포함하지 않음)"
+      },
+      {
+        "word": "three-digit integer",
+        "meaning": "세 자리 정수 (100~999)"
+      },
+      {
+        "word": "at least / at most",
+        "meaning": "적어도(이상) / 많아야(이하)"
+      },
+      {
+        "word": "integer",
+        "meaning": "정수"
+      },
+      {
+        "word": "digit",
+        "meaning": "숫자(0~9), 자릿수"
       }
     ]
   },
@@ -1409,6 +1765,20 @@ window.QEXPLANATIONS_12 = {
         "text": "16",
         "analysis": "오답. 정답과 가까운 값입니다. 계산 중 작은 실수(경계값·부호·반올림)를 하면 고르게 되는 선택지입니다."
       }
+    ],
+    "vocab": [
+      {
+        "word": "constant rate",
+        "meaning": "일정한 속도(작업 속도)"
+      },
+      {
+        "word": "circular track",
+        "meaning": "원형 트랙"
+      },
+      {
+        "word": "point",
+        "meaning": "점"
+      }
     ]
   },
   "S2-Q15": {
@@ -1453,6 +1823,24 @@ window.QEXPLANATIONS_12 = {
         "value": -456,
         "display": "−456",
         "why": "마지막 항을 a₁ + nd로 잡은 값입니다."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "sequence",
+        "meaning": "수열"
+      },
+      {
+        "word": "arithmetic sequence",
+        "meaning": "등차수열"
+      },
+      {
+        "word": "sum / product",
+        "meaning": "합 / 곱"
+      },
+      {
+        "word": "term",
+        "meaning": "(수열의) 항"
       }
     ]
   }

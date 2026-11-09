@@ -331,7 +331,7 @@
           ${[['all', `전체 문항 (${st.total})`], ['wrong', `오답노트만 (${st.total - st.raw})`], ['correct', `맞힌 문항 (${st.raw})`]].map(([k, l]) => `<button class="filter-btn ${uiFilter === k ? 'active' : ''}" data-f="${k}">${l}</button>`).join('')}</div>
         <div class="filter-group"><span class="filter-label">유형:</span>
           ${[['all', '전체'], ['QC', 'QC'], ['MC', 'MC'], ['MA', 'MA'], ['NE', 'NE']].map(([k, l]) => `<button class="filter-btn ${typeFilter === k ? 'active' : ''}" data-t="${k}">${l}</button>`).join('')}</div>
-        <div class="filter-group"><button class="filter-btn" id="btn-expand">모두 펼치기</button><button class="filter-btn" id="btn-collapse">모두 접기</button><button class="filter-btn" id="btn-print">🖨️ 인쇄/PDF</button><a class="filter-btn" href="index.html">목록으로</a><button class="filter-btn" id="btn-retry">다시 풀기</button></div>
+        <div class="filter-group"><button class="filter-btn" id="btn-expand">모두 펼치기</button><button class="filter-btn" id="btn-collapse">모두 접기</button><button class="filter-btn" id="btn-print">🖨️ 인쇄/PDF</button><a class="filter-btn" href="glossary.html" target="_blank">📖 수학 용어집</a><a class="filter-btn" href="index.html">목록으로</a><button class="filter-btn" id="btn-retry">다시 풀기</button></div>
       </div>
 
       <table class="results-table q-rtable"><thead><tr><th>#</th><th>유형</th><th>주제</th><th>내 답</th><th>정답</th><th></th></tr></thead><tbody>
@@ -391,6 +391,7 @@
         <div>${!x.answered ? '<span class="exp-status-pill skipped">미응답 ⊘</span>' : x.ok ? '<span class="exp-status-pill correct">정답 ✓</span>' : '<span class="exp-status-pill wrong">오답 ✗</span>'}</div></div>
       ${fb}
       <div class="exp-context-box"><div class="exp-context-label">문항 (Question)</div>${questionReplay(q)}<div class="q-correct-line">정답: <strong>${correctDisplay(q)}</strong></div></div>
+      ${(e.vocab || []).length ? `<div class="exp-vocab-box q-vocab"><div class="exp-section-title">📖 이 문제의 수학 용어 (Math Vocabulary)</div><div class="vocab-list">${e.vocab.map(v => `<div class="vocab-item"><span class="vocab-word">${esc(v.word)}</span><span class="vocab-meaning">: ${esc(v.meaning)}</span></div>`).join('')}</div><div class="q-vocab-more"><a href="glossary.html" target="_blank">전체 수학 용어집 보기 →</a></div></div>` : ''}
       ${e.clue ? `<div class="q-key"><b>💡 핵심 아이디어</b> ${e.clue}</div>` : ''}
       ${steps ? `<div class="exp-logic-box"><div class="exp-section-title">정답 도출 과정 (Step-by-Step)</div><div class="logic-steps-list">${steps}</div></div>` : ''}
       ${choices ? `<div class="exp-choices-box"><div class="exp-section-title">선택지별 분석 (Choices Analysis)</div><div class="choices-analysis-list">${choices}</div></div>` : ''}

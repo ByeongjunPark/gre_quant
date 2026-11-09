@@ -5,6 +5,7 @@ const path = require('path');
 const { Rng } = require('./lib');
 const { finalize } = require('./make');
 const { diGrowth, diBudget } = require('./t_di');
+const { GLOSSARY, vocabFor } = require('./glossary');
 
 const TEMPLATES = [...require('./t_arith'), ...require('./t_alg'), ...require('./t_qc'), ...require('./t_geo'), ...require('./t_data'), ...require('./t_fig')];
 const ROOT = path.join(__dirname, '..');
@@ -78,7 +79,7 @@ function buildTest(n) {
     number: si + 1, timeLimit: si === 0 ? 21 : 26,
     questions: items.map((it, qi) => {
       const id = `S${si + 1}-Q${qi + 1}`;
-      exp[id] = it.exp;
+      exp[id] = { ...it.exp, vocab: vocabFor(it.q) };
       return { id, ...it.q };
     }),
   }));
@@ -119,14 +120,17 @@ QuantExam.boot(examData, window.QEXPLANATIONS_${pad(n)});
 function main() {
   fs.mkdirSync(path.join(ROOT, 'js'), { recursive: true });
   const summary = [];
+  const termCounts = {};
   for (let n = 1; n <= NUM_TESTS; n++) {
     const { examData, exp } = buildTest(n);
     fs.writeFileSync(path.join(ROOT, `Quant_Mock_${pad(n)}.html`), pageHtml(n, examData));
+    Object.values(exp).forEach(e => (e.vocab || []).forEach(v => { termCounts[v.word] = (termCounts[v.word] || 0) + 1; }));
     fs.writeFileSync(path.join(ROOT, 'js', `quant_explanations_${pad(n)}.js`), `window.QEXPLANATIONS_${pad(n)} = ${JSON.stringify(exp, null, 2)};\n`);
     const types = {}; examData.sections.forEach(s => s.questions.forEach(q => { types[q.type] = (types[q.type] || 0) + 1; }));
     summary.push({ n, types });
   }
   fs.writeFileSync(path.join(ROOT, 'js', 'quant_tests_index.js'), `window.QUANT_TESTS = ${JSON.stringify(summary.map(s => ({ n: s.n, file: `Quant_Mock_${pad(s.n)}.html`, types: s.types })))};\n`);
+  require('./glossary_page').writeGlossary(ROOT, termCounts);
   console.log('templates:', TEMPLATES.length);
   console.log('usage:', Object.entries(usage).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k}:${v}`).join(' '));
   console.log('built', NUM_TESTS, 'tests');

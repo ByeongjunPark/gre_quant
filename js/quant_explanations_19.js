@@ -46,6 +46,20 @@ window.QEXPLANATIONS_19 = {
         "text": "The relationship cannot be determined from the information given.",
         "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 7, Quantity B = 6) 참고로 7은(는) 거듭제곱 항을 하나 더 센 값입니다."
       }
+    ],
+    "vocab": [
+      {
+        "word": "divisor / factor",
+        "meaning": "약수 (n을 나누어떨어지게 하는 수)"
+      },
+      {
+        "word": "factorial (n!)",
+        "meaning": "팩토리얼, 계승 (n! = 1 × 2 × … × n)"
+      },
+      {
+        "word": "integer",
+        "meaning": "정수"
+      }
     ]
   },
   "S1-Q2": {
@@ -94,6 +108,20 @@ window.QEXPLANATIONS_19 = {
         "isCorrect": true,
         "text": "The relationship cannot be determined from the information given.",
         "analysis": "정답. 조건을 만족하는 값에 따라 대소 관계가 달라지므로(위 단계의 반례 참고) 관계를 하나로 정할 수 없습니다."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "drawn to scale",
+        "meaning": "축척대로 그린 (Not drawn to scale: 실제 비율과 다를 수 있음)"
+      },
+      {
+        "word": "triangle",
+        "meaning": "삼각형"
+      },
+      {
+        "word": "side",
+        "meaning": "변"
       }
     ]
   },
@@ -148,6 +176,24 @@ window.QEXPLANATIONS_19 = {
         "text": "The relationship cannot be determined from the information given.",
         "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 2, Quantity B = 3) 참고로 3은(는) 계산 실수 값입니다."
       }
+    ],
+    "vocab": [
+      {
+        "word": "sequence",
+        "meaning": "수열"
+      },
+      {
+        "word": "preceding",
+        "meaning": "바로 앞의"
+      },
+      {
+        "word": "sum / product",
+        "meaning": "합 / 곱"
+      },
+      {
+        "word": "term",
+        "meaning": "(수열의) 항"
+      }
     ]
   },
   "S1-Q4": {
@@ -196,6 +242,16 @@ window.QEXPLANATIONS_19 = {
         "isCorrect": false,
         "text": "The relationship cannot be determined from the information given.",
         "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "standard deviation",
+        "meaning": "표준편차 (평균으로부터 퍼진 정도)"
+      },
+      {
+        "word": "list",
+        "meaning": "(수의) 목록, 자료"
       }
     ]
   },
@@ -246,6 +302,20 @@ window.QEXPLANATIONS_19 = {
         "value": -49,
         "display": "−49",
         "why": "부등호의 끝값(포함되지 않음)을 대입한 값입니다."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "greatest / least possible value",
+        "meaning": "가능한 최댓값 / 최솟값"
+      },
+      {
+        "word": "integer",
+        "meaning": "정수"
+      },
+      {
+        "word": "value",
+        "meaning": "값"
       }
     ]
   },
@@ -309,6 +379,28 @@ window.QEXPLANATIONS_19 = {
         "text": "(1, 3)",
         "analysis": "오답. 중심까지 거리의 제곱 = (1 − 3)² + (3 − 4)² = 5 > 4 → 외부"
       }
+    ],
+    "vocab": [
+      {
+        "word": "interior",
+        "meaning": "내부"
+      },
+      {
+        "word": "indicate all",
+        "meaning": "해당하는 것을 모두 고르시오"
+      },
+      {
+        "word": "circle",
+        "meaning": "원"
+      },
+      {
+        "word": "center",
+        "meaning": "중심"
+      },
+      {
+        "word": "point",
+        "meaning": "점"
+      }
     ]
   },
   "S1-Q7": {
@@ -353,6 +445,12 @@ window.QEXPLANATIONS_19 = {
         "value": 60,
         "display": "60",
         "why": "추가 후의 전체 개수입니다."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "ratio",
+        "meaning": "비, 비율 (a to b = a : b)"
       }
     ]
   },
@@ -410,6 +508,12 @@ window.QEXPLANATIONS_19 = {
         "text": "4",
         "analysis": "오답. 계산 실수 값입니다."
       }
+    ],
+    "vocab": [
+      {
+        "word": "value",
+        "meaning": "값"
+      }
     ]
   },
   "S1-Q9": {
@@ -454,6 +558,24 @@ window.QEXPLANATIONS_19 = {
         "value": 12.5,
         "display": "12.5",
         "why": "AD와 DB의 산술평균입니다. 높이는 기하평균입니다."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "right triangle / right angle",
+        "meaning": "직각삼각형 / 직각"
+      },
+      {
+        "word": "segment",
+        "meaning": "선분"
+      },
+      {
+        "word": "figure",
+        "meaning": "그림, 도형"
+      },
+      {
+        "word": "angle",
+        "meaning": "각"
       }
     ]
   },
@@ -511,6 +633,20 @@ window.QEXPLANATIONS_19 = {
         "text": "4/5",
         "analysis": "오답. 서로 다른 색일 확률입니다."
       }
+    ],
+    "vocab": [
+      {
+        "word": "probability",
+        "meaning": "확률"
+      },
+      {
+        "word": "at random",
+        "meaning": "무작위로"
+      },
+      {
+        "word": "without replacement",
+        "meaning": "비복원 (뽑은 것을 다시 넣지 않고)"
+      }
     ]
   },
   "S1-Q11": {
@@ -566,6 +702,28 @@ window.QEXPLANATIONS_19 = {
         "isCorrect": false,
         "text": "21",
         "analysis": "오답. 백의 자리가 0인 경우까지 포함한 값입니다."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "positive integer",
+        "meaning": "양의 정수 (1, 2, 3, …; 0은 포함하지 않음)"
+      },
+      {
+        "word": "three-digit integer",
+        "meaning": "세 자리 정수 (100~999)"
+      },
+      {
+        "word": "integer",
+        "meaning": "정수"
+      },
+      {
+        "word": "digit",
+        "meaning": "숫자(0~9), 자릿수"
+      },
+      {
+        "word": "sum / product",
+        "meaning": "합 / 곱"
       }
     ]
   },
@@ -623,6 +781,32 @@ window.QEXPLANATIONS_19 = {
         "text": "132",
         "analysis": "정답. 위 풀이 과정의 결과와 일치합니다."
       }
+    ],
+    "vocab": [
+      {
+        "word": "figure",
+        "meaning": "그림, 도형"
+      },
+      {
+        "word": "lie on",
+        "meaning": "(점이) ~ 위에 있다"
+      },
+      {
+        "word": "value",
+        "meaning": "값"
+      },
+      {
+        "word": "circle",
+        "meaning": "원"
+      },
+      {
+        "word": "center",
+        "meaning": "중심"
+      },
+      {
+        "word": "point",
+        "meaning": "점"
+      }
     ]
   },
   "S2-Q1": {
@@ -672,6 +856,16 @@ window.QEXPLANATIONS_19 = {
         "text": "The relationship cannot be determined from the information given.",
         "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요."
       }
+    ],
+    "vocab": [
+      {
+        "word": "consecutive",
+        "meaning": "연속하는 (consecutive integers: 연속하는 정수)"
+      },
+      {
+        "word": "integer",
+        "meaning": "정수"
+      }
     ]
   },
   "S2-Q2": {
@@ -720,6 +914,24 @@ window.QEXPLANATIONS_19 = {
         "isCorrect": false,
         "text": "The relationship cannot be determined from the information given.",
         "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "drawn to scale",
+        "meaning": "축척대로 그린 (Not drawn to scale: 실제 비율과 다를 수 있음)"
+      },
+      {
+        "word": "triangle",
+        "meaning": "삼각형"
+      },
+      {
+        "word": "angle",
+        "meaning": "각"
+      },
+      {
+        "word": "measure (of an angle)",
+        "meaning": "(각의) 크기"
       }
     ]
   },
@@ -774,7 +986,8 @@ window.QEXPLANATIONS_19 = {
         "text": "The relationship cannot be determined from the information given.",
         "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = −32, Quantity B = 32) 참고로 32은(는) 두 식을 뺄 때 부호를 반대로 처리한 값입니다."
       }
-    ]
+    ],
+    "vocab": []
   },
   "S2-Q4": {
     "topic": "연속 백분율 변화",
@@ -827,6 +1040,12 @@ window.QEXPLANATIONS_19 = {
         "text": "The relationship cannot be determined from the information given.",
         "analysis": "오답. 주어진 조건만으로 두 양의 대소가 항상 하나로 정해집니다. 관계가 결정되지 않는다고 판단하기 전에 식을 끝까지 정리해 보세요. (실제 값: Quantity A = 168.75, Quantity B = 165) 참고로 165은(는) 변화율을 단순 합산한 값입니다."
       }
+    ],
+    "vocab": [
+      {
+        "word": "percent",
+        "meaning": "퍼센트, 백분율"
+      }
     ]
   },
   "S2-Q5": {
@@ -871,6 +1090,20 @@ window.QEXPLANATIONS_19 = {
         "value": 70,
         "display": "70",
         "why": "전체 경로 수입니다."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "sequence",
+        "meaning": "수열"
+      },
+      {
+        "word": "path",
+        "meaning": "경로"
+      },
+      {
+        "word": "point",
+        "meaning": "점"
       }
     ]
   },
@@ -927,6 +1160,20 @@ window.QEXPLANATIONS_19 = {
         "isCorrect": false,
         "text": "130",
         "analysis": "오답. 계산 실수 값입니다."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "average (arithmetic mean)",
+        "meaning": "평균 (산술평균)"
+      },
+      {
+        "word": "average speed",
+        "meaning": "평균 속력 (전체 거리 ÷ 전체 시간)"
+      },
+      {
+        "word": "round trip",
+        "meaning": "왕복"
       }
     ]
   },
@@ -989,6 +1236,32 @@ window.QEXPLANATIONS_19 = {
         "text": "39",
         "analysis": "오답. x = 39이면 평균 = 85/6, 중앙값 = 21/2 → 조건 불만족"
       }
+    ],
+    "vocab": [
+      {
+        "word": "average (arithmetic mean)",
+        "meaning": "평균 (산술평균)"
+      },
+      {
+        "word": "must be / could be",
+        "meaning": "반드시 ~이다 / ~일 수도 있다"
+      },
+      {
+        "word": "median",
+        "meaning": "중앙값"
+      },
+      {
+        "word": "value",
+        "meaning": "값"
+      },
+      {
+        "word": "indicate all",
+        "meaning": "해당하는 것을 모두 고르시오"
+      },
+      {
+        "word": "list",
+        "meaning": "(수의) 목록, 자료"
+      }
     ]
   },
   "S2-Q8": {
@@ -1040,6 +1313,28 @@ window.QEXPLANATIONS_19 = {
         "isCorrect": false,
         "text": "73",
         "analysis": "오답. 대각선 길이의 제곱을 넓이로 쓴 값입니다(d²/2가 넓이)."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "vertex (vertices)",
+        "meaning": "꼭짓점"
+      },
+      {
+        "word": "opposite vertices",
+        "meaning": "마주 보는 꼭짓점 (대각선의 양 끝)"
+      },
+      {
+        "word": "square",
+        "meaning": "정사각형 (수에서는 제곱)"
+      },
+      {
+        "word": "area",
+        "meaning": "넓이"
+      },
+      {
+        "word": "point",
+        "meaning": "점"
       }
     ]
   },
@@ -1093,6 +1388,20 @@ window.QEXPLANATIONS_19 = {
         "text": "Electronics",
         "analysis": "오답. Electronics의 증가율은 10.0%로 Toys(59.2%)보다 작습니다."
       }
+    ],
+    "vocab": [
+      {
+        "word": "percent increase / decrease",
+        "meaning": "증가율 / 감소율 ((나중 − 처음) ÷ 처음 × 100)"
+      },
+      {
+        "word": "category",
+        "meaning": "범주, 항목"
+      },
+      {
+        "word": "percent",
+        "meaning": "퍼센트, 백분율"
+      }
     ]
   },
   "S2-Q10": {
@@ -1132,6 +1441,24 @@ window.QEXPLANATIONS_19 = {
         "value": 40,
         "display": "40",
         "why": "다섯 범주가 같다고 보고 2/5로 어림한 값입니다."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "combined",
+        "meaning": "합친, 합계의"
+      },
+      {
+        "word": "round to the nearest",
+        "meaning": "~ 단위로 반올림"
+      },
+      {
+        "word": "category",
+        "meaning": "범주, 항목"
+      },
+      {
+        "word": "percent",
+        "meaning": "퍼센트, 백분율"
       }
     ]
   },
@@ -1186,6 +1513,20 @@ window.QEXPLANATIONS_19 = {
         "isCorrect": true,
         "text": "Toys",
         "analysis": "정답. 2020: 120/1,730 ≈ 6.9%, 2022: 191/1,948 ≈ 9.8% → 증가"
+      }
+    ],
+    "vocab": [
+      {
+        "word": "share of the total",
+        "meaning": "전체에서 차지하는 비중"
+      },
+      {
+        "word": "category",
+        "meaning": "범주, 항목"
+      },
+      {
+        "word": "indicate all",
+        "meaning": "해당하는 것을 모두 고르시오"
       }
     ]
   },
@@ -1243,6 +1584,28 @@ window.QEXPLANATIONS_19 = {
         "text": "48",
         "analysis": "오답. 계산 실수 값입니다."
       }
+    ],
+    "vocab": [
+      {
+        "word": "solution (chemistry)",
+        "meaning": "용액"
+      },
+      {
+        "word": "by volume",
+        "meaning": "부피 기준으로"
+      },
+      {
+        "word": "must be / could be",
+        "meaning": "반드시 ~이다 / ~일 수도 있다"
+      },
+      {
+        "word": "volume",
+        "meaning": "부피"
+      },
+      {
+        "word": "percent",
+        "meaning": "퍼센트, 백분율"
+      }
     ]
   },
   "S2-Q13": {
@@ -1293,6 +1656,16 @@ window.QEXPLANATIONS_19 = {
         "display": "4",
         "why": "주기 길이를 잘못 잡았을 때 나오는 값입니다."
       }
+    ],
+    "vocab": [
+      {
+        "word": "units digit",
+        "meaning": "일의 자리 숫자"
+      },
+      {
+        "word": "digit",
+        "meaning": "숫자(0~9), 자릿수"
+      }
     ]
   },
   "S2-Q14": {
@@ -1332,6 +1705,24 @@ window.QEXPLANATIONS_19 = {
         "value": 1,
         "display": "1",
         "why": "마지막 만남을 빠뜨린 값입니다."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "constant rate",
+        "meaning": "일정한 속도(작업 속도)"
+      },
+      {
+        "word": "circular track",
+        "meaning": "원형 트랙"
+      },
+      {
+        "word": "side",
+        "meaning": "변"
+      },
+      {
+        "word": "point",
+        "meaning": "점"
       }
     ]
   },
@@ -1388,6 +1779,44 @@ window.QEXPLANATIONS_19 = {
         "isCorrect": true,
         "text": "50π − 100",
         "analysis": "정답. 위 풀이 과정의 결과와 일치합니다."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "square",
+        "meaning": "정사각형 (수에서는 제곱)"
+      },
+      {
+        "word": "figure",
+        "meaning": "그림, 도형"
+      },
+      {
+        "word": "arc (minor / major arc)",
+        "meaning": "호 (작은 호 / 큰 호)"
+      },
+      {
+        "word": "quarter of a circle",
+        "meaning": "사분원 (원의 1/4)"
+      },
+      {
+        "word": "shaded region",
+        "meaning": "색칠한 영역"
+      },
+      {
+        "word": "side",
+        "meaning": "변"
+      },
+      {
+        "word": "area",
+        "meaning": "넓이"
+      },
+      {
+        "word": "circle",
+        "meaning": "원"
+      },
+      {
+        "word": "center",
+        "meaning": "중심"
       }
     ]
   }
